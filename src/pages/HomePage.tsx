@@ -1,6 +1,26 @@
-import { CalendarDays, Plane } from 'lucide-react'
+import { ArrowRight, CalendarDays, CalendarRange, Plane } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import { SectionCard } from '../components/SectionCard'
 import { sections } from '../config/sections'
+
+const documentsSection = sections.find(
+  (section) => section.path === '/documents',
+)
+
+const homeSections = [
+  ...(documentsSection
+    ? [
+        {
+          ...documentsSection,
+          description: 'Все важные документы поездки в одном месте',
+        },
+      ]
+    : []),
+  ...sections.filter(
+    (section) =>
+      section.path !== '/plan' && section.path !== '/documents',
+  ),
+]
 
 export function HomePage() {
   return (
@@ -39,6 +59,51 @@ export function HomePage() {
 
       <section className="border-t border-stone-200/70 bg-[#f7f8f4] px-5 py-12 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
         <div className="mx-auto max-w-6xl">
+          <Link
+            to="/trip"
+            className="group relative mb-12 flex min-h-72 overflow-hidden rounded-[2rem] bg-emerald-900 p-7 text-white shadow-[0_24px_65px_rgba(20,83,45,0.22)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_30px_75px_rgba(20,83,45,0.28)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 sm:min-h-80 sm:p-10"
+          >
+            <div className="pointer-events-none absolute -right-20 -top-28 size-80 rounded-full bg-emerald-600/40 blur-3xl" />
+            <div className="pointer-events-none absolute -bottom-32 left-1/4 size-72 rounded-full bg-red-400/15 blur-3xl" />
+
+            <div className="relative flex w-full flex-col">
+              <div className="flex items-start justify-between gap-5">
+                <span className="flex size-14 items-center justify-center rounded-2xl bg-white/12 shadow-inner ring-1 ring-white/15 backdrop-blur">
+                  <CalendarRange
+                    size={27}
+                    strokeWidth={1.8}
+                    aria-hidden="true"
+                  />
+                </span>
+                <span className="rounded-full bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-emerald-50 ring-1 ring-white/10 backdrop-blur">
+                  Главный раздел
+                </span>
+              </div>
+
+              <div className="mt-auto pt-12">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-200">
+                  10 дней · единый план
+                </p>
+                <h2 className="mt-3 text-3xl font-semibold tracking-[-0.045em] sm:text-5xl">
+                  📅 Мое путешествие
+                </h2>
+                <div className="mt-5 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+                  <p className="max-w-xl text-sm leading-6 text-emerald-100/80 sm:text-base">
+                    Дни, события и подробный план всей поездки в одном месте.
+                  </p>
+                  <span className="inline-flex items-center gap-2 text-sm font-semibold">
+                    Открыть путешествие
+                    <ArrowRight
+                      size={18}
+                      className="transition group-hover:translate-x-1"
+                      aria-hidden="true"
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </Link>
+
           <div className="mb-8 flex items-end justify-between gap-4 sm:mb-10">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700">
@@ -54,7 +119,7 @@ export function HomePage() {
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {sections.map((section, index) => (
+            {homeSections.map((section, index) => (
               <SectionCard key={section.path} section={section} index={index} />
             ))}
           </div>

@@ -1,0 +1,138 @@
+[
+  {
+    "id": "trip-day-01",
+    "date": "2026-08-25",
+    "title": "День прибытия",
+    "description": "Фиктивный план первого дня путешествия.",
+    "icon": "✈️",
+    "eventIds": [
+      "event-demo-01",
+      "event-day-01-arrival",
+      "event-day-01-atm",
+      "event-day-01-sim",
+      "event-day-01-bolt",
+      "event-day-01-check-in",
+      "event-day-01-groceries",
+      "event-day-01-walk",
+      "event-day-01-dinner",
+      "event-day-01-hotel-return"
+    ]
+  },
+  {
+    "id": "trip-day-02",
+    "date": "2026-08-26",
+    "title": "Пещера Прометея и каньон Мартвили",
+    "description": "Самые красивые природные достопримечательности Имеретии: Пещера Прометея и каньон Мартвили.",
+    "icon": "🌿",
+    "eventIds": [
+      "event-day-02-morning",
+      "event-day-02-breakfast",
+      "event-day-02-departure",
+      "event-day-02-prometheus",
+      "event-day-02-transfer-martvili",
+      "event-day-02-martvili",
+      "event-day-02-lunch",
+      "event-day-02-return-kutaisi",
+      "event-day-02-free-time"
+    ]
+  },
+  {
+    "id": "trip-day-03",
+    "date": "2026-08-27",
+    "title": "Переезд в Кобулети",
+    "description": "Сегодня мы покидаем Кутаиси и отправляемся в Кобулети — уютный курорт на побережье Чёрного моря. После заселения в отель нас ждёт первое знакомство с морем, прогулка по набережной и спокойный вечер на пляже.",
+    "icon": "🏖️",
+    "eventIds": [
+      "event-day-03-morning",
+      "event-day-03-breakfast",
+      "event-day-03-checkout",
+      "event-day-03-station",
+      "event-day-03-tickets",
+      "event-day-03-marshrutka",
+      "event-day-03-walk-hotel",
+      "event-day-03-check-in",
+      "event-day-03-lunch",
+      "event-day-03-sea",
+      "event-day-03-promenade",
+      "event-day-03-dinner",
+      "event-day-03-sunset"
+    ]
+  },
+  {
+    "id": "trip-day-04",
+    "date": "2026-08-28",
+    "title": "День прогулок",
+    "description": "Тестовый маршрут без реальных объектов.",
+    "icon": "🚶",
+    "eventIds": [
+      "event-demo-09",
+      "event-demo-10"
+    ]
+  },
+  {
+    "id": "trip-day-05",
+    "date": "2026-08-29",
+    "title": "День отдыха",
+    "description": "Фиктивный спокойный день путешествия.",
+    "icon": "☀️",
+    "eventIds": [
+      "event-demo-11",
+      "event-demo-12"
+    ]
+  },
+  {
+    "id": "trip-day-06",
+    "date": "2026-08-30",
+    "title": "Свободный день",
+    "description": "Тестовые события со свободным расписанием.",
+    "icon": "✨",
+    "eventIds": [
+      "event-demo-13",
+      "event-demo-14"
+    ]
+  },
+  {
+    "id": "trip-day-07",
+    "date": "2026-08-31",
+    "title": "День впечатлений",
+    "description": "Фиктивная дневная и вечерняя программа.",
+    "icon": "📷",
+    "eventIds": [
+      "event-demo-15",
+      "event-demo-16"
+    ]
+  },
+  {
+    "id": "trip-day-08",
+    "date": "2026-09-01",
+    "title": "Спокойный день",
+    "description": "Тестовый план без привязки к реальным местам.",
+    "icon": "🌿",
+    "eventIds": [
+      "event-demo-17",
+      "event-demo-18"
+    ]
+  },
+  {
+    "id": "trip-day-09",
+    "date": "2026-09-02",
+    "title": "Завершающий день",
+    "description": "Фиктивная программа перед возвращением.",
+    "icon": "🎒",
+    "eventIds": [
+      "event-demo-19",
+      "event-demo-20"
+    ]
+  },
+  {
+    "id": "trip-day-10",
+    "date": "2026-09-03",
+    "title": "Возвращение домой",
+    "description": "Тестовый план заключительного дня поездки.",
+    "icon": "🏠",
+    "eventIds": [
+      "event-demo-21",
+      "event-demo-22"
+    ]
+  }
+]

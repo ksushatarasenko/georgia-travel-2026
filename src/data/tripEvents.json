@@ -1,0 +1,5802 @@
+[
+  {
+    "id": "event-demo-01",
+    "dayId": "trip-day-01",
+    "title": "✈️ Вылет из Познани",
+    "category": "flight",
+    "icon": "✈️",
+    "time": "08:15",
+    "duration": "3 часа 35 минут",
+    "description": "Перелёт Wizz Air по маршруту Poznań (POZ) → Kutaisi (KUT).",
+    "image": "/images/airport/ppoznan-arrival.jpg",
+    "price": "Будет заполнено позже.",
+    "gps": null,
+    "tips": [
+      "Приехать заранее.",
+      "Держать паспорт под рукой.",
+      "После регистрации проверить номер выхода.",
+      "Проверить размер ручной клади."
+    ],
+    "notes": "Автоматическая регистрация куплена.",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "flightDetails": {
+      "date": "2026-08-25",
+      "route": {
+        "origin": "Poznań (POZ)",
+        "destination": "Kutaisi (KUT)"
+      },
+      "departureTime": "08:15",
+      "arrivalTime": "13:50",
+      "duration": "3 часа 35 минут",
+      "airline": "Wizz Air",
+      "passengerCount": 3,
+      "seats": [
+        "7A",
+        "7B",
+        "7C"
+      ],
+      "baggage": {
+        "description": "У каждого пассажира бесплатная личная вещь",
+        "dimensions": "40 × 30 × 20 см"
+      },
+      "checkIn": "Автоматическая регистрация куплена.",
+      "documents": [
+        {
+          "id": "flight-booking",
+          "title": "Подтверждение бронирования",
+          "icon": "🧾",
+          "filePath": "/documents/flight/booking.pdf",
+          "available": false
+        },
+        {
+          "id": "boarding-pass-oksana",
+          "title": "Посадочный талон — Оксана",
+          "icon": "🎫",
+          "filePath": "/documents/flight/boarding-pass-oksana.pdf",
+          "available": false
+        },
+        {
+          "id": "boarding-pass-marina",
+          "title": "Посадочный талон — Марина",
+          "icon": "🎫",
+          "filePath": "/documents/flight/boarding-pass-marina.pdf",
+          "available": false
+        },
+        {
+          "id": "boarding-pass-kyrylo",
+          "title": "Посадочный талон — Kyrylo",
+          "icon": "🎫",
+          "filePath": "/documents/flight/boarding-pass-kyrylo.pdf",
+          "available": false
+        },
+        {
+          "id": "flight-insurance",
+          "title": "Страховка",
+          "icon": "🛡️",
+          "filePath": "/documents/flight/insurance.pdf",
+          "available": false
+        }
+      ],
+      "cabinBag": {
+        "dimensions": "40 × 30 × 20 см",
+        "imagePath": "/images/airport/cabin-bag.png",
+        "imageAvailable": false
+      },
+      "packingLists": [
+        {
+          "id": "kirill",
+          "name": "Кирилл",
+          "icon": "👦",
+          "items": [
+            {
+              "id": "kirill-underwear",
+              "label": "Трусы — 5 шт"
+            },
+            {
+              "id": "kirill-socks",
+              "label": "Носки — 2 пары"
+            },
+            {
+              "id": "kirill-swimwear",
+              "label": "Плавки"
+            },
+            {
+              "id": "kirill-tshirts",
+              "label": "Футболки — 4 шт"
+            },
+            {
+              "id": "kirill-shorts",
+              "label": "Шорты — 3 шт"
+            },
+            {
+              "id": "kirill-trousers",
+              "label": "Штаны — 1 шт"
+            },
+            {
+              "id": "kirill-sweater",
+              "label": "Кофта"
+            },
+            {
+              "id": "kirill-toothbrush",
+              "label": "Зубная щетка"
+            }
+          ]
+        },
+        {
+          "id": "oksana",
+          "name": "Оксана",
+          "icon": "👩",
+          "items": [
+            {
+              "id": "oksana-underwear",
+              "label": "Трусы — 3 шт"
+            },
+            {
+              "id": "oksana-swimwear",
+              "label": "Купальник"
+            },
+            {
+              "id": "oksana-socks",
+              "label": "Носки — 1 пара"
+            },
+            {
+              "id": "oksana-pareo",
+              "label": "Парео"
+            },
+            {
+              "id": "oksana-trousers",
+              "label": "Штаны — 2 шт"
+            },
+            {
+              "id": "oksana-cycling-shorts",
+              "label": "Велосипедки — 2 шт"
+            },
+            {
+              "id": "oksana-tshirts",
+              "label": "Футболки — 3 шт"
+            },
+            {
+              "id": "oksana-toothbrush",
+              "label": "Зубная щетка"
+            },
+            {
+              "id": "oksana-spf",
+              "label": "Крем SPF 50 (до 100 мл)"
+            }
+          ]
+        }
+      ],
+      "cabinBagReminders": [
+        "Жидкости — емкости до 100 мл.",
+        "Все жидкости перевозятся в прозрачном пакете.",
+        "Общий объем жидкостей — до 1 литра.",
+        "Power Bank перевозить только в ручной клади.",
+        "Документы и деньги держать при себе.",
+        "Телефон и зарядку положить в легкодоступное место."
+      ],
+      "checklist": [
+        {
+          "id": "passports",
+          "label": "Проверить паспорта"
+        },
+        {
+          "id": "auto-check-in",
+          "label": "Проверить автоматическую регистрацию"
+        },
+        {
+          "id": "boarding-passes",
+          "label": "Скачать посадочные талоны"
+        },
+        {
+          "id": "phones",
+          "label": "Зарядить телефоны"
+        },
+        {
+          "id": "power-bank",
+          "label": "Зарядить Power Bank"
+        },
+        {
+          "id": "bank-cards",
+          "label": "Проверить банковские карты"
+        },
+        {
+          "id": "bolt",
+          "label": "Вызвать Bolt"
+        }
+      ],
+      "airportTransfer": {
+        "method": "Bolt",
+        "duration": "Будет заполнено позже.",
+        "cost": "Будет заполнено позже.",
+        "callTime": "Будет заполнено позже."
+      },
+      "usefulTips": [
+        "Приехать заранее.",
+        "Держать паспорт под рукой.",
+        "После регистрации проверить номер выхода.",
+        "Проверить размер ручной клади."
+      ]
+    }
+  },
+  {
+    "id": "event-day-01-arrival",
+    "dayId": "trip-day-01",
+    "isPlaceholder": false,
+    "isTimeConfirmed": true,
+    "title": "🛬 Прилет в Кутаиси",
+    "category": "arrival",
+    "icon": "🛬",
+    "time": "13:50",
+    "duration": "",
+    "description": "Добро пожаловать в Грузию! После выхода из самолета приложение поможет пройти все первые шаги.",
+    "image": "/images/airport/kutaisi-arrival.jpg",
+    "price": "",
+    "gps": null,
+    "tips": [
+      "Не выбрасывайте посадочный талон до выхода из аэропорта.",
+      "Если возникнут вопросы — сотрудники аэропорта обычно говорят по-английски.",
+      "Подключите интернет как можно раньше.",
+      "Перед вызовом Bolt убедитесь, что определилось ваше местоположение."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "arrivalDetails": {
+      "date": "2026-08-25",
+      "arrivalTime": "13:50",
+      "airline": "Wizz Air",
+      "airport": "Kutaisi International Airport",
+      "airportCode": "KUT",
+      "country": "Грузия",
+      "baggage": "Только ручная кладь",
+      "steps": [
+        {
+          "id": "plane",
+          "title": "Самолет",
+          "icon": "🛬"
+        },
+        {
+          "id": "passport-control",
+          "title": "Паспортный контроль",
+          "icon": "🛂"
+        },
+        {
+          "id": "terminal-exit",
+          "title": "Выход из терминала",
+          "icon": "🚪"
+        },
+        {
+          "id": "cash-and-sim",
+          "title": "Банкомат + SIM-карта Magti",
+          "icon": "💳"
+        },
+        {
+          "id": "bolt",
+          "title": "Bolt",
+          "icon": "🚖"
+        }
+      ],
+      "checklist": [
+        {
+          "id": "passport-control",
+          "label": "Пройти паспортный контроль"
+        },
+        {
+          "id": "internet",
+          "label": "Проверить интернет"
+        },
+        {
+          "id": "cash",
+          "label": "Снять наличные"
+        },
+        {
+          "id": "sim",
+          "label": "Купить SIM-карту"
+        },
+        {
+          "id": "bolt",
+          "label": "Вызвать Bolt"
+        },
+        {
+          "id": "family-message",
+          "label": "Сообщить родным, что прилетели"
+        }
+      ],
+      "requiredDocuments": [
+        {
+          "id": "passport",
+          "title": "Паспорт",
+          "icon": "🛂",
+          "filePath": null,
+          "available": false
+        },
+        {
+          "id": "boarding-pass",
+          "title": "Посадочный талон",
+          "icon": "🎫",
+          "filePath": null,
+          "available": false
+        },
+        {
+          "id": "insurance",
+          "title": "Страховка",
+          "icon": "🩺",
+          "filePath": null,
+          "available": false
+        },
+        {
+          "id": "hotel-address",
+          "title": "Адрес отеля",
+          "icon": "🏨",
+          "filePath": null,
+          "available": false
+        }
+      ],
+      "nextActions": [
+        {
+          "id": "atm",
+          "title": "Банкомат",
+          "icon": "💳",
+          "description": "Снять наличные в лари.",
+          "eventId": "event-day-01-atm"
+        },
+        {
+          "id": "magti",
+          "title": "Magti",
+          "icon": "📱",
+          "description": "Купить SIM-карту и подключить интернет.",
+          "eventId": "event-day-01-sim"
+        },
+        {
+          "id": "bolt",
+          "title": "Bolt",
+          "icon": "🚖",
+          "description": "Вызвать такси до отеля.",
+          "eventId": "event-day-01-bolt"
+        }
+      ],
+      "usefulTips": [
+        "Не выбрасывайте посадочный талон до выхода из аэропорта.",
+        "Если возникнут вопросы — сотрудники аэропорта обычно говорят по-английски.",
+        "Подключите интернет как можно раньше.",
+        "Перед вызовом Bolt убедитесь, что определилось ваше местоположение."
+      ]
+    }
+  },
+  {
+    "id": "event-day-01-atm",
+    "dayId": "trip-day-01",
+    "isPlaceholder": false,
+    "title": "Банкомат",
+    "category": "activity",
+    "icon": "💳",
+    "time": "—",
+    "duration": "",
+    "description": "После выхода из терминала необходимо снять небольшую сумму наличных в грузинских лари (GEL) для первых расходов.",
+    "image": "/images/airport/bankomats.jpg",
+    "price": "",
+    "gps": null,
+    "tips": [
+      "Не снимайте слишком большую сумму сразу.",
+      "Банкоматы находятся прямо в терминале аэропорта.",
+      "Если банкомат удерживает карту — сразу обращайтесь к сотрудникам банка.",
+      "Большинство магазинов и ресторанов в Грузии принимают банковские карты, поэтому крупную сумму наличных носить с собой не обязательно."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "atmDetails": {
+      "airport": "Kutaisi International Airport",
+      "banks": [
+        {
+          "id": "tbc",
+          "name": "TBC Bank",
+          "icon": "🏦",
+          "location": "В зоне прилета",
+          "hours": "Работает 24/7"
+        },
+        {
+          "id": "liberty",
+          "name": "Liberty Bank",
+          "icon": "🏦",
+          "location": "В зоне прилета",
+          "hours": "Работает 24/7"
+        }
+      ],
+      "supportedCards": [
+        {
+          "id": "visa",
+          "name": "Visa",
+          "icon": "💳",
+          "status": "Поддерживается"
+        },
+        {
+          "id": "mastercard",
+          "name": "Mastercard",
+          "icon": "💳",
+          "status": "Поддерживается"
+        }
+      ],
+      "cardNote": "Перед поездкой желательно убедиться, что на карте разрешены международные операции.",
+      "recommendedAmount": "300 GEL",
+      "recommendedUses": [
+        "Такси",
+        "Небольшие покупки",
+        "Кафе",
+        "Расходы, если где-то нельзя оплатить картой"
+      ],
+      "amountNote": "При необходимости позже можно снять еще наличные в городе.",
+      "dccAdvice": {
+        "warning": "Если банкомат предложит выполнить конвертацию (Dynamic Currency Conversion), ❌ отказаться.",
+        "choices": [
+          "Without conversion",
+          "Charge in GEL"
+        ],
+        "explanation": "Конвертацию должен выполнять ваш банк. Это часто позволяет получить более выгодный курс."
+      },
+      "checklist": [
+        {
+          "id": "atm-found",
+          "label": "Банкомат найден"
+        },
+        {
+          "id": "card-inserted",
+          "label": "Карта вставлена"
+        },
+        {
+          "id": "cash-withdrawn",
+          "label": "Сняты наличные"
+        },
+        {
+          "id": "cash-counted",
+          "label": "Деньги пересчитаны"
+        },
+        {
+          "id": "card-taken",
+          "label": "Карта забрана"
+        }
+      ],
+      "nextAction": {
+        "title": "SIM-карта Magti",
+        "icon": "📱",
+        "description": "Купить SIM-карту и подключить интернет.",
+        "eventId": "event-day-01-sim"
+      },
+      "usefulTips": [
+        "Не снимайте слишком большую сумму сразу.",
+        "Банкоматы находятся прямо в терминале аэропорта.",
+        "Если банкомат удерживает карту — сразу обращайтесь к сотрудникам банка.",
+        "Большинство магазинов и ресторанов в Грузии принимают банковские карты, поэтому крупную сумму наличных носить с собой не обязательно."
+      ]
+    }
+  },
+  {
+    "id": "event-day-01-sim",
+    "dayId": "trip-day-01",
+    "isPlaceholder": false,
+    "title": "SIM-карта Magti",
+    "category": "activity",
+    "icon": "📱",
+    "time": "—",
+    "duration": "",
+    "description": "После выхода из терминала можно сразу купить SIM-карту оператора Magti и подключить мобильный интернет.",
+    "image": "/images/airport/magti.jpeg",
+    "price": "",
+    "gps": null,
+    "tips": [
+      "Не выбрасывайте упаковку SIM-карты до конца поездки.",
+      "Проверьте интернет сразу возле стойки Magti.",
+      "Если интернет не работает — попросите сотрудника помочь с настройкой.",
+      "После подключения сразу откройте Google Maps и Bolt."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "simDetails": {
+      "airport": "Kutaisi International Airport",
+      "benefits": [
+        {
+          "id": "coverage",
+          "icon": "📶",
+          "title": "Лучшее покрытие по Грузии"
+        },
+        {
+          "id": "mountains",
+          "icon": "🏔",
+          "title": "Хорошо работает в горах"
+        },
+        {
+          "id": "coast",
+          "icon": "🌊",
+          "title": "Отличная связь на побережье"
+        },
+        {
+          "id": "sim-types",
+          "icon": "📱",
+          "title": "Поддержка eSIM и обычных SIM"
+        }
+      ],
+      "purchasePoint": {
+        "title": "Стойка Magti",
+        "icon": "📍",
+        "details": [
+          "Находится в зоне прилета аэропорта.",
+          "Купить можно сразу после выхода из терминала.",
+          "Обычно сотрудники говорят по-английски."
+        ]
+      },
+      "recommendedPlan": {
+        "title": "Туристический пакет с интернетом",
+        "includes": [
+          "Интернет",
+          "Звонки по Грузии",
+          "SMS (если есть)"
+        ],
+        "note": "Если доступны несколько тарифов, попросите самый выгодный туристический пакет с мобильным интернетом."
+      },
+      "requirements": [
+        {
+          "id": "passport",
+          "icon": "🛂",
+          "title": "Паспорт"
+        },
+        {
+          "id": "payment",
+          "icon": "💳",
+          "title": "Банковская карта или наличные"
+        },
+        {
+          "id": "phone",
+          "icon": "📱",
+          "title": "Телефон"
+        }
+      ],
+      "englishPhrases": [
+        {
+          "original": "I'd like a SIM card.",
+          "translation": "Я хотел(а) бы купить SIM-карту."
+        },
+        {
+          "original": "How much does it cost?",
+          "translation": "Сколько это стоит?"
+        },
+        {
+          "original": "I need mobile internet.",
+          "translation": "Мне нужен мобильный интернет."
+        },
+        {
+          "original": "Can you help me activate it?",
+          "translation": "Помогите, пожалуйста, активировать её."
+        },
+        {
+          "original": "Does it include unlimited internet?",
+          "translation": "В этот тариф входит безлимитный интернет?"
+        },
+        {
+          "original": "Thank you!",
+          "translation": "Спасибо!"
+        }
+      ],
+      "checklist": [
+        {
+          "id": "find-magti",
+          "label": "Найти стойку Magti"
+        },
+        {
+          "id": "choose-plan",
+          "label": "Выбрать тариф"
+        },
+        {
+          "id": "buy-sim",
+          "label": "Купить SIM-карту"
+        },
+        {
+          "id": "check-internet",
+          "label": "Проверить мобильный интернет"
+        },
+        {
+          "id": "check-maps",
+          "label": "Проверить, что работают Google Maps"
+        },
+        {
+          "id": "check-bolt",
+          "label": "Проверить, что работает Bolt"
+        }
+      ],
+      "nextAction": {
+        "title": "Bolt",
+        "icon": "🚖",
+        "description": "Заказать такси до отеля.",
+        "eventId": "event-day-01-bolt"
+      },
+      "usefulTips": [
+        "Не выбрасывайте упаковку SIM-карты до конца поездки.",
+        "Проверьте интернет сразу возле стойки Magti.",
+        "Если интернет не работает — попросите сотрудника помочь с настройкой.",
+        "После подключения сразу откройте Google Maps и Bolt."
+      ]
+    }
+  },
+  {
+    "id": "event-day-01-bolt",
+    "dayId": "trip-day-01",
+    "isPlaceholder": false,
+    "title": "Bolt",
+    "category": "transport",
+    "icon": "🚖",
+    "time": "—",
+    "duration": "",
+    "description": "Самый удобный способ добраться до отеля — заказать Bolt сразу после выхода из терминала.",
+    "image": "/images/airport/bolt.jpeg",
+    "price": "",
+    "gps": null,
+    "tips": [
+      "Не садитесь в автомобиль, пока не сверите номер машины с приложением.",
+      "Если водитель не может вас найти — воспользуйтесь встроенным чатом или звонком в приложении.",
+      "Перед началом поездки убедитесь, что пункт назначения указан правильно.",
+      "Если едете с детьми или большим количеством вещей, убедитесь, что выбран автомобиль подходящего размера.",
+      "Во время поездки можно следить за маршрутом в приложении Bolt."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "boltDetails": {
+      "airport": "Kutaisi International Airport",
+      "prerequisites": [
+        {
+          "id": "internet",
+          "icon": "📱",
+          "title": "Работает мобильный интернет"
+        },
+        {
+          "id": "location",
+          "icon": "📍",
+          "title": "Определено местоположение"
+        },
+        {
+          "id": "payment",
+          "icon": "💳",
+          "title": "Банковская карта привязана или выбран способ оплаты наличными"
+        },
+        {
+          "id": "battery",
+          "icon": "🔋",
+          "title": "Телефон заряжен"
+        }
+      ],
+      "orderSteps": [
+        "Открыть приложение Bolt",
+        "Разрешить доступ к геолокации",
+        "Указать пункт назначения (отель)",
+        "Проверить стоимость поездки",
+        "Подтвердить заказ",
+        "Дождаться назначенного автомобиля"
+      ],
+      "vehicleChecks": [
+        "Проверьте марку автомобиля.",
+        "Проверьте цвет автомобиля.",
+        "Сверьте номер автомобиля.",
+        "Посмотрите имя водителя.",
+        "Не садитесь в автомобиль, если номер не совпадает."
+      ],
+      "englishPhrases": [
+        {
+          "original": "I have booked a Bolt.",
+          "translation": "Я заказал(а) Bolt."
+        },
+        {
+          "original": "Are you my driver?",
+          "translation": "Вы мой водитель?"
+        },
+        {
+          "original": "Can you help me with the luggage?",
+          "translation": "Поможете с багажом?"
+        },
+        {
+          "original": "Please take me to this address.",
+          "translation": "Пожалуйста, отвезите меня по этому адресу."
+        },
+        {
+          "original": "Thank you. Have a nice day!",
+          "translation": "Спасибо. Хорошего дня!"
+        }
+      ],
+      "checklist": [
+        {
+          "id": "internet-working",
+          "label": "Интернет работает"
+        },
+        {
+          "id": "bolt-open",
+          "label": "Bolt открыт"
+        },
+        {
+          "id": "address-selected",
+          "label": "Адрес выбран"
+        },
+        {
+          "id": "car-ordered",
+          "label": "Машина заказана"
+        },
+        {
+          "id": "plate-checked",
+          "label": "Проверен номер автомобиля"
+        },
+        {
+          "id": "hotel-reached",
+          "label": "Доехали до отеля"
+        }
+      ],
+      "nextAction": {
+        "title": "Заселение в отель",
+        "icon": "🏨",
+        "description": "После приезда зарегистрироваться в гостинице и получить ключи.",
+        "eventId": "event-day-01-check-in"
+      },
+      "usefulTips": [
+        "Не садитесь в автомобиль, пока не сверите номер машины с приложением.",
+        "Если водитель не может вас найти — воспользуйтесь встроенным чатом или звонком в приложении.",
+        "Перед началом поездки убедитесь, что пункт назначения указан правильно.",
+        "Если едете с детьми или большим количеством вещей, убедитесь, что выбран автомобиль подходящего размера.",
+        "Во время поездки можно следить за маршрутом в приложении Bolt."
+      ]
+    }
+  },
+  {
+    "id": "event-day-01-check-in",
+    "dayId": "trip-day-01",
+    "isPlaceholder": false,
+    "title": "Заселение в отель",
+    "category": "accommodation",
+    "icon": "🏨",
+    "time": "—",
+    "duration": "",
+    "description": "Теперь осталось зарегистрироваться, получить ключ и начать отдых.",
+    "image": "/images/hotel/check-in.jpg",
+    "price": "",
+    "gps": null,
+    "tips": [
+      "Проверьте номер сразу после заселения.",
+      "Подключитесь к Wi-Fi.",
+      "Уточните пароль от Wi-Fi, если его нет в номере.",
+      "Узнайте время завтрака.",
+      "Спросите, где находится ближайший супермаркет.",
+      "Сохраните визитку или адрес отеля в телефоне."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "hotelCheckInDetails": {
+      "subtitle": "Добро пожаловать!",
+      "bookingInfo": [
+        {
+          "id": "hotel-name",
+          "icon": "🏨",
+          "label": "Название отеля",
+          "value": "Будет заполнено позже"
+        },
+        {
+          "id": "address",
+          "icon": "📍",
+          "label": "Адрес",
+          "value": "Будет заполнено позже"
+        },
+        {
+          "id": "dates",
+          "icon": "📅",
+          "label": "Даты проживания",
+          "value": "25.08.2026 - 27.09.2026"
+        },
+        {
+          "id": "guests",
+          "icon": "👥",
+          "label": "Гости",
+          "value": "Будет заполнено позже"
+        },
+        {
+          "id": "phone",
+          "icon": "☎",
+          "label": "Телефон",
+          "value": "Будет заполнено позже"
+        },
+        {
+          "id": "check-in-time",
+          "icon": "🕒",
+          "label": "Время заселения",
+          "value": "Будет заполнено позже"
+        }
+      ],
+      "receptionDocuments": [
+        {
+          "id": "passport",
+          "icon": "🛂",
+          "title": "Паспорт"
+        },
+        {
+          "id": "booking",
+          "icon": "📄",
+          "title": "Подтверждение бронирования"
+        },
+        {
+          "id": "card",
+          "icon": "💳",
+          "title": "Банковская карта",
+          "note": "Если потребуется депозит"
+        }
+      ],
+      "checkInSteps": [
+        "Подойти к стойке регистрации",
+        "Передать паспорт",
+        "Назвать фамилию",
+        "Получить ключ или карту",
+        "Уточнить номер комнаты",
+        "Подняться в номер"
+      ],
+      "englishPhrases": [
+        {
+          "original": "Hello!",
+          "translation": "Здравствуйте!"
+        },
+        {
+          "original": "I have a reservation.",
+          "translation": "У меня есть бронирование."
+        },
+        {
+          "original": "My name is...",
+          "translation": "Меня зовут..."
+        },
+        {
+          "original": "Can I check in now?",
+          "translation": "Могу ли я сейчас заселиться?"
+        },
+        {
+          "original": "What time is breakfast?",
+          "translation": "Во сколько завтрак?"
+        },
+        {
+          "original": "Where is the elevator?",
+          "translation": "Где находится лифт?"
+        },
+        {
+          "original": "Thank you!",
+          "translation": "Спасибо!"
+        }
+      ],
+      "checklist": [
+        {
+          "id": "approach-reception",
+          "label": "Подойти к стойке регистрации"
+        },
+        {
+          "id": "show-passport",
+          "label": "Показать паспорт"
+        },
+        {
+          "id": "receive-key",
+          "label": "Получить ключ"
+        },
+        {
+          "id": "learn-room-number",
+          "label": "Узнать номер комнаты"
+        },
+        {
+          "id": "check-wifi",
+          "label": "Проверить Wi-Fi"
+        },
+        {
+          "id": "check-in-complete",
+          "label": "Заселиться"
+        }
+      ],
+      "nextAction": {
+        "title": "Первый магазин",
+        "icon": "🛒",
+        "description": "Купить воду, продукты и все необходимое после заселения.",
+        "eventId": "event-day-01-groceries"
+      },
+      "usefulTips": [
+        "Проверьте номер сразу после заселения.",
+        "Подключитесь к Wi-Fi.",
+        "Уточните пароль от Wi-Fi, если его нет в номере.",
+        "Узнайте время завтрака.",
+        "Спросите, где находится ближайший супермаркет.",
+        "Сохраните визитку или адрес отеля в телефоне."
+      ]
+    }
+  },
+  {
+    "id": "event-day-01-groceries",
+    "dayId": "trip-day-01",
+    "isPlaceholder": false,
+    "title": "Первый магазин",
+    "category": "activity",
+    "icon": "🛒",
+    "time": "—",
+    "duration": "",
+    "description": "После заселения удобно сразу купить воду, продукты и всё необходимое на первые дни отдыха.",
+    "image": "/images/stores/store.jpg",
+    "price": "",
+    "gps": null,
+    "tips": [
+      "Купите несколько бутылок воды сразу после заселения.",
+      "Если планируете экскурсии, возьмите воду и лёгкий перекус заранее.",
+      "Большинство магазинов принимают карты.",
+      "Цены указаны в грузинских лари (GEL)."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "storeDetails": {
+      "supermarkets": [
+        {
+          "id": "nikora",
+          "rank": "🥇",
+          "name": "Nikora",
+          "subtitle": "Самый удобный магазин для ежедневных покупок.",
+          "description": [
+            "Находится в центре Кутаиси, недалеко от площади с фонтаном Колхиды.",
+            "До большинства центральных отелей можно дойти пешком за несколько минут.",
+            "Отличный вариант, если нужно быстро купить продукты после заселения."
+          ],
+          "products": [
+            "🥛 Молочные продукты",
+            "🍞 Хлеб",
+            "🧀 Сыр",
+            "🍗 Колбаса",
+            "🥩 Мясо",
+            "🍎 Фрукты",
+            "🥦 Овощи",
+            "🥤 Вода",
+            "☕ Чай и кофе",
+            "🍪 Сладости",
+            "🧻 Бытовые товары"
+          ],
+          "advantages": [
+            "Хорошие цены",
+            "Быстрое обслуживание",
+            "Можно оплатить картой",
+            "Привычный небольшой супермаркет"
+          ]
+        },
+        {
+          "id": "carrefour",
+          "rank": "🥈",
+          "name": "Carrefour",
+          "subtitle": "Большой супермаркет с широким ассортиментом.",
+          "description": [
+            "Если нужно купить продукты сразу на несколько дней — это отличный вариант."
+          ],
+          "products": [
+            "🥩 Мясо",
+            "🐟 Рыба",
+            "🧀 Сыры",
+            "🥛 Молочные продукты",
+            "🍎 Фрукты",
+            "🥦 Овощи",
+            "🥖 Свежая выпечка",
+            "🥤 Напитки",
+            "🧴 Бытовая химия"
+          ],
+          "advantages": [
+            "Большой выбор",
+            "Хорошие акции",
+            "Привычный европейский формат"
+          ]
+        }
+      ],
+      "shoppingGuide": {
+        "title": "Как покупать в магазинах Грузии",
+        "introduction": "Покупки проходят практически так же, как в Польше или большинстве европейских стран.",
+        "steps": [
+          "Возьмите корзину или тележку.",
+          "Выберите необходимые товары.",
+          "Подойдите к кассе.",
+          "Оплатите покупку.",
+          "Заберите чек."
+        ],
+        "paymentMethods": [
+          "💳 Банковская карта",
+          "💵 Наличные (лари)"
+        ]
+      },
+      "usefulToKnow": [
+        {
+          "id": "bags",
+          "icon": "🛍️",
+          "title": "Пакеты",
+          "description": "После оплаты продукты складываете самостоятельно. Пакеты обычно платные."
+        },
+        {
+          "id": "produce",
+          "icon": "⚖️",
+          "title": "Овощи и фрукты",
+          "description": "В некоторых магазинах их нужно взвесить самостоятельно, в других это делает кассир."
+        },
+        {
+          "id": "cards",
+          "icon": "💳",
+          "title": "Карты",
+          "description": "Практически во всех супермаркетах принимают банковские карты."
+        }
+      ],
+      "priceGuide": {
+        "title": "Примерные цены (август 2026)",
+        "items": [
+          {
+            "product": "💧 Вода 1,5 л",
+            "price": "1–2 GEL"
+          },
+          {
+            "product": "🥤 Coca-Cola 1,5 л",
+            "price": "3–4 GEL"
+          },
+          {
+            "product": "🥛 Йогурт",
+            "price": "2,5–5 GEL"
+          },
+          {
+            "product": "🧀 Сыр сулугуни (1 кг)",
+            "price": "14–20 GEL"
+          },
+          {
+            "product": "🍞 Хлеб",
+            "price": "2–4 GEL"
+          },
+          {
+            "product": "🫓 Лаваш (шоти)",
+            "price": "2–3 GEL"
+          },
+          {
+            "product": "🥚 Яйца (10 шт.)",
+            "price": "5–8 GEL"
+          },
+          {
+            "product": "🧈 Масло сливочное",
+            "price": "6–10 GEL"
+          },
+          {
+            "product": "🥛 Молоко 1 л",
+            "price": "4–6 GEL"
+          },
+          {
+            "product": "☕ Кофе растворимый",
+            "price": "12–20 GEL"
+          },
+          {
+            "product": "🍵 Чай",
+            "price": "4–10 GEL"
+          },
+          {
+            "product": "🍎 Яблоки",
+            "price": "3–5 GEL/кг"
+          },
+          {
+            "product": "🍑 Персики",
+            "price": "3–6 GEL/кг"
+          },
+          {
+            "product": "🍇 Виноград",
+            "price": "4–8 GEL/кг"
+          },
+          {
+            "product": "🍉 Арбуз",
+            "price": "1–2 GEL/кг"
+          },
+          {
+            "product": "🍌 Бананы",
+            "price": "4–6 GEL/кг"
+          },
+          {
+            "product": "🍅 Помидоры",
+            "price": "2–4 GEL/кг"
+          },
+          {
+            "product": "🥒 Огурцы",
+            "price": "2–4 GEL/кг"
+          },
+          {
+            "product": "🥔 Картофель",
+            "price": "2–4 GEL/кг"
+          },
+          {
+            "product": "🧻 Туалетная бумага (4 рулона)",
+            "price": "5–8 GEL"
+          }
+        ],
+        "sampleBasket": [
+          {
+            "item": "💧 2 бутылки воды",
+            "price": "3 GEL"
+          },
+          {
+            "item": "🍑 Персики",
+            "price": "5 GEL"
+          },
+          {
+            "item": "🧀 Сулугуни (300 г)",
+            "price": "5 GEL"
+          },
+          {
+            "item": "🫓 Лаваш",
+            "price": "2,5 GEL"
+          },
+          {
+            "item": "🥛 Йогурт",
+            "price": "3 GEL"
+          },
+          {
+            "item": "🍪 Печенье",
+            "price": "4 GEL"
+          }
+        ],
+        "sampleTotal": "Примерно 22–25 GEL (около 30–35 PLN, в зависимости от курса)."
+      },
+      "checklist": [
+        {
+          "id": "water",
+          "label": "Вода"
+        },
+        {
+          "id": "fruit",
+          "label": "Фрукты"
+        },
+        {
+          "id": "bread",
+          "label": "Лаваш или хлеб"
+        },
+        {
+          "id": "sulguni",
+          "label": "Сыр сулугуни"
+        },
+        {
+          "id": "yogurt",
+          "label": "Йогурт"
+        },
+        {
+          "id": "tea-coffee",
+          "label": "Чай или кофе"
+        },
+        {
+          "id": "sweet",
+          "label": "Что-нибудь сладкое"
+        }
+      ],
+      "nextAction": {
+        "title": "Прогулка по центру Кутаиси",
+        "icon": "🚶",
+        "eventId": "event-day-01-walk"
+      },
+      "usefulTips": [
+        "Купите несколько бутылок воды сразу после заселения.",
+        "Если планируете экскурсии, возьмите воду и лёгкий перекус заранее.",
+        "Большинство магазинов принимают карты.",
+        "Цены указаны в грузинских лари (GEL)."
+      ]
+    }
+  },
+  {
+    "id": "event-day-01-walk",
+    "dayId": "trip-day-01",
+    "isPlaceholder": false,
+    "title": "Первый вечер в Кутаиси",
+    "category": "walk",
+    "icon": "🚶",
+    "time": "—",
+    "duration": "",
+    "description": "После заселения и небольших покупок самое время познакомиться с городом.",
+    "image": "/images/kutaisi/evening-walk.jpg",
+    "price": "",
+    "gps": null,
+    "tips": [
+      "Наденьте удобную обувь.",
+      "Возьмите воду.",
+      "Фото получаются особенно красивыми перед закатом.",
+      "Большинство маршрута проходит по пешеходным улицам.",
+      "Вечером в центре много людей и спокойно гулять."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "walkDetails": {
+      "overview": [
+        {
+          "id": "distance",
+          "icon": "📏",
+          "label": "Длина маршрута",
+          "value": "≈ 3,8 км"
+        },
+        {
+          "id": "duration",
+          "icon": "⏱",
+          "label": "Продолжительность",
+          "value": "2–3 часа"
+        },
+        {
+          "id": "difficulty",
+          "icon": "🥾",
+          "label": "Сложность",
+          "value": "Легкая"
+        },
+        {
+          "id": "best-time",
+          "icon": "📸",
+          "label": "Лучшее время",
+          "value": "За 1–2 часа до заката"
+        }
+      ],
+      "routeStops": [
+        {
+          "id": "colchis-fountain",
+          "name": "Фонтан Колхиды",
+          "transferLabel": "От отеля",
+          "distance": "200–500 метров",
+          "walkingTime": "≈ 3–7 минут пешком",
+          "durationLabel": "Осмотр",
+          "duration": "10–15 минут",
+          "highlights": [
+            "⛲ Главный фонтан города",
+            "✨ Позолоченные фигуры древней Колхиды",
+            "🏛 Центральную площадь",
+            "📸 Отличное место для первой фотографии"
+          ],
+          "tip": "Вечером включается красивая подсветка."
+        },
+        {
+          "id": "white-bridge",
+          "name": "Белый мост",
+          "transferLabel": "От фонтана",
+          "distance": "≈ 350 метров",
+          "walkingTime": "≈ 5 минут пешком",
+          "durationLabel": "Осмотр",
+          "duration": "10–15 минут",
+          "highlights": [
+            "🌉 Белый мост",
+            "🌊 Реку Риони",
+            "🧑‍🎨 Скульптуру «Мальчик Пикассо»",
+            "📸 Один из самых красивых видов города"
+          ],
+          "tip": "С моста открываются красивые фотографии на реку."
+        },
+        {
+          "id": "old-town",
+          "name": "Старый город",
+          "transferLabel": "От Белого моста",
+          "distance": "≈ 250 метров",
+          "walkingTime": "≈ 3–4 минуты",
+          "durationLabel": "Прогулка",
+          "duration": "30–40 минут",
+          "highlights": [
+            "🏘 Старинные дома",
+            "🏠 Деревянные балконы",
+            "☕ Уютные кафе",
+            "🍷 Винные бары",
+            "🎁 Магазины сувениров",
+            "🎨 Атмосферные узкие улочки"
+          ],
+          "tip": "Не спешите. Именно здесь чувствуется настоящий Кутаиси."
+        },
+        {
+          "id": "bagrati-cathedral",
+          "name": "Собор Баграта",
+          "transferLabel": "От Старого города",
+          "distance": "≈ 1 км",
+          "walkingTime": "≈ 15–20 минут",
+          "durationLabel": "Осмотр",
+          "duration": "20–30 минут",
+          "highlights": [
+            "⛪ Собор XI века",
+            "🌄 Панораму всего Кутаиси",
+            "📸 Лучшую смотровую площадку города",
+            "🌅 Закат над городом"
+          ],
+          "tip": "Возьмите бутылку воды — подъём немного в горку."
+        },
+        {
+          "id": "return-center",
+          "name": "Возвращение в центр",
+          "transferLabel": "Расстояние",
+          "distance": "≈ 1 км",
+          "walkingTime": "≈ 15–20 минут",
+          "conclusion": "Завершите прогулку ужином в одном из ресторанов центра."
+        }
+      ],
+      "dinnerIdeas": [
+        {
+          "id": "khinkali",
+          "icon": "🥟",
+          "title": "Хинкали"
+        },
+        {
+          "id": "khachapuri",
+          "icon": "🧀",
+          "title": "Имерули хачапури"
+        },
+        {
+          "id": "mtsvadi",
+          "icon": "🍢",
+          "title": "Мцвади"
+        },
+        {
+          "id": "salad",
+          "icon": "🥗",
+          "title": "Салат с орехами"
+        },
+        {
+          "id": "lemonade",
+          "icon": "🍋",
+          "title": "Лимонад"
+        },
+        {
+          "id": "wine",
+          "icon": "🍷",
+          "title": "Грузинское вино (для взрослых)"
+        }
+      ],
+      "summary": {
+        "highlights": [
+          "Фонтан Колхиды",
+          "Белый мост",
+          "Реку Риони",
+          "Старый город",
+          "Собор Баграта",
+          "Панораму Кутаиси",
+          "Первый грузинский ужин"
+        ],
+        "stats": [
+          {
+            "icon": "📏",
+            "label": "Общая прогулка",
+            "value": "3,8 км"
+          },
+          {
+            "icon": "🚶",
+            "label": "В движении",
+            "value": "Пешком около 60 минут"
+          },
+          {
+            "icon": "⏱",
+            "label": "Вместе с остановками",
+            "value": "Около 2–3 часов"
+          }
+        ]
+      },
+      "nextAction": {
+        "title": "Первый грузинский ужин",
+        "icon": "🍽️",
+        "description": "Попробуйте лучшие блюда грузинской кухни и узнайте, что стоит заказать в первый вечер.",
+        "eventId": "event-day-01-dinner"
+      },
+      "usefulTips": [
+        "Наденьте удобную обувь.",
+        "Возьмите воду.",
+        "Фото получаются особенно красивыми перед закатом.",
+        "Большинство маршрута проходит по пешеходным улицам.",
+        "Вечером в центре много людей и спокойно гулять."
+      ]
+    }
+  },
+  {
+    "id": "event-day-01-dinner",
+    "dayId": "trip-day-01",
+    "isPlaceholder": false,
+    "title": "Первый грузинский ужин",
+    "category": "food",
+    "icon": "🍽️",
+    "time": "—",
+    "duration": "",
+    "description": "После прогулки по Кутаиси самое время попробовать настоящую грузинскую кухню.",
+    "image": "/images/restaurants/georgian-dinner.jpg",
+    "price": "",
+    "gps": null,
+    "tips": [
+      "В Грузии порции обычно большие.",
+      "Одного хачапури часто хватает на двух человек.",
+      "Лучше заказать сначала 5–6 хинкали на человека.",
+      "Чаевые не обязательны; если обслуживание понравилось — обычно оставляют около 10%."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "dinnerDetails": {
+      "restaurants": [
+        {
+          "id": "palaty",
+          "rank": "🥇",
+          "name": "Palaty",
+          "subtitle": "Лучшее сочетание цены, качества и атмосферы.",
+          "location": "Центр Кутаиси",
+          "walkingTime": "От площади Колхиды ≈ 3 минуты пешком",
+          "reasons": [
+            "Очень популярное место среди туристов и местных жителей.",
+            "Аутентичная грузинская кухня.",
+            "Красивый интерьер.",
+            "Большие порции.",
+            "Хорошее обслуживание."
+          ],
+          "averageCheck": "35–55 GEL на человека"
+        },
+        {
+          "id": "sisters",
+          "rank": "🥈",
+          "name": "Sisters",
+          "subtitle": "Уютный семейный ресторан.",
+          "location": "Старый город",
+          "walkingTime": "5–7 минут пешком",
+          "reasons": [
+            "Домашняя кухня.",
+            "Спокойная атмосфера.",
+            "Отличные отзывы."
+          ],
+          "averageCheck": "30–45 GEL"
+        },
+        {
+          "id": "el-depo",
+          "rank": "🥉",
+          "name": "El Depo",
+          "subtitle": "Если хочется вкусно и недорого.",
+          "location": "Центр города",
+          "walkingTime": "Несколько минут пешком",
+          "reasons": [
+            "Демократичные цены.",
+            "Большие порции.",
+            "Популярное место у местных жителей."
+          ],
+          "averageCheck": "25–40 GEL"
+        }
+      ],
+      "firstOrderDishes": [
+        {
+          "id": "khinkali",
+          "icon": "🥟",
+          "title": "Хинкали",
+          "price": "10–12 GEL",
+          "description": "Попробуйте классические с мясом.",
+          "howToEat": "Возьмите за хвостик, аккуратно надкусите, выпейте бульон, затем съешьте.",
+          "note": "Не принято есть хвостик."
+        },
+        {
+          "id": "khachapuri",
+          "icon": "🧀",
+          "title": "Имерули хачапури",
+          "price": "15–22 GEL",
+          "description": "Классическая лепешка с сыром.",
+          "note": "Отлично подходит на двоих."
+        },
+        {
+          "id": "mtsvadi",
+          "icon": "🍢",
+          "title": "Мцвади",
+          "price": "18–30 GEL",
+          "description": "Грузинский шашлык.",
+          "note": "Подаётся с луком и соусом."
+        },
+        {
+          "id": "salad",
+          "icon": "🥗",
+          "title": "Овощной салат с грецкими орехами",
+          "price": "10–15 GEL",
+          "description": "Свежие овощи с фирменной ореховой заправкой."
+        },
+        {
+          "id": "lemonade",
+          "icon": "🍋",
+          "title": "Лимонад Натахтари",
+          "price": "4–6 GEL",
+          "description": "Популярный грузинский лимонад.",
+          "flavors": [
+            "Груша",
+            "Тархун",
+            "Саперави"
+          ]
+        }
+      ],
+      "tips": [
+        {
+          "id": "portions",
+          "icon": "🍽️",
+          "title": "Порции",
+          "description": "В Грузии порции обычно большие. Одного хачапури часто хватает на двух человек."
+        },
+        {
+          "id": "khinkali-tip",
+          "icon": "🥟",
+          "title": "Хинкали",
+          "description": "Лучше заказать сначала 5–6 штук на человека."
+        },
+        {
+          "id": "tips",
+          "icon": "💰",
+          "title": "Чаевые",
+          "description": "Не обязательны. Если обслуживание понравилось — обычно оставляют около 10%."
+        }
+      ],
+      "sampleOrder": {
+        "title": "Первый грузинский заказ",
+        "items": [
+          "🥟 Хинкали — 12 шт.",
+          "🧀 Имерули хачапури — 1 шт.",
+          "🥗 Салат с орехами — 1 шт.",
+          "🥤 2 лимонада Натахтари"
+        ],
+        "total": "Примерно 60–80 GEL"
+      },
+      "checklist": [
+        {
+          "id": "try-khinkali",
+          "label": "Попробовать хинкали"
+        },
+        {
+          "id": "try-khachapuri",
+          "label": "Попробовать хачапури"
+        },
+        {
+          "id": "drink-lemonade",
+          "label": "Выпить грузинский лимонад"
+        },
+        {
+          "id": "photo",
+          "label": "Сделать фото ужина"
+        }
+      ],
+      "nextAction": {
+        "title": "Возвращение в отель",
+        "icon": "🌙",
+        "description": "Подготовьтесь к следующему дню путешествия.",
+        "eventId": "event-day-01-hotel-return"
+      }
+    }
+  },
+  {
+    "id": "event-day-01-hotel-return",
+    "dayId": "trip-day-01",
+    "isPlaceholder": false,
+    "title": "Первый день завершён",
+    "category": "other",
+    "icon": "🌙",
+    "time": "—",
+    "duration": "",
+    "description": "Поздравляем! Вы успешно добрались до Грузии, заселились в отель, познакомились с Кутаиси и попробовали национальную кухню.",
+    "image": "/images/hotel/night.jpg",
+    "price": "",
+    "gps": null,
+    "tips": [
+      "Зарядите телефон — завтра будете много фотографировать и пользоваться картой.",
+      "Купите воду заранее, чтобы утром сразу отправиться гулять.",
+      "Проверьте погоду: летом в Кутаиси может быть очень жарко.",
+      "Подготовьте удобную обувь — во второй день будет много прогулок."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "hotelReturnDetails": {
+      "dayHighlights": [
+        "Прилетели в Грузию",
+        "Прошли паспортный контроль",
+        "Сняли деньги",
+        "Купили SIM-карту",
+        "Доехали до отеля",
+        "Заселились",
+        "Купили продукты",
+        "Погуляли по Кутаиси",
+        "Попробовали грузинскую кухню"
+      ],
+      "checklist": [
+        {
+          "id": "charge-phone",
+          "label": "Зарядить телефон"
+        },
+        {
+          "id": "charge-powerbank",
+          "label": "Зарядить Power Bank"
+        },
+        {
+          "id": "prepare-water",
+          "label": "Подготовить воду"
+        },
+        {
+          "id": "prepare-cash",
+          "label": "Подготовить наличные"
+        },
+        {
+          "id": "check-documents",
+          "label": "Проверить документы"
+        },
+        {
+          "id": "check-weather",
+          "label": "Посмотреть прогноз погоды"
+        },
+        {
+          "id": "sleep-early",
+          "label": "Лечь спать пораньше"
+        }
+      ],
+      "tips": [
+        {
+          "id": "charge",
+          "icon": "🔋",
+          "title": "Зарядите телефон",
+          "description": "Завтра будете много фотографировать и пользоваться картой."
+        },
+        {
+          "id": "water",
+          "icon": "💧",
+          "title": "Купите воду заранее",
+          "description": "Чтобы утром сразу отправиться гулять."
+        },
+        {
+          "id": "weather",
+          "icon": "🌤",
+          "title": "Проверьте погоду",
+          "description": "Летом в Кутаиси может быть очень жарко."
+        },
+        {
+          "id": "shoes",
+          "icon": "👟",
+          "title": "Подготовьте удобную обувь",
+          "description": "Во второй день будет много прогулок."
+        }
+      ],
+      "stats": [
+        {
+          "id": "walking",
+          "icon": "🚶",
+          "label": "Пешком",
+          "value": "≈ 6–8 км"
+        },
+        {
+          "id": "photos",
+          "icon": "📸",
+          "label": "Фотографий",
+          "value": "Самое время сделать красивые снимки на память."
+        },
+        {
+          "id": "expenses",
+          "icon": "💰",
+          "label": "Расходы",
+          "value": "Можно записать расходы за день."
+        },
+        {
+          "id": "day",
+          "icon": "⏱",
+          "label": "День путешествия",
+          "value": "Первый день успешно завершён."
+        }
+      ],
+      "tomorrowPreview": {
+        "title": "Второй день путешествия",
+        "description": "Сегодня был только первый вечер. Завтра вы увидите самые известные места Кутаиси и его окрестностей."
+      },
+      "nextAction": {
+        "title": "День 2. Доброе утро, Кутаиси",
+        "icon": "🌅",
+        "description": "Начинаем второй день путешествия. Завтрак, прогулка и новые впечатления.",
+        "eventId": "event-day-02-morning",
+        "buttonLabel": "Начать второй день"
+      }
+    }
+  },
+  {
+    "id": "event-day-02-morning",
+    "dayId": "trip-day-02",
+    "isPlaceholder": false,
+    "title": "Доброе утро, Кутаиси",
+    "category": "other",
+    "icon": "🌅",
+    "time": "07:30",
+    "duration": "",
+    "description": "Сегодня вас ждут самые красивые природные достопримечательности Имеретии.",
+    "image": "/images/kutaisi/morning.jpg",
+    "price": "",
+    "gps": null,
+    "tips": [
+      "Не выходите без воды.",
+      "Используйте солнцезащитный крем.",
+      "Наденьте удобную обувь.",
+      "Захватите лёгкую кофту — утром может быть прохладнее."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "morningDetails": {
+      "morningPlan": [
+        {
+          "id": "wake-up",
+          "time": "🕢 07:30",
+          "title": "Подъём",
+          "description": "Откройте окно, насладитесь свежим утром и подготовьтесь к новому дню."
+        },
+        {
+          "id": "shower",
+          "time": "🚿 07:30–08:00",
+          "title": "Душ и сборы"
+        },
+        {
+          "id": "check",
+          "time": "📱 08:00",
+          "title": "Проверьте",
+          "checklist": [
+            "Телефон",
+            "Заряд Power Bank",
+            "Документы",
+            "Деньги"
+          ]
+        },
+        {
+          "id": "breakfast",
+          "time": "🍳 08:00–08:45",
+          "title": "Завтрак"
+        },
+        {
+          "id": "leave",
+          "time": "🚖 08:45",
+          "title": "Выезд из Кутаиси"
+        }
+      ],
+      "packingItems": [
+        {
+          "id": "phone",
+          "icon": "📱",
+          "title": "Телефон"
+        },
+        {
+          "id": "powerbank",
+          "icon": "🔋",
+          "title": "Power Bank"
+        },
+        {
+          "id": "water",
+          "icon": "💧",
+          "title": "Бутылку воды"
+        },
+        {
+          "id": "hat",
+          "icon": "🧢",
+          "title": "Кепку или панаму"
+        },
+        {
+          "id": "sunglasses",
+          "icon": "🕶",
+          "title": "Солнцезащитные очки"
+        },
+        {
+          "id": "spf",
+          "icon": "🧴",
+          "title": "Крем SPF"
+        },
+        {
+          "id": "card",
+          "icon": "💳",
+          "title": "Банковскую карту"
+        },
+        {
+          "id": "cash",
+          "icon": "💵",
+          "title": "Немного наличных"
+        }
+      ],
+      "dayForecast": [
+        {
+          "id": "heat",
+          "icon": "🌡",
+          "title": "Летом может быть жарко",
+          "description": "Лучше начать прогулку утром."
+        },
+        {
+          "id": "walking",
+          "icon": "🚶",
+          "title": "Много ходьбы",
+          "description": "Сегодня предстоит много ходить пешком."
+        },
+        {
+          "id": "hydrate",
+          "icon": "💧",
+          "title": "Пейте воду",
+          "description": "Не забывайте пить воду."
+        }
+      ],
+      "checklist": [
+        {
+          "id": "wake",
+          "label": "Проснуться"
+        },
+        {
+          "id": "breakfast",
+          "label": "Позавтракать"
+        },
+        {
+          "id": "charge-phone",
+          "label": "Зарядить телефон"
+        },
+        {
+          "id": "take-water",
+          "label": "Взять воду"
+        },
+        {
+          "id": "check-docs",
+          "label": "Проверить документы"
+        },
+        {
+          "id": "leave-hotel",
+          "label": "Выйти из отеля"
+        }
+      ],
+      "usefulTips": [
+        "Не выходите без воды.",
+        "Используйте солнцезащитный крем.",
+        "Наденьте удобную обувь.",
+        "Захватите лёгкую кофту — утром может быть прохладнее."
+      ],
+      "nextAction": {
+        "title": "Завтрак",
+        "icon": "🍳",
+        "description": "Начните день с вкусного завтрака и чашки ароматного кофе.",
+        "eventId": "event-day-02-breakfast"
+      }
+    }
+  },
+  {
+    "id": "event-day-02-breakfast",
+    "dayId": "trip-day-02",
+    "isPlaceholder": false,
+    "title": "Завтрак",
+    "category": "food",
+    "icon": "🍳",
+    "time": "08:00",
+    "duration": "≈45 минут",
+    "description": "Сегодня предстоит насыщенный день. После завтрака вы отправитесь в Пещеру Прометея и каньон Мартвили.",
+    "image": null,
+    "price": "",
+    "gps": null,
+    "tips": [
+      "Не пропускайте завтрак — впереди насыщенный день.",
+      "Возьмите воду с собой.",
+      "Зарядите телефон до 100%.",
+      "Если ожидается жаркая погода, используйте солнцезащитный крем."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "breakfastDetails": {
+      "title": "Завтрак",
+      "description": "Сегодня предстоит насыщенный день. После завтрака вы отправитесь в Пещеру Прометея и каньон Мартвили.",
+      "schedule": [
+        {
+          "id": "breakfast-time",
+          "icon": "🕗",
+          "label": "Завтрак",
+          "value": "08:00–08:45"
+        },
+        {
+          "id": "departure",
+          "icon": "🚖",
+          "label": "Выезд",
+          "value": "08:45"
+        },
+        {
+          "id": "drive",
+          "icon": "🚗",
+          "label": "До Пещеры Прометея",
+          "value": "≈30 минут"
+        }
+      ],
+      "hotelBreakfast": {
+        "includedTitle": "Если завтрак включён в стоимость проживания",
+        "includedText": "Рекомендуется воспользоваться завтраком в отеле — это самый удобный вариант перед ранним выездом.",
+        "notIncludedTitle": "Если завтрак не включён",
+        "notIncludedText": "Выберите ближайшее кафе рядом с отелем. Не привязывайтесь к конкретным заведениям, чтобы информация оставалась актуальной."
+      },
+      "foodIdeas": [
+        {
+          "id": "omelet",
+          "icon": "🥚",
+          "title": "Омлет"
+        },
+        {
+          "id": "pastry",
+          "icon": "🥐",
+          "title": "Выпечка"
+        },
+        {
+          "id": "cheese",
+          "icon": "🧀",
+          "title": "Сыр"
+        },
+        {
+          "id": "veggies",
+          "icon": "🥗",
+          "title": "Овощи"
+        },
+        {
+          "id": "coffee",
+          "icon": "☕",
+          "title": "Кофе"
+        },
+        {
+          "id": "tea",
+          "icon": "🍵",
+          "title": "Чай"
+        },
+        {
+          "id": "water",
+          "icon": "💧",
+          "title": "Вода"
+        }
+      ],
+      "priceExamples": [
+        {
+          "id": "coffee-price",
+          "label": "Кофе",
+          "price": "5–8 GEL"
+        },
+        {
+          "id": "omelet-price",
+          "label": "Омлет",
+          "price": "10–15 GEL"
+        },
+        {
+          "id": "pastry-price",
+          "label": "Выпечка",
+          "price": "4–8 GEL"
+        },
+        {
+          "id": "full-price",
+          "label": "Полноценный завтрак",
+          "price": "20–35 GEL на человека"
+        }
+      ],
+      "checklist": [
+        {
+          "id": "eat",
+          "label": "Позавтракать"
+        },
+        {
+          "id": "buy-water",
+          "label": "Купить воду"
+        },
+        {
+          "id": "charge-phone",
+          "label": "Зарядить телефон"
+        },
+        {
+          "id": "powerbank",
+          "label": "Взять Power Bank"
+        },
+        {
+          "id": "docs",
+          "label": "Проверить документы"
+        },
+        {
+          "id": "cash",
+          "label": "Проверить наличные"
+        },
+        {
+          "id": "shoes",
+          "label": "Надеть удобную обувь"
+        },
+        {
+          "id": "hat",
+          "label": "Взять головной убор"
+        }
+      ],
+      "usefulTips": [
+        "Не пропускайте завтрак — впереди насыщенный день.",
+        "Возьмите воду с собой.",
+        "Зарядите телефон до 100%.",
+        "Если ожидается жаркая погода, используйте солнцезащитный крем."
+      ],
+      "nextAction": {
+        "title": "Выезд из Кутаиси",
+        "icon": "🚖",
+        "description": "Рекомендуем воспользоваться Bolt. Дорога до Пещеры Прометея занимает около 30 минут.",
+        "eventId": "event-day-02-departure",
+        "buttonLabel": "Выехать"
+      }
+    }
+  },
+  {
+    "id": "event-day-02-departure",
+    "dayId": "trip-day-02",
+    "isPlaceholder": false,
+    "title": "Выезд из Кутаиси",
+    "category": "transport",
+    "icon": "🚖",
+    "time": "08:45",
+    "duration": "≈30 минут",
+    "description": "Рекомендуем воспользоваться Bolt. Дорога занимает около 30 минут.",
+    "image": null,
+    "price": "",
+    "gps": null,
+    "tips": [
+      "Закажите Bolt заранее.",
+      "Укажите в приложении Prometheus Cave / Kumistavi.",
+      "Возьмите воду в дорогу."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    }
+  },
+  {
+    "id": "event-day-02-prometheus",
+    "dayId": "trip-day-02",
+    "isPlaceholder": false,
+    "title": "Пещера Прометея",
+    "category": "activity",
+    "icon": "🕳️",
+    "time": "09:30",
+    "duration": "≈1,5–2 часа",
+    "description": "Время включает покупку билетов, экскурсию по пещере, осмотр залов и фотографии.",
+    "image": "/images/prometheus/gallery/gallery-01.jpg",
+    "price": "Будет обновлено",
+    "gps": {
+      "latitude": 42.3769,
+      "longitude": 42.6006
+    },
+    "tips": [
+      "Лучше приезжать утром.",
+      "Внутри прохладнее.",
+      "Не трогать сталактиты.",
+      "Фото без вспышки выглядят лучше."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "attractionDetails": {
+      "visitFlow": [
+        {
+          "id": "arrive",
+          "icon": "🚗",
+          "text": "Приезжаете в Visitor Centre."
+        },
+        {
+          "id": "ticket",
+          "icon": "🎟️",
+          "text": "Покупаете билет в кассе или показываете электронный билет."
+        },
+        {
+          "id": "group",
+          "icon": "👥",
+          "text": "Ожидаете формирования экскурсионной группы."
+        },
+        {
+          "id": "enter",
+          "icon": "🚶",
+          "text": "Вместе с гидом проходите в пещеру."
+        },
+        {
+          "id": "tour",
+          "icon": "💡",
+          "text": "Экскурсия проходит по оборудованному маршруту и занимает около одного часа."
+        },
+        {
+          "id": "boat",
+          "icon": "🚣",
+          "text": "Если куплена лодочная прогулка и она проводится в этот день, после экскурсии вас проводят к месту посадки."
+        },
+        {
+          "id": "exit",
+          "icon": "🛍️",
+          "text": "После выхода можно посетить сувенирный магазин, кафе и зону отдыха."
+        }
+      ],
+      "gallery": [
+        {
+          "id": "img-1",
+          "src": "/images/prometheus/gallery/gallery-01.jpg",
+          "alt": "Вход в Пещеру Прометея"
+        },
+        {
+          "id": "img-2",
+          "src": "/images/prometheus/gallery/gallery-02.jpg",
+          "alt": "Самый большой подземный зал Пещеры Прометея"
+        },
+        {
+          "id": "img-3",
+          "src": "/images/prometheus/gallery/gallery-03.jpg",
+          "alt": "Подсвеченные сталактиты в Пещере Прометея"
+        },
+        {
+          "id": "img-4",
+          "src": "/images/prometheus/gallery/gallery-04.jpg",
+          "alt": "Подземная река в Пещере Прометея"
+        },
+        {
+          "id": "img-5",
+          "src": "/images/prometheus/gallery/gallery-05.jpg",
+          "alt": "Подземная водная галерея — зона лодочной прогулки"
+        },
+        {
+          "id": "img-6",
+          "src": "/images/prometheus/gallery/gallery-06.jpg",
+          "alt": "Панорамный вид зала Пещеры Прометея"
+        }
+      ],
+      "quickFacts": [
+        {
+          "id": "rating",
+          "icon": "⭐",
+          "label": "Наша оценка",
+          "value": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "id": "distance",
+          "icon": "📍",
+          "label": "Расстояние",
+          "value": "≈22 км от Кутаиси"
+        },
+        {
+          "id": "drive-time",
+          "icon": "🚗",
+          "label": "Время в пути",
+          "value": "≈25 минут"
+        },
+        {
+          "id": "duration",
+          "icon": "🕒",
+          "label": "Продолжительность",
+          "value": "≈1,5–2 часа"
+        },
+        {
+          "id": "kids",
+          "icon": "👨‍👩‍👧",
+          "label": "Подходит детям",
+          "value": "Да"
+        }
+      ],
+      "location": {
+        "address": "Кумистави, регион Имеретия, Грузия",
+        "coordinates": "42.3769, 42.6006",
+        "mapsUrl": "https://maps.google.com/?q=42.3769,42.6006"
+      },
+      "transportTip": {
+        "title": "💡 Рекомендуем",
+        "lines": [
+          "Для нашего маршрута самым удобным вариантом является Bolt.",
+          "Если вы хотите посетить несколько достопримечательностей с гидом и не планируете самостоятельно организовывать поездку, выбирайте экскурсию."
+        ]
+      },
+      "transportOptions": [
+        {
+          "id": "bolt",
+          "icon": "🚖",
+          "title": "Bolt",
+          "badge": "⭐ Рекомендуем",
+          "description": "Самый удобный способ добраться до Пещеры Прометея. Автомобиль заберёт вас прямо от отеля и довезёт до входа в пещеру.",
+          "infoBlocks": [
+            {
+              "label": "💰 Стоимость",
+              "value": "≈30–45 GEL",
+              "note": "Стоимость зависит от времени суток и спроса."
+            },
+            {
+              "label": "⏱ Время",
+              "value": "≈25–35 минут"
+            },
+            {
+              "label": "📍 Посадка",
+              "value": "Прямо от вашего отеля"
+            },
+            {
+              "label": "📱 Заказ",
+              "value": "Через приложение Bolt"
+            }
+          ],
+          "pros": [
+            "Без пересадок",
+            "Комфортно",
+            "Удобно с ребёнком",
+            "Не нужно искать остановки",
+            "Можно выехать в любое время"
+          ],
+          "cons": [
+            "В часы пик стоимость может быть выше"
+          ]
+        },
+        {
+          "id": "tour",
+          "icon": "🧑‍🤝‍🧑",
+          "title": "Экскурсия",
+          "description": "Подходит тем, кто хочет готовую организованную поездку с трансфером и гидом.",
+          "infoBlocks": [
+            {
+              "label": "💰 Стоимость",
+              "options": [
+                {
+                  "title": "Только Пещера Прометея",
+                  "value": "≈40–70 GEL с человека"
+                },
+                {
+                  "title": "Пещера Прометея + каньон Мартвили",
+                  "value": "≈65–90 GEL с человека"
+                }
+              ],
+              "note": "В большинстве случаев входные билеты оплачиваются отдельно"
+            },
+            {
+              "label": "⏱ Продолжительность",
+              "value": "Половина или целый день"
+            }
+          ],
+          "includes": [
+            "Трансфер",
+            "Сопровождение гида",
+            "Часто посещение сразу двух достопримечательностей: Пещеры Прометея и каньона Мартвили"
+          ],
+          "bookingPlaces": [
+            "🏨 На ресепшене вашего отеля",
+            "ℹ️ В туристическом информационном центре Кутаиси",
+            "🌐 Через популярные сервисы бронирования экскурсий"
+          ],
+          "pros": [
+            "Всё организовано",
+            "Не нужно искать транспорт",
+            "Интересный рассказ гида",
+            "Можно посетить сразу несколько мест"
+          ],
+          "cons": [
+            "Нужно подстраиваться под расписание группы",
+            "Маршрут менее гибкий"
+          ]
+        }
+      ],
+      "ticketPrices": [
+        {
+          "id": "adult",
+          "icon": "👤",
+          "label": "Входной билет",
+          "value": "40 GEL",
+          "note": "для иностранных туристов"
+        },
+        {
+          "id": "child",
+          "icon": "👶",
+          "label": "Дети",
+          "details": [
+            "До 6 лет — бесплатно",
+            "6–18 лет — льготный билет"
+          ]
+        },
+        {
+          "id": "boat",
+          "icon": "🚣",
+          "label": "Подземная лодочная прогулка",
+          "value": "30 GEL с человека",
+          "details": [
+            "Продолжительность около 15 минут.",
+            "Лодка проходит по подземной реке Куми и является дополнительной услугой."
+          ],
+          "warning": {
+            "title": "⚠️ Важно",
+            "text": "Прогулка проводится только при безопасном уровне воды. После сильных дождей лодочное сообщение может быть временно отменено."
+          }
+        },
+        {
+          "id": "payment",
+          "icon": "💳",
+          "label": "Оплата",
+          "details": [
+            "Наличными",
+            "Банковской картой"
+          ]
+        }
+      ],
+      "openingHours": [
+        {
+          "id": "open",
+          "icon": "🟢",
+          "label": "Открытие",
+          "value": "10:00"
+        },
+        {
+          "id": "close",
+          "icon": "🌙",
+          "label": "Закрытие",
+          "value": "19:00",
+          "note": "летний режим работы"
+        },
+        {
+          "id": "last-entry",
+          "icon": "🎟",
+          "label": "Последний вход",
+          "value": "Рекомендуем прибыть не позднее 17:30–18:00",
+          "note": "Чтобы спокойно пройти весь маршрут и при желании воспользоваться лодочной прогулкой."
+        },
+        {
+          "id": "days",
+          "icon": "📅",
+          "label": "Рабочие дни",
+          "value": "Ежедневно",
+          "note": "Круглый год"
+        }
+      ],
+      "openingHoursInfo": {
+        "title": "ℹ️ Полезная информация",
+        "lines": [
+          "В летний туристический сезон часы работы продлеваются до 19:00.",
+          "В другое время года пещера обычно работает с 10:00 до 17:00.",
+          "Перед поездкой рекомендуется проверить актуальный режим работы."
+        ]
+      },
+      "openingHoursWarning": {
+        "title": "⚠️ Лодочная прогулка",
+        "lines": [
+          "Подземная прогулка на лодке проводится только при безопасном уровне воды.",
+          "После сильных дождей или при повышении уровня подземной реки лодочное сообщение может быть временно отменено.",
+          "Это связано исключительно с безопасностью посетителей."
+        ]
+      },
+      "highlights": [
+        {
+          "id": "halls",
+          "title": "Огромные подземные залы",
+          "image": "/images/prometheus/highlights/main-hall.jpg"
+        },
+        {
+          "id": "stalactites",
+          "title": "Сталактиты",
+          "image": "/images/prometheus/highlights/stalactites.jpg"
+        },
+        {
+          "id": "stalagmites",
+          "title": "Сталагмиты",
+          "image": "/images/prometheus/highlights/stalagmites.jpg"
+        },
+        {
+          "id": "river",
+          "title": "Подземная река",
+          "image": "/images/prometheus/highlights/underground-river.jpg"
+        },
+        {
+          "id": "lights",
+          "title": "Световая подсветка",
+          "image": "/images/prometheus/highlights/lighting.jpg"
+        },
+        {
+          "id": "photo",
+          "title": "Красивые фотозоны",
+          "image": "/images/prometheus/highlights/photo-spot.jpg"
+        }
+      ],
+      "didYouKnow": {
+        "icon": "💡",
+        "title": "Знаете ли вы?",
+        "storyTitle": "🔥 Почему пещера называется «Прометея»?",
+        "paragraphs": [
+          "Первоначально пещера называлась Кумистави — по имени соседней деревни.",
+          "Позже её переименовали в честь титана Прометея, который, согласно древнегреческой легенде, был прикован к скалам Кавказа за то, что подарил людям огонь.",
+          "У грузин есть собственный герой — Амирани, история которого очень похожа на миф о Прометее. Поэтому название объединяет греческую и грузинскую мифологию."
+        ],
+        "highlight": "Название Пещеры Прометея — мост между греческим мифом и грузинской легендой об Амирани."
+      },
+      "packingChecklist": [
+        {
+          "id": "water",
+          "label": "Вода"
+        },
+        {
+          "id": "sweater",
+          "label": "Лёгкая кофта"
+        },
+        {
+          "id": "shoes",
+          "label": "Удобная обувь"
+        },
+        {
+          "id": "powerbank",
+          "label": "Power Bank"
+        },
+        {
+          "id": "camera",
+          "label": "Фотоаппарат"
+        },
+        {
+          "id": "cash",
+          "label": "Наличные"
+        }
+      ],
+      "usefulTips": [
+        {
+          "id": "morning",
+          "title": "Лучше приезжать утром."
+        },
+        {
+          "id": "cool",
+          "title": "Внутри прохладнее."
+        },
+        {
+          "id": "dont-touch",
+          "title": "Не трогать сталактиты."
+        },
+        {
+          "id": "no-flash",
+          "title": "Фото без вспышки выглядят лучше."
+        }
+      ],
+      "infrastructure": [
+        {
+          "id": "toilet",
+          "icon": "🚻",
+          "title": "Туалет",
+          "status": "✅ Есть",
+          "statusTone": "ok",
+          "description": [
+            "Туалеты находятся возле входа в туристический комплекс."
+          ]
+        },
+        {
+          "id": "cafe",
+          "icon": "☕",
+          "title": "Кафе",
+          "status": "✅ Есть",
+          "statusTone": "ok",
+          "description": [
+            "Небольшое кафе с напитками, кофе, мороженым и лёгкими закусками.",
+            "Подходит для короткого отдыха до или после экскурсии."
+          ]
+        },
+        {
+          "id": "mobile",
+          "icon": "📶",
+          "title": "Мобильная связь",
+          "status": "⚠️ Частично",
+          "statusTone": "partial",
+          "description": [
+            "У входа в комплекс мобильная связь и интернет работают хорошо.",
+            "Внутри пещеры сигнал практически отсутствует.",
+            "Рекомендуется заранее скачать офлайн-карты и сохранить необходимые билеты."
+          ]
+        },
+        {
+          "id": "access",
+          "icon": "♿",
+          "title": "Доступность",
+          "status": "⚠️ Частичная",
+          "statusTone": "partial",
+          "description": [
+            "Основной маршрут оборудован удобными дорожками и освещением.",
+            "Однако внутри есть лестницы и перепады высоты, поэтому не все участки подходят для людей с ограниченной мобильностью."
+          ]
+        },
+        {
+          "id": "souvenirs",
+          "icon": "🎁",
+          "title": "Сувениры",
+          "status": "✅ Есть",
+          "statusTone": "ok",
+          "description": [
+            "После экскурсии можно приобрести магниты, изделия местных мастеров, открытки и другие памятные сувениры."
+          ]
+        }
+      ],
+      "nextAction": {
+        "title": "Каньон Мартвили",
+        "icon": "🚣",
+        "description": "Продолжаем путешествие и отправляемся в один из самых красивых каньонов Грузии.",
+        "eventId": "event-day-02-martvili",
+        "buttonLabel": "Перейти"
+      }
+    }
+  },
+  {
+    "id": "event-day-02-transfer-martvili",
+    "dayId": "trip-day-02",
+    "isPlaceholder": false,
+    "title": "Переезд в каньон Мартвили",
+    "category": "transport",
+    "icon": "🚗",
+    "time": "11:30",
+    "duration": "≈50 минут",
+    "description": "Расстояние ≈50 км. Во время поездки можно насладиться красивыми видами западной Грузии.",
+    "image": null,
+    "price": "",
+    "gps": null,
+    "tips": [
+      "Оставьте немного времени на ожидание Bolt.",
+      "Возьмите воду — впереди ещё одна активность."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    }
+  },
+  {
+    "id": "event-day-02-martvili",
+    "dayId": "trip-day-02",
+    "isPlaceholder": false,
+    "title": "Каньон Мартвили",
+    "category": "activity",
+    "icon": "🚣",
+    "time": "12:30",
+    "duration": "≈2–2,5 часа",
+    "description": "Бирюзовая вода, лодочная прогулка, водопады, самшитовый лес и одни из лучших фотографий всей поездки.",
+    "image": "/images/martvili/gallery/gallery-01.jpg",
+    "price": "40 GEL",
+    "gps": {
+      "latitude": 42.5083,
+      "longitude": 42.3881
+    },
+    "tips": [
+      "Если хотите лодку — уточните доступность сразу при входе.",
+      "На солнце может быть жарко — возьмите головной убор.",
+      "Самые красивые кадры получаются с мостов и во время лодочной прогулки.",
+      "Не торопитесь: каньон небольшой, но очень живописный."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "attractionDetails": {
+      "visitFlow": [
+        {
+          "id": "arrive",
+          "icon": "🚗",
+          "text": "Приезжаете в Visitor Centre."
+        },
+        {
+          "id": "ticket",
+          "icon": "🎟️",
+          "text": "Покупаете билет в кассе или показываете электронный билет с QR-кодом."
+        },
+        {
+          "id": "boat-pay",
+          "icon": "🚣",
+          "text": "При желании сразу оплачиваете лодочную прогулку."
+        },
+        {
+          "id": "trail",
+          "icon": "🚶",
+          "text": "Проходите через турникет и начинаете прогулку по оборудованной тропе."
+        },
+        {
+          "id": "dock",
+          "icon": "⛵",
+          "text": "Если куплена лодочная прогулка, сотрудники пригласят вас к причалу, когда подойдёт очередь."
+        },
+        {
+          "id": "after",
+          "icon": "📸",
+          "text": "После прогулки можно сделать фотографии, посетить сувенирный магазин или кафе."
+        }
+      ],
+      "gallery": [
+        {
+          "id": "img-1",
+          "src": "/images/martvili/gallery/gallery-01.jpg",
+          "alt": "Панорамный вид каньона Мартвили с водопадом и бирюзовой водой"
+        },
+        {
+          "id": "img-2",
+          "src": "/images/martvili/gallery/gallery-02.jpg",
+          "alt": "Бирюзовая река Абаша между скалами каньона Мартвили"
+        },
+        {
+          "id": "img-3",
+          "src": "/images/martvili/gallery/gallery-03.jpg",
+          "alt": "Подвесной мост над каньоном Мартвили"
+        },
+        {
+          "id": "img-4",
+          "src": "/images/martvili/gallery/gallery-04.jpg",
+          "alt": "Вид сверху на узкий каньон Мартвили"
+        },
+        {
+          "id": "img-5",
+          "src": "/images/martvili/gallery/gallery-05.jpg",
+          "alt": "Два водопада, сливающихся в бирюзовый бассейн каньона Мартвили"
+        },
+        {
+          "id": "img-6",
+          "src": "/images/martvili/gallery/gallery-06.jpg",
+          "alt": "Изумрудный водоём в узком проходе каньона Мартвили"
+        }
+      ],
+      "quickFacts": [
+        {
+          "id": "rating",
+          "icon": "⭐",
+          "label": "Наша оценка",
+          "value": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "id": "distance",
+          "icon": "📍",
+          "label": "Расстояние",
+          "value": "≈50 км от Пещеры Прометея"
+        },
+        {
+          "id": "drive-time",
+          "icon": "🚗",
+          "label": "Время в пути",
+          "value": "≈50 минут"
+        },
+        {
+          "id": "duration",
+          "icon": "🕒",
+          "label": "Продолжительность",
+          "value": "≈2–2,5 часа"
+        },
+        {
+          "id": "kids",
+          "icon": "👨‍👩‍👧",
+          "label": "Подходит детям",
+          "value": "Да"
+        }
+      ],
+      "location": {
+        "address": "Мартвили, регион Самегрело, Грузия",
+        "coordinates": "42.5083, 42.3881",
+        "mapsUrl": "https://maps.google.com/?q=42.5083,42.3881"
+      },
+      "transportTip": {
+        "title": "💡 Рекомендуем",
+        "lines": [
+          "В нашем маршруте удобнее всего доехать на Bolt от Пещеры Прометея.",
+          "Если вы выбрали экскурсию, трансфер между объектами обычно уже включён."
+        ]
+      },
+      "transportOptions": [
+        {
+          "id": "bolt",
+          "icon": "🚖",
+          "title": "Bolt",
+          "badge": "⭐ Рекомендуем",
+          "description": "Самый гибкий способ добраться из Пещеры Прометея или Кутаиси прямо до входа в каньон.",
+          "infoBlocks": [
+            {
+              "label": "💰 Стоимость",
+              "value": "≈40–70 GEL",
+              "note": "Зависит от точки старта, времени суток и спроса."
+            },
+            {
+              "label": "⏱ Время",
+              "value": "≈50 минут от Пещеры Прометея"
+            },
+            {
+              "label": "📍 Посадка",
+              "value": "От пещеры или от вашего отеля"
+            },
+            {
+              "label": "📱 Заказ",
+              "value": "Через приложение Bolt"
+            }
+          ],
+          "pros": [
+            "Без пересадок",
+            "Можно выехать сразу после пещеры",
+            "Удобно с ребёнком",
+            "Гибкое время"
+          ],
+          "cons": [
+            "В часы пик стоимость может быть выше"
+          ]
+        },
+        {
+          "id": "tour",
+          "icon": "🧑‍🤝‍🧑",
+          "title": "Экскурсия",
+          "description": "Подходит тем, кто хочет совместить Пещеру Прометея и каньон Мартвили в одной организованной поездке.",
+          "infoBlocks": [
+            {
+              "label": "💰 Стоимость",
+              "options": [
+                {
+                  "title": "Пещера Прометея + каньон Мартвили",
+                  "value": "≈65–90 GEL с человека"
+                }
+              ],
+              "note": "В большинстве случаев входные билеты оплачиваются отдельно"
+            },
+            {
+              "label": "⏱ Продолжительность",
+              "value": "Обычно целый день"
+            }
+          ],
+          "includes": [
+            "Трансфер",
+            "Сопровождение гида",
+            "Часто посещение сразу двух достопримечательностей"
+          ],
+          "bookingPlaces": [
+            "🏨 На ресепшене вашего отеля",
+            "ℹ️ В туристическом информационном центре Кутаиси",
+            "🌐 Через популярные сервисы бронирования экскурсий"
+          ],
+          "pros": [
+            "Всё организовано",
+            "Не нужно искать транспорт между локациями",
+            "Интересный рассказ гида"
+          ],
+          "cons": [
+            "Нужно подстраиваться под расписание группы",
+            "Маршрут менее гибкий"
+          ]
+        }
+      ],
+      "ticketPrices": [
+        {
+          "id": "adult",
+          "icon": "🎫",
+          "label": "Входной билет",
+          "value": "40 GEL",
+          "note": "Для иностранных туристов",
+          "description": "В стоимость входит прогулка по пешеходному маршруту через каньон со смотровыми площадками и водопадами."
+        },
+        {
+          "id": "child",
+          "icon": "👶",
+          "label": "Дети",
+          "pricedRows": [
+            {
+              "label": "До 6 лет",
+              "value": "Бесплатно"
+            },
+            {
+              "label": "6–18 лет",
+              "value": "5,50 GEL",
+              "note": "Льготный билет"
+            }
+          ]
+        },
+        {
+          "id": "boat",
+          "icon": "🚣",
+          "label": "Лодочная прогулка",
+          "value": "20 GEL",
+          "note": "Дополнительная услуга",
+          "description": "Самая популярная часть посещения. Лодка проходит по бирюзовой реке между отвесными скалами каньона.",
+          "duration": "≈15–20 минут"
+        },
+        {
+          "id": "payment",
+          "icon": "💳",
+          "label": "Оплата",
+          "details": [
+            "✅ Наличные (GEL)",
+            "✅ Банковские карты Visa",
+            "✅ Mastercard"
+          ]
+        }
+      ],
+      "openingHours": [
+        {
+          "id": "open",
+          "icon": "🟢",
+          "label": "Открытие",
+          "value": "10:00"
+        },
+        {
+          "id": "close",
+          "icon": "🌙",
+          "label": "Закрытие",
+          "value": "18:00",
+          "note": "в туристический сезон"
+        },
+        {
+          "id": "last-entry",
+          "icon": "🎟",
+          "label": "Последний вход",
+          "value": "Рекомендуем прибыть не позднее 16:00–16:30",
+          "note": "Чтобы успеть прогулку и лодочную поездку."
+        },
+        {
+          "id": "days",
+          "icon": "📅",
+          "label": "Рабочие дни",
+          "value": "Ежедневно",
+          "note": "Круглый год"
+        }
+      ],
+      "openingHoursInfo": {
+        "title": "ℹ️ Полезная информация",
+        "lines": [
+          "В высокий сезон каньон обычно работает дольше.",
+          "Лучше приезжать днём, когда вода особенно красиво переливается на солнце.",
+          "Перед поездкой рекомендуется проверить актуальный режим работы."
+        ]
+      },
+      "openingHoursWarning": {
+        "title": "⚠️ Лодочная прогулка",
+        "lines": [
+          "Прогулка на лодке проводится только при безопасном уровне воды.",
+          "После сильных дождей лодочное сообщение может быть временно отменено.",
+          "Это связано исключительно с безопасностью посетителей."
+        ]
+      },
+      "highlights": [
+        {
+          "id": "water",
+          "title": "Бирюзовая вода",
+          "image": "/images/martvili/highlights/water.jpg"
+        },
+        {
+          "id": "boat",
+          "title": "Лодочная прогулка",
+          "image": "/images/martvili/highlights/boat.jpg"
+        },
+        {
+          "id": "waterfall",
+          "title": "Водопады",
+          "image": "/images/martvili/highlights/waterfall.jpg"
+        },
+        {
+          "id": "boxwood",
+          "title": "Самшитовый лес",
+          "image": "/images/martvili/highlights/forest.jpg"
+        },
+        {
+          "id": "bridge",
+          "title": "Мосты и смотровые площадки",
+          "image": "/images/martvili/highlights/bridge.jpg"
+        },
+        {
+          "id": "photo",
+          "title": "Красивые фотозоны",
+          "image": "/images/martvili/highlights/photo-spot.jpg"
+        }
+      ],
+      "didYouKnow": {
+        "icon": "💡",
+        "title": "Знаете ли вы?",
+        "storyTitle": "💙 Почему вода здесь такая бирюзовая?",
+        "paragraphs": [
+          "Каньон Мартвили вырезала река Абаша — за тысячи лет вода проложила узкий коридор между известняковыми скалами.",
+          "Необычный бирюзовый цвет появляется благодаря минералам и тому, как солнечный свет отражается в чистой неглубокой воде.",
+          "Рядом растёт самшитовый лес — живой отголосок древней колхидской природы, за которую этот край известен с античных времён."
+        ],
+        "highlight": "Цвет воды в каньоне Мартвили — не фильтр для фото, а сочетание минералов, глубины и солнечного света."
+      },
+      "packingChecklist": [
+        {
+          "id": "water",
+          "label": "Вода"
+        },
+        {
+          "id": "hat",
+          "label": "Головной убор"
+        },
+        {
+          "id": "shoes",
+          "label": "Удобная обувь"
+        },
+        {
+          "id": "spf",
+          "label": "Крем SPF"
+        },
+        {
+          "id": "powerbank",
+          "label": "Power Bank"
+        },
+        {
+          "id": "cash",
+          "label": "Наличные"
+        }
+      ],
+      "usefulTips": [
+        {
+          "id": "boat-first",
+          "title": "Если хотите лодку — уточните доступность сразу при входе."
+        },
+        {
+          "id": "sun",
+          "title": "На солнце может быть жарко — возьмите головной убор."
+        },
+        {
+          "id": "photos",
+          "title": "Самые красивые кадры получаются с мостов и во время лодочной прогулки."
+        },
+        {
+          "id": "time",
+          "title": "Не торопитесь: каньон небольшой, но очень живописный."
+        }
+      ],
+      "infrastructure": [
+        {
+          "id": "toilet",
+          "icon": "🚻",
+          "title": "Туалет",
+          "status": "✅ Есть",
+          "statusTone": "ok",
+          "description": [
+            "Туалеты находятся на территории туристического комплекса."
+          ]
+        },
+        {
+          "id": "cafe",
+          "icon": "☕",
+          "title": "Кафе",
+          "status": "✅ Есть",
+          "statusTone": "ok",
+          "description": [
+            "Рядом с каньоном можно перекусить и выпить кофе.",
+            "Удобно совместить с обедом после прогулки."
+          ]
+        },
+        {
+          "id": "mobile",
+          "icon": "📶",
+          "title": "Мобильная связь",
+          "status": "⚠️ Частично",
+          "statusTone": "partial",
+          "description": [
+            "У входа связь обычно есть.",
+            "В узких участках каньона сигнал может пропадать."
+          ]
+        },
+        {
+          "id": "access",
+          "icon": "♿",
+          "title": "Доступность",
+          "status": "⚠️ Частичная",
+          "statusTone": "partial",
+          "description": [
+            "Есть оборудованные дорожки и мосты.",
+            "Однако часть маршрута включает ступени и неровные участки."
+          ]
+        },
+        {
+          "id": "souvenirs",
+          "icon": "🎁",
+          "title": "Сувениры",
+          "status": "✅ Есть",
+          "statusTone": "ok",
+          "description": [
+            "На территории можно найти небольшие сувениры и местные товары."
+          ]
+        }
+      ],
+      "nextAction": {
+        "title": "Обед",
+        "icon": "🍽️",
+        "description": "После каньона самое время подкрепиться — рядом или по дороге обратно в Кутаиси.",
+        "eventId": "event-day-02-lunch",
+        "buttonLabel": "Перейти"
+      },
+      "ticketWarning": {
+        "title": "⚠️ Важно",
+        "lines": [
+          "Лодочная прогулка проводится только при безопасном уровне воды.",
+          "После сильных дождей или во время плохой погоды она может быть временно отменена.",
+          "В лодке одновременно размещается до 6 человек.",
+          "Для участия рост посетителя должен быть не менее 1 метра."
+        ]
+      },
+      "ticketIncludes": {
+        "title": "🎫 Что входит в билет",
+        "items": [
+          "Пешеходная тропа",
+          "Смотровые площадки",
+          "Водопады",
+          "Подвесные мостики"
+        ],
+        "note": "Лодочная прогулка оплачивается отдельно."
+      },
+      "ticketTip": {
+        "title": "💡 Полезный совет",
+        "text": "Большинство туристов приезжают именно ради лодочной прогулки. Если позволяет погода, рекомендуем обязательно добавить её к обычному входному билету — именно с воды открываются самые красивые виды каньона."
+      }
+    }
+  },
+  {
+    "id": "event-day-02-lunch",
+    "dayId": "trip-day-02",
+    "isPlaceholder": false,
+    "title": "Обед",
+    "category": "food",
+    "icon": "🍽️",
+    "time": "15:00",
+    "duration": "≈45–60 минут",
+    "description": "После каньона Мартвили лучше подкрепиться рядом или по дороге в Кутаиси — так день проходит спокойнее и сытнее.",
+    "image": null,
+    "price": "≈30–50 GEL",
+    "gps": null,
+    "tips": [
+      "Лучше пообедать до возвращения в Кутаиси.",
+      "В выходные возможны очереди.",
+      "В большинстве мест принимают карты."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "lunchDetails": {
+      "whyHere": {
+        "title": "Почему обед именно здесь",
+        "paragraphs": [
+          "После Пещеры Прометея и каньона Мартвили вы уже будете голодны, а до Кутаиси ещё около часа езды.",
+          "Лучше пообедать рядом с каньоном или по дороге обратно: порции большие, кухня мегрельская, а после сытного обеда дорога в город проходит спокойнее.",
+          "Так вы не вернётесь в Кутаиси голодными в час пик и успеете отдохнуть перед вечером."
+        ]
+      },
+      "restaurants": [
+        {
+          "id": "oda",
+          "rank": "🥇",
+          "name": "Oda Family Marani",
+          "subtitle": "Семейный марани с настоящей мегрельской кухней.",
+          "location": "Мартвили, недалеко от каньона",
+          "driveTime": "≈10–15 минут от входа в каньон",
+          "reasons": [
+            "Одно из лучших мест в регионе по отзывам путешественников.",
+            "Аутентичная мегрельская кухня и домашнее вино.",
+            "Тёплая семейная атмосфера, не туристическая «столовая у входа»."
+          ],
+          "averageCheck": "35–55 GEL на человека",
+          "note": "⚠️ В сезон лучше забронировать стол заранее — место очень популярное."
+        },
+        {
+          "id": "sanapiro",
+          "rank": "🥈",
+          "name": "Sanapiro (სანაპირო)",
+          "subtitle": "Ресторан у реки с видом и грузинским меню.",
+          "location": "Мартвили, рядом с каньоном",
+          "driveTime": "Несколько минут от Visitor Centre",
+          "reasons": [
+            "Удобно заехать сразу после прогулки по каньону.",
+            "Есть хачапури, хинкали, рыба, шашлык и другие классические блюда.",
+            "Терраса с видом на воду — приятно отдохнуть после жары."
+          ],
+          "averageCheck": "30–45 GEL на человека"
+        },
+        {
+          "id": "canyon-cafe",
+          "rank": "🥉",
+          "name": "Кафе у каньона",
+          "subtitle": "Самый быстрый вариант, если хочется поесть без лишнего переезда.",
+          "location": "У Visitor Centre каньона Мартвили",
+          "driveTime": "Пешком от выхода",
+          "reasons": [
+            "Не нужно никуда ехать — удобно с ребёнком.",
+            "Можно быстро перекусить и выпить кофе или лимонад.",
+            "Подходит, если времени мало и вы хотите скорее выехать в Кутаиси."
+          ],
+          "averageCheck": "25–40 GEL на человека",
+          "note": "Цены могут быть выше, а качество — скромнее, чем в городских ресторанах Мартвили."
+        },
+        {
+          "id": "khoni",
+          "rank": "4️⃣",
+          "name": "Kalakis Chrdilshi",
+          "subtitle": "Бюджетный грузинский обед по дороге в Кутаиси.",
+          "location": "Хони, по маршруту возвращения",
+          "driveTime": "≈25–30 минут от каньона по пути в Кутаиси",
+          "reasons": [
+            "Удобно совместить с возвращением в город — без отдельного крюка.",
+            "Демократичные цены и сытные порции.",
+            "Хороший запасной вариант, если в Мартвили всё занято."
+          ],
+          "averageCheck": "20–35 GEL на человека"
+        }
+      ],
+      "dishes": [
+        {
+          "id": "khachapuri",
+          "icon": "🧀",
+          "title": "Хачапури"
+        },
+        {
+          "id": "khinkali",
+          "icon": "🥟",
+          "title": "Хинкали"
+        },
+        {
+          "id": "ojakhuri",
+          "icon": "🥔",
+          "title": "Оджахури"
+        },
+        {
+          "id": "mtsvadi",
+          "icon": "🍢",
+          "title": "Шашлык"
+        },
+        {
+          "id": "lemonade",
+          "icon": "🍋",
+          "title": "Лимонад"
+        },
+        {
+          "id": "compote",
+          "icon": "🍒",
+          "title": "Домашний компот"
+        }
+      ],
+      "averageCheck": {
+        "perPerson": "30–50 GEL",
+        "family": "90–150 GEL",
+        "note": "Ориентир для семьи из 3–4 человек без алкоголя. В Oda Family Marani чек может быть выше."
+      },
+      "duration": {
+        "value": "≈45–60 минут",
+        "note": "Хватает, чтобы спокойно поесть и выехать в Кутаиси без спешки. Если бронируете Oda — заложите немного больше времени."
+      },
+      "tips": [
+        {
+          "id": "before-return",
+          "text": "Лучше пообедать до возвращения в Кутаиси."
+        },
+        {
+          "id": "weekend",
+          "text": "В выходные возможны очереди — особенно у популярных мест."
+        },
+        {
+          "id": "cards",
+          "text": "В большинстве мест принимают карты, но мелкую наличность всё равно полезно иметь."
+        }
+      ],
+      "nextAction": {
+        "title": "Возвращение в Кутаиси",
+        "icon": "🚗",
+        "description": "После обеда отправляемся обратно в город — впереди около часа дороги.",
+        "eventId": "event-day-02-return-kutaisi",
+        "buttonLabel": "Перейти"
+      }
+    }
+  },
+  {
+    "id": "event-day-02-return-kutaisi",
+    "dayId": "trip-day-02",
+    "isPlaceholder": false,
+    "title": "Возвращение в Кутаиси",
+    "category": "transport",
+    "icon": "🚗",
+    "time": "16:00",
+    "duration": "≈50–60 минут",
+    "description": "После насыщенного дня самое время расслабиться и отправиться обратно в Кутаиси. Дорога займёт около часа и пройдёт через живописные районы Имеретии.",
+    "image": "/images/return-kutaisi/gallery/gallery-01.jpg",
+    "price": "Bolt / такси",
+    "gps": null,
+    "tips": [
+      "Закажите Bolt заранее, если планируете выезд в час пик.",
+      "По дороге можно остановиться у фруктовых лавок.",
+      "Если останутся силы — вечером прогуляйтесь по центру Кутаиси."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "returnDriveDetails": {
+      "gallery": [
+        {
+          "id": "img-1",
+          "src": "/images/return-kutaisi/gallery/gallery-01.jpg",
+          "alt": "Зелёные холмы Имеретии по дороге в Кутаиси"
+        },
+        {
+          "id": "img-2",
+          "src": "/images/return-kutaisi/gallery/gallery-02.jpg",
+          "alt": "Дорога через западную Грузию"
+        },
+        {
+          "id": "img-3",
+          "src": "/images/return-kutaisi/gallery/gallery-03.jpg",
+          "alt": "Сельский пейзаж Имеретии возле Аргети"
+        },
+        {
+          "id": "img-4",
+          "src": "/images/return-kutaisi/gallery/gallery-04.jpg",
+          "alt": "Река Риони в Кутаиси"
+        },
+        {
+          "id": "img-5",
+          "src": "/images/return-kutaisi/gallery/gallery-05.jpg",
+          "alt": "Вид на холмы с окрестностей Кутаиси"
+        },
+        {
+          "id": "img-6",
+          "src": "/images/return-kutaisi/gallery/gallery-06.jpg",
+          "alt": "Панорама имеретинских холмов у Шомахети"
+        }
+      ],
+      "tripFacts": [
+        {
+          "id": "distance",
+          "icon": "📍",
+          "label": "Расстояние",
+          "value": "≈50 км"
+        },
+        {
+          "id": "time",
+          "icon": "⏱️",
+          "label": "Время",
+          "value": "≈50–60 минут"
+        },
+        {
+          "id": "transport",
+          "icon": "🚖",
+          "label": "Рекомендуемый транспорт",
+          "value": "Bolt / такси"
+        }
+      ],
+      "scenery": [
+        {
+          "id": "hills",
+          "icon": "🌿",
+          "title": "Зелёные холмы Имеретии",
+          "description": "По пути открываются мягкие холмы, покрытые лесом и пастбищами — типичный пейзаж западной Грузии.",
+          "image": "/images/return-kutaisi/scenery/hills.jpg"
+        },
+        {
+          "id": "villages",
+          "icon": "🏠",
+          "title": "Небольшие грузинские деревни",
+          "description": "По обочинам встречаются дома с виноградниками, садами и привычной сельской жизнью Имеретии.",
+          "image": "/images/return-kutaisi/scenery/villages.jpg"
+        },
+        {
+          "id": "fields",
+          "icon": "🍃",
+          "title": "Чайные и кукурузные поля",
+          "description": "В этом регионе до сих пор выращивают чай и кукурузу — поля особенно красивы в ясный день.",
+          "image": "/images/return-kutaisi/scenery/fields.jpg"
+        },
+        {
+          "id": "rivers",
+          "icon": "🏞️",
+          "title": "Горные реки",
+          "description": "По дороге и ближе к Кутаиси видны реки и ручьи — Риони и её притоки формируют ландшафт всей долины.",
+          "image": "/images/return-kutaisi/scenery/rivers.jpg"
+        }
+      ],
+      "stops": [
+        {
+          "id": "cafes",
+          "icon": "☕",
+          "title": "Придорожные кафе",
+          "description": "Можно остановиться на кофе или быстрый перекус, если после обеда ещё захочется чего-то лёгкого."
+        },
+        {
+          "id": "fruit",
+          "icon": "🍑",
+          "title": "Фруктовые лавки",
+          "description": "По сезону продают персики, виноград, арбузы и другие местные фрукты прямо у дороги."
+        },
+        {
+          "id": "honey",
+          "icon": "🍯",
+          "title": "Местный мёд",
+          "description": "Часто встречаются продавцы с банками горного и цветочного мёда — хороший съедобный сувенир."
+        },
+        {
+          "id": "churchkhela",
+          "icon": "🍇",
+          "title": "Домашняя чурчхела",
+          "description": "Классическая грузинская сладость из виноградного сусла и орехов — удобно взять с собой в дорогу."
+        }
+      ],
+      "tip": {
+        "title": "Если до вечера ещё есть время",
+        "text": "Можно немного отдохнуть в отеле и отправиться на прогулку по вечернему Кутаиси — центр особенно приятен после дневной жары."
+      },
+      "nextAction": {
+        "title": "Вечерний Кутаиси",
+        "icon": "🌇",
+        "description": "Свободный вечер в городе: прогулка по центру, кофе, сувениры или ужин в местном ресторане.",
+        "eventId": "event-day-02-free-time",
+        "buttonLabel": "Перейти"
+      }
+    }
+  },
+  {
+    "id": "event-day-02-free-time",
+    "dayId": "trip-day-02",
+    "isPlaceholder": false,
+    "title": "Вечерний Кутаиси",
+    "category": "walk",
+    "icon": "🌇",
+    "time": "17:30",
+    "duration": "≈2–3 часа",
+    "description": "После насыщенного дня самое время неспешно прогуляться по вечернему Кутаиси. Именно вечером исторический центр особенно красив: включается подсветка, открываются летние террасы, а на улицах появляется приятная атмосфера.",
+    "image": "/images/evening-kutaisi/gallery/gallery-01.jpg",
+    "price": "",
+    "gps": null,
+    "tips": [
+      "В центре безопасно гулять вечером.",
+      "Большинство кафе работают до позднего вечера.",
+      "Если ужинаете после 20:00 — лучше забронировать столик."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "eveningCityDetails": {
+      "whyEvening": [
+        {
+          "id": "lights",
+          "icon": "✨",
+          "title": "Архитектурная подсветка"
+        },
+        {
+          "id": "cafes",
+          "icon": "☕",
+          "title": "Уютные кафе и рестораны"
+        },
+        {
+          "id": "music",
+          "icon": "🎶",
+          "title": "Живая музыка на площади"
+        },
+        {
+          "id": "photos",
+          "icon": "🌉",
+          "title": "Красивые вечерние фотографии"
+        },
+        {
+          "id": "walk",
+          "icon": "🚶",
+          "title": "Спокойная прогулка без дневной жары"
+        }
+      ],
+      "activities": [
+        {
+          "id": "coffee",
+          "icon": "☕",
+          "title": "Выпить кофе"
+        },
+        {
+          "id": "dinner",
+          "icon": "🍽️",
+          "title": "Поужинать в грузинском ресторане"
+        },
+        {
+          "id": "souvenirs",
+          "icon": "🛍️",
+          "title": "Купить сувениры"
+        },
+        {
+          "id": "bridge",
+          "icon": "🌉",
+          "title": "Прогуляться по Белому мосту"
+        },
+        {
+          "id": "fountain",
+          "icon": "⛲",
+          "title": "Посмотреть музыкальный фонтан"
+        },
+        {
+          "id": "photos",
+          "icon": "📸",
+          "title": "Сделать красивые вечерние фотографии"
+        }
+      ],
+      "routeDuration": "≈2–3 часа",
+      "route": [
+        {
+          "id": "hotel-start",
+          "icon": "🏨",
+          "title": "Отель",
+          "note": "Начало вечерней прогулки"
+        },
+        {
+          "id": "white-bridge",
+          "icon": "🌉",
+          "title": "Белый мост",
+          "note": "Красивые виды на Риони и подсветка"
+        },
+        {
+          "id": "david-square",
+          "icon": "🏛️",
+          "title": "Площадь Давида Строителя",
+          "note": "Сердце исторического центра"
+        },
+        {
+          "id": "fountain",
+          "icon": "⛲",
+          "title": "Колхидский фонтан",
+          "note": "Один из символов вечернего Кутаиси"
+        },
+        {
+          "id": "dinner",
+          "icon": "🍽️",
+          "title": "Ужин",
+          "note": "Грузинский ресторан или винная терраса"
+        },
+        {
+          "id": "hotel-end",
+          "icon": "🏨",
+          "title": "Возвращение в отель",
+          "note": "Конец второго дня"
+        }
+      ],
+      "bestPlaces": [
+        {
+          "id": "white-bridge",
+          "icon": "🌉",
+          "title": "Белый мост",
+          "description": "Пешеходный мост через Риони — одно из самых фотогеничных мест вечернего Кутаиси.",
+          "image": "/images/evening-kutaisi/places/white-bridge.jpg"
+        },
+        {
+          "id": "fountain",
+          "icon": "⛲",
+          "title": "Колхидский фонтан",
+          "description": "Золотые фигуры древней Колхиды особенно эффектно смотрятся при вечерней подсветке.",
+          "image": "/images/evening-kutaisi/places/colchis-fountain.jpg"
+        },
+        {
+          "id": "square",
+          "icon": "🏛️",
+          "title": "Площадь Давида Строителя",
+          "description": "Главная площадь города: театр, фонтан, летние террасы и живая атмосфера центра.",
+          "image": "/images/evening-kutaisi/places/david-square.jpg"
+        },
+        {
+          "id": "park",
+          "icon": "🌳",
+          "title": "Центральный парк",
+          "description": "Спокойная зелёная зона рядом с центром — удобно пройтись перед ужином или после него.",
+          "image": "/images/evening-kutaisi/places/central-park.jpg"
+        },
+        {
+          "id": "terrace",
+          "icon": "🍷",
+          "title": "Уютная винная терраса",
+          "description": "После прогулки приятно сесть на террасе: грузинское вино, хачапури и неспешный ужин.",
+          "image": "/images/evening-kutaisi/places/wine-terrace.jpg"
+        }
+      ],
+      "dinnerIdeas": [
+        {
+          "id": "khinkali",
+          "icon": "🥟",
+          "title": "Хинкали"
+        },
+        {
+          "id": "khachapuri",
+          "icon": "🧀",
+          "title": "Имерули хачапури"
+        },
+        {
+          "id": "mtsvadi",
+          "icon": "🥩",
+          "title": "Шашлык"
+        },
+        {
+          "id": "ojakhuri",
+          "icon": "🥘",
+          "title": "Оджахури"
+        },
+        {
+          "id": "wine",
+          "icon": "🍷",
+          "title": "Грузинское вино"
+        },
+        {
+          "id": "lagidze",
+          "icon": "🍋",
+          "title": "Лимонад «Лагидзе»"
+        }
+      ],
+      "tips": [
+        {
+          "id": "safe",
+          "text": "В центре безопасно гулять вечером."
+        },
+        {
+          "id": "hours",
+          "text": "Большинство кафе работают до позднего вечера."
+        },
+        {
+          "id": "cards",
+          "text": "Практически везде принимают банковские карты."
+        },
+        {
+          "id": "booking",
+          "text": "Если планируете ужин после 20:00, лучше заранее забронировать столик в популярных ресторанах."
+        }
+      ],
+      "didYouKnow": {
+        "icon": "💡",
+        "title": "Знаете ли вы?",
+        "storyTitle": "💡 Почему Кутаиси особенно красив вечером?",
+        "paragraphs": [
+          "После захода солнца включается художественная подсветка исторических зданий, мостов и фонтанов.",
+          "Благодаря мягкому освещению центр города приобретает совершенно другую атмосферу.",
+          "Многие местные жители специально выходят на вечернюю прогулку после дневной жары, а туристы считают вечер лучшим временем для фотографий."
+        ]
+      },
+      "gallery": [
+        {
+          "id": "g1",
+          "src": "/images/evening-kutaisi/gallery/gallery-01.jpg",
+          "alt": "Вечерняя атмосфера и огни Кутаиси"
+        },
+        {
+          "id": "g2",
+          "src": "/images/evening-kutaisi/gallery/gallery-02.jpg",
+          "alt": "Белый мост через реку Риони"
+        },
+        {
+          "id": "g3",
+          "src": "/images/evening-kutaisi/gallery/gallery-03.jpg",
+          "alt": "Колхидский фонтан на центральной площади"
+        },
+        {
+          "id": "g4",
+          "src": "/images/evening-kutaisi/gallery/gallery-04.jpg",
+          "alt": "Улицы и кафе исторического центра Кутаиси"
+        },
+        {
+          "id": "g5",
+          "src": "/images/evening-kutaisi/gallery/gallery-05.jpg",
+          "alt": "Освещённые улицы вечернего Кутаиси"
+        },
+        {
+          "id": "g6",
+          "src": "/images/evening-kutaisi/gallery/gallery-06.jpg",
+          "alt": "Панорама центра Кутаиси и Белого моста"
+        }
+      ],
+      "nextAction": {
+        "title": "День 3 · Переезд в Кобулети",
+        "icon": "🏖️",
+        "description": "Утром уезжаем на побережье Чёрного моря — Кобулети.",
+        "to": "/trip/trip-day-03",
+        "buttonLabel": "Перейти"
+      }
+    }
+  },
+  {
+    "id": "event-demo-09",
+    "dayId": "trip-day-04",
+    "isPlaceholder": true,
+    "title": "Событие 1",
+    "category": "other",
+    "icon": "📌",
+    "time": "09:30",
+    "duration": "2 часа",
+    "description": "Фиктивная прогулка по условному маршруту.",
+    "image": null,
+    "price": "Бесплатно",
+    "gps": {
+      "latitude": 0.0401,
+      "longitude": 0.0401
+    },
+    "tips": [
+      "Маршрут будет добавлен позднее."
+    ],
+    "notes": "Без реальных мест.",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    }
+  },
+  {
+    "id": "event-demo-10",
+    "dayId": "trip-day-04",
+    "isPlaceholder": true,
+    "title": "Событие 2",
+    "category": "other",
+    "icon": "📌",
+    "time": "16:00",
+    "duration": "1 час",
+    "description": "Фиктивная дневная активность.",
+    "image": null,
+    "price": "Тестовый билет",
+    "gps": {
+      "latitude": 0.0402,
+      "longitude": 0.0402
+    },
+    "tips": [
+      "Уточнить расписание при наполнении."
+    ],
+    "notes": "Демонстрационные данные.",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    }
+  },
+  {
+    "id": "event-demo-11",
+    "dayId": "trip-day-05",
+    "isPlaceholder": true,
+    "title": "Событие 1",
+    "category": "other",
+    "icon": "📌",
+    "time": "10:00",
+    "duration": "2 часа",
+    "description": "Фиктивное событие для дня отдыха.",
+    "image": null,
+    "price": "Бесплатно",
+    "gps": {
+      "latitude": 0.0501,
+      "longitude": 0.0501
+    },
+    "tips": [
+      "Оставить время без плотного расписания."
+    ],
+    "notes": "Тестовая запись.",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    }
+  },
+  {
+    "id": "event-demo-12",
+    "dayId": "trip-day-05",
+    "isPlaceholder": true,
+    "title": "Событие 2",
+    "category": "other",
+    "icon": "📌",
+    "time": "19:00",
+    "duration": "1 час",
+    "description": "Фиктивное завершение спокойного дня.",
+    "image": null,
+    "price": "Не указано",
+    "gps": {
+      "latitude": 0.0502,
+      "longitude": 0.0502
+    },
+    "tips": [
+      "Детали будут добавлены позже."
+    ],
+    "notes": "Без привязки к месту.",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    }
+  },
+  {
+    "id": "event-demo-13",
+    "dayId": "trip-day-06",
+    "isPlaceholder": true,
+    "title": "Событие 1",
+    "category": "other",
+    "icon": "📌",
+    "time": "10:30",
+    "duration": "2 часа",
+    "description": "Фиктивный свободный блок расписания.",
+    "image": null,
+    "price": "Не указано",
+    "gps": {
+      "latitude": 0.0601,
+      "longitude": 0.0601
+    },
+    "tips": [
+      "Можно заменить реальным событием позднее."
+    ],
+    "notes": "Тестовый блок.",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    }
+  },
+  {
+    "id": "event-demo-14",
+    "dayId": "trip-day-06",
+    "isPlaceholder": true,
+    "title": "Событие 2",
+    "category": "other",
+    "icon": "📌",
+    "time": "17:00",
+    "duration": "1 час",
+    "description": "Фиктивное событие второй половины дня.",
+    "image": null,
+    "price": "Бесплатно",
+    "gps": {
+      "latitude": 0.0602,
+      "longitude": 0.0602
+    },
+    "tips": [
+      "Добавить точную информацию позднее."
+    ],
+    "notes": "Демонстрационная запись.",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    }
+  },
+  {
+    "id": "event-demo-15",
+    "dayId": "trip-day-07",
+    "isPlaceholder": true,
+    "title": "Событие 1",
+    "category": "other",
+    "icon": "📌",
+    "time": "11:00",
+    "duration": "2 часа",
+    "description": "Фиктивное событие для проверки timeline.",
+    "image": null,
+    "price": "Тестовая стоимость",
+    "gps": {
+      "latitude": 0.0701,
+      "longitude": 0.0701
+    },
+    "tips": [
+      "Подготовить будущую ссылку на место."
+    ],
+    "notes": "Тестовые данные.",
+    "references": {
+      "placeId": "place-demo-5",
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": [
+        "tip-demo-1"
+      ]
+    }
+  },
+  {
+    "id": "event-demo-16",
+    "dayId": "trip-day-07",
+    "isPlaceholder": true,
+    "title": "Событие 2",
+    "category": "other",
+    "icon": "📌",
+    "time": "19:30",
+    "duration": "1 час 30 минут",
+    "description": "Фиктивное вечернее событие.",
+    "image": null,
+    "price": "Тестовый бюджет",
+    "gps": {
+      "latitude": 0.0702,
+      "longitude": 0.0702
+    },
+    "tips": [
+      "Ресторан будет выбран позднее."
+    ],
+    "notes": "Пока без ссылки.",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [
+        "restaurant-demo-1"
+      ],
+      "documentIds": [],
+      "tipIds": []
+    }
+  },
+  {
+    "id": "event-demo-17",
+    "dayId": "trip-day-08",
+    "isPlaceholder": true,
+    "title": "Событие 1",
+    "category": "other",
+    "icon": "📌",
+    "time": "10:00",
+    "duration": "1 час",
+    "description": "Фиктивное спокойное начало дня.",
+    "image": null,
+    "price": "Бесплатно",
+    "gps": {
+      "latitude": 0.0801,
+      "longitude": 0.0801
+    },
+    "tips": [
+      "Уточнить место при наполнении."
+    ],
+    "notes": "GPS тестовый.",
+    "references": {
+      "placeId": "place-demo-6",
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": [
+        "tip-demo-2"
+      ]
+    }
+  },
+  {
+    "id": "event-demo-18",
+    "dayId": "trip-day-08",
+    "isPlaceholder": true,
+    "title": "Событие 2",
+    "category": "other",
+    "icon": "📌",
+    "time": "14:00",
+    "duration": "45 минут",
+    "description": "Фиктивная остановка в расписании.",
+    "image": null,
+    "price": "Тестовая стоимость",
+    "gps": {
+      "latitude": 0.0802,
+      "longitude": 0.0802
+    },
+    "tips": [
+      "Связать с рестораном в будущем."
+    ],
+    "notes": "Тестовое событие.",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [
+        "restaurant-demo-2"
+      ],
+      "documentIds": [],
+      "tipIds": []
+    }
+  },
+  {
+    "id": "event-demo-19",
+    "dayId": "trip-day-09",
+    "isPlaceholder": true,
+    "title": "Событие 1",
+    "category": "other",
+    "icon": "📌",
+    "time": "10:00",
+    "duration": "2 часа",
+    "description": "Фиктивная прогулка перед завершением поездки.",
+    "image": null,
+    "price": "Бесплатно",
+    "gps": {
+      "latitude": 0.0901,
+      "longitude": 0.0901
+    },
+    "tips": [
+      "Не добавлять реальные места до наполнения."
+    ],
+    "notes": "Условный маршрут.",
+    "references": {
+      "placeId": "place-demo-4",
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    }
+  },
+  {
+    "id": "event-demo-20",
+    "dayId": "trip-day-09",
+    "isPlaceholder": true,
+    "title": "Событие 2",
+    "category": "other",
+    "icon": "📌",
+    "time": "18:00",
+    "duration": "30 минут",
+    "description": "Фиктивная проверка вещей и документов.",
+    "image": null,
+    "price": "Бесплатно",
+    "gps": null,
+    "tips": [
+      "Проверить будущий список документов."
+    ],
+    "notes": "Ссылка на документ пока не задана.",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [
+        "document-demo-1",
+        "document-demo-2"
+      ],
+      "tipIds": [
+        "tip-demo-1"
+      ]
+    }
+  },
+  {
+    "id": "event-demo-21",
+    "dayId": "trip-day-10",
+    "isPlaceholder": true,
+    "title": "Событие 1",
+    "category": "other",
+    "icon": "📌",
+    "time": "08:00",
+    "duration": "1 час",
+    "description": "Фиктивное транспортное событие.",
+    "image": null,
+    "price": "Тестовая стоимость",
+    "gps": {
+      "latitude": 0.1001,
+      "longitude": 0.1001
+    },
+    "tips": [
+      "Связать с транспортом при наполнении."
+    ],
+    "notes": "Маршрут демонстрационный.",
+    "references": {
+      "placeId": null,
+      "transportId": "transport-demo-1",
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": [
+        "tip-demo-2"
+      ]
+    }
+  },
+  {
+    "id": "event-demo-22",
+    "dayId": "trip-day-10",
+    "isPlaceholder": true,
+    "title": "Событие 2",
+    "category": "other",
+    "icon": "📌",
+    "time": "14:00",
+    "duration": "2 часа",
+    "description": "Фиктивное финальное событие путешествия.",
+    "image": null,
+    "price": "Включено",
+    "gps": {
+      "latitude": 0.1002,
+      "longitude": 0.1002
+    },
+    "tips": [
+      "Сохранить заметки о поездке."
+    ],
+    "notes": "Тестовая финальная запись.",
+    "references": {
+      "placeId": null,
+      "transportId": "transport-demo-2",
+      "nearbyRestaurantIds": [],
+      "documentIds": [
+        "document-demo-2"
+      ],
+      "tipIds": [
+        "tip-demo-1"
+      ]
+    }
+  },
+  {
+    "isPlaceholder": false,
+    "image": null,
+    "price": "",
+    "gps": null,
+    "tips": [
+      "Проверьте, что чемоданы закрыты.",
+      "Зарядите телефон и power bank.",
+      "Документы держите в ручной сумке."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "id": "event-day-03-morning",
+    "dayId": "trip-day-03",
+    "title": "Подъём",
+    "category": "other",
+    "icon": "🌅",
+    "time": "07:30",
+    "duration": "≈30 минут",
+    "description": "Спокойное утро в Кутаиси: собираем последние вещи перед переездом на побережье.",
+    "morningDetails": {
+      "morningPlan": [
+        {
+          "id": "wake",
+          "time": "🕢 07:30",
+          "title": "Подъём",
+          "description": "Спокойное утро без спешки — впереди переезд, а не ранний тур."
+        },
+        {
+          "id": "pack",
+          "time": "🧳 07:30–08:00",
+          "title": "Сбор последних вещей",
+          "checklist": [
+            "Зарядки",
+            "Купальники",
+            "Документы",
+            "Лекарства"
+          ]
+        },
+        {
+          "id": "breakfast",
+          "time": "🍳 08:00",
+          "title": "Завтрак в отеле"
+        },
+        {
+          "id": "checkout",
+          "time": "🏨 09:00",
+          "title": "Выселение и выезд на автовокзал"
+        }
+      ],
+      "packingItems": [
+        {
+          "id": "docs",
+          "icon": "🛂",
+          "title": "Паспорта и бронь"
+        },
+        {
+          "id": "cash",
+          "icon": "💵",
+          "title": "Наличные GEL на билеты"
+        },
+        {
+          "id": "water",
+          "icon": "💧",
+          "title": "Вода в дорогу"
+        },
+        {
+          "id": "snacks",
+          "icon": "🍪",
+          "title": "Лёгкий перекус"
+        },
+        {
+          "id": "power",
+          "icon": "🔋",
+          "title": "Power bank"
+        },
+        {
+          "id": "swim",
+          "icon": "🩱",
+          "title": "Купальники сверху"
+        }
+      ],
+      "dayForecast": [
+        {
+          "id": "road",
+          "icon": "🚌",
+          "title": "Переезд",
+          "description": "Маршрутка Кутаиси → Кобулети ≈1,5–2 часа."
+        },
+        {
+          "id": "sea",
+          "icon": "🌊",
+          "title": "Море",
+          "description": "После заселения — первое знакомство с Чёрным морем."
+        },
+        {
+          "id": "evening",
+          "icon": "🌅",
+          "title": "Вечер",
+          "description": "Набережная, ужин и закат на пляже."
+        }
+      ],
+      "checklist": [
+        {
+          "id": "charge",
+          "label": "Зарядить телефон"
+        },
+        {
+          "id": "pack-all",
+          "label": "Проверить шкафы и ванную"
+        },
+        {
+          "id": "cash",
+          "label": "Подготовить наличные на маршрутку"
+        },
+        {
+          "id": "booking",
+          "label": "Сохранить адрес отеля в Кобулети"
+        }
+      ],
+      "usefulTips": [
+        "Не оставляйте вещи в номере «на потом» — после завтрака сразу выселение.",
+        "Билет на маршрутку удобнее покупать наличными.",
+        "Купальники положите сверху — после заселения сразу пойдёте к морю."
+      ],
+      "nextAction": {
+        "title": "Завтрак",
+        "icon": "🍳",
+        "description": "Последний завтрак в Кутаиси перед выездом.",
+        "eventId": "event-day-03-breakfast",
+        "buttonLabel": "Перейти"
+      }
+    }
+  },
+  {
+    "isPlaceholder": false,
+    "image": null,
+    "price": "",
+    "gps": null,
+    "tips": [
+      "Поешьте плотно — до обеда в Кобулети ещё несколько часов.",
+      "Возьмите воду с собой."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "id": "event-day-03-breakfast",
+    "dayId": "trip-day-03",
+    "title": "Завтрак",
+    "category": "food",
+    "icon": "🍳",
+    "time": "08:00",
+    "duration": "≈1 час",
+    "description": "Последний завтрак в Кутаиси перед переездом в Кобулети.",
+    "breakfastDetails": {
+      "title": "Завтрак",
+      "description": "Последний завтрак в Кутаиси. После него — сбор вещей, выселение и дорога на побережье.",
+      "schedule": [
+        {
+          "id": "t",
+          "icon": "🕗",
+          "label": "Завтрак",
+          "value": "08:00–09:00"
+        },
+        {
+          "id": "c",
+          "icon": "🧳",
+          "label": "Выселение",
+          "value": "09:00–09:45"
+        },
+        {
+          "id": "b",
+          "icon": "🚌",
+          "label": "Автовокзал",
+          "value": "≈10:00"
+        }
+      ],
+      "hotelBreakfast": {
+        "includedTitle": "Обычно входит",
+        "includedText": "Яйца или омлет, сыр, хлеб, фрукты, кофе или чай — типичный отельный завтрак перед выездом.",
+        "notIncludedTitle": "Возьмите с собой",
+        "notIncludedText": "Бутылку воды и лёгкий перекус в дорогу на случай, если маршрутка задержится."
+      },
+      "foodIdeas": [
+        {
+          "id": "protein",
+          "icon": "🍳",
+          "title": "Яйца или сыр"
+        },
+        {
+          "id": "carbs",
+          "icon": "🥖",
+          "title": "Хлеб / хачапури"
+        },
+        {
+          "id": "drink",
+          "icon": "☕",
+          "title": "Кофе или чай"
+        },
+        {
+          "id": "fruit",
+          "icon": "🍎",
+          "title": "Фрукты"
+        },
+        {
+          "id": "water",
+          "icon": "💧",
+          "title": "Вода в дорогу"
+        }
+      ],
+      "priceExamples": [
+        {
+          "id": "hotel",
+          "label": "Завтрак в отеле",
+          "price": "Часто включён"
+        },
+        {
+          "id": "cafe",
+          "label": "Кафе рядом",
+          "price": "≈15–25 GEL"
+        }
+      ],
+      "checklist": [
+        {
+          "id": "eat",
+          "label": "Позавтракать без спешки"
+        },
+        {
+          "id": "water",
+          "label": "Взять воду в дорогу"
+        },
+        {
+          "id": "room",
+          "label": "Вернуться в номер и закончить сборы"
+        }
+      ],
+      "usefulTips": [
+        "Не пропускайте завтрак — до обеда в Кобулети далеко.",
+        "Если завтрак слабый, возьмите йогурт или фрукты дополнительно."
+      ],
+      "nextAction": {
+        "title": "Сбор вещей и выселение",
+        "icon": "🧳",
+        "description": "Освобождаем номер и проверяем, что ничего не забыли.",
+        "eventId": "event-day-03-checkout",
+        "buttonLabel": "Перейти"
+      }
+    }
+  },
+  {
+    "isPlaceholder": false,
+    "image": null,
+    "price": "",
+    "gps": null,
+    "tips": [
+      "Проверьте шкафы, сейф и ванную.",
+      "Сдайте ключ-карту на ресепшене."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "id": "event-day-03-checkout",
+    "dayId": "trip-day-03",
+    "title": "Сбор вещей и выселение",
+    "category": "accommodation",
+    "icon": "🧳",
+    "time": "09:00",
+    "duration": "≈45 минут",
+    "description": "Освобождаем номер в Кутаиси, проверяем документы и ничего не забываем.",
+    "guideDetails": {
+      "introTitle": "Перед выездом",
+      "intro": [
+        "Выселение обычно нужно завершить до 11:00–12:00, но сегодня вы уезжаете раньше — к автовокзалу.",
+        "Сначала закончите сборы, затем сдайте номер и сразу поезжайте на станцию."
+      ],
+      "factsTitle": "Что проверить",
+      "facts": [
+        {
+          "id": "time",
+          "icon": "🕒",
+          "label": "Время",
+          "value": "09:00–09:45"
+        },
+        {
+          "id": "docs",
+          "icon": "🛂",
+          "label": "Документы",
+          "value": "Паспорта, бронь Кобулети"
+        },
+        {
+          "id": "keys",
+          "icon": "🔑",
+          "label": "Ключ",
+          "value": "Сдать на ресепшене"
+        },
+        {
+          "id": "safe",
+          "icon": "🔐",
+          "label": "Сейф",
+          "value": "Пустой и открытый"
+        }
+      ],
+      "stepsTitle": "Порядок действий",
+      "steps": [
+        {
+          "id": "rooms",
+          "icon": "🛏️",
+          "title": "Пройтись по номеру",
+          "text": "Шкаф, тумбочки, ванная, розетки с зарядками, балкон."
+        },
+        {
+          "id": "bags",
+          "icon": "🧳",
+          "title": "Собрать чемоданы",
+          "text": "Документы и деньги — в ручную сумку, а не в багаж."
+        },
+        {
+          "id": "desk",
+          "icon": "🏨",
+          "title": "Сдать номер",
+          "text": "Отдайте ключ-карту, уточните, нет ли открытого мини-бара."
+        },
+        {
+          "id": "go",
+          "icon": "🚖",
+          "title": "Выйти к транспорту",
+          "text": "Сразу заказывайте Bolt на автовокзал или выходите пешком, если близко."
+        }
+      ],
+      "tips": [
+        {
+          "id": "t1",
+          "text": "Сфотографируйте пустой номер и сейф — на случай вопросов."
+        },
+        {
+          "id": "t2",
+          "text": "Адрес отеля в Кобулети сохраните офлайн на телефоне."
+        },
+        {
+          "id": "t3",
+          "text": "Не оставляйте заряды в розетках — самая частая потеря."
+        }
+      ],
+      "checklist": [
+        {
+          "id": "c1",
+          "label": "Проверить шкаф и ванную"
+        },
+        {
+          "id": "c2",
+          "label": "Забрать зарядки"
+        },
+        {
+          "id": "c3",
+          "label": "Сдать ключ"
+        },
+        {
+          "id": "c4",
+          "label": "Документы в ручной сумке"
+        }
+      ],
+      "nextAction": {
+        "title": "Поездка на автовокзал",
+        "icon": "🚖",
+        "description": "Добираемся до центрального автовокзала Кутаиси.",
+        "eventId": "event-day-03-station",
+        "buttonLabel": "Перейти"
+      }
+    }
+  },
+  {
+    "isPlaceholder": false,
+    "image": "/images/day03/station/gallery-01.jpg",
+    "price": "",
+    "gps": null,
+    "tips": [
+      "В приложении Bolt укажите Kutaisi Bus Station / Central Bus Station.",
+      "С детьми и большим багажом лучше ехать, а не идти пешком."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "id": "event-day-03-station",
+    "dayId": "trip-day-03",
+    "title": "Поездка на автовокзал",
+    "category": "transport",
+    "icon": "🚖",
+    "time": "09:45",
+    "duration": "≈15 минут",
+    "description": "Доезжаем на Bolt или идём пешком, если отель рядом с центром.",
+    "guideDetails": {
+      "introTitle": "Куда ехать",
+      "intro": [
+        "Центральный автовокзал Кутаиси (Central Bus Station) — основной пункт отправления маршруток на побережье, в том числе в Кобулети и Батуми.",
+        "Если отель в центре, путь может занять 10–20 минут. С чемоданами надёжнее Bolt."
+      ],
+      "gallery": [
+        {
+          "id": "g1",
+          "src": "/images/day03/station/gallery-01.jpg",
+          "alt": "Маршрутки у автовокзала"
+        },
+        {
+          "id": "g2",
+          "src": "/images/day03/station/gallery-02.jpg",
+          "alt": "Автовокзал и перрон"
+        },
+        {
+          "id": "g3",
+          "src": "/images/day03/station/gallery-03.jpg",
+          "alt": "Транспортный узел Кутаиси"
+        },
+        {
+          "id": "g4",
+          "src": "/images/day03/station/gallery-04.jpg",
+          "alt": "Подход к станции"
+        }
+      ],
+      "factsTitle": "Как добраться",
+      "facts": [
+        {
+          "id": "where",
+          "icon": "📍",
+          "label": "Куда",
+          "value": "Central Bus Station, Кутаиси"
+        },
+        {
+          "id": "bolt",
+          "icon": "🚖",
+          "label": "Bolt",
+          "value": "≈8–15 GEL",
+          "note": "Зависит от района и спроса"
+        },
+        {
+          "id": "time",
+          "icon": "⏱",
+          "label": "Время",
+          "value": "≈10–20 минут"
+        },
+        {
+          "id": "walk",
+          "icon": "🚶",
+          "label": "Пешком",
+          "value": "Только если отель очень близко"
+        }
+      ],
+      "stepsTitle": "Как найти автовокзал",
+      "steps": [
+        {
+          "id": "app",
+          "icon": "📱",
+          "title": "Введите точку в Bolt",
+          "text": "Ищите Kutaisi Bus Station / Central Bus Station. Покажите водителю точку на карте."
+        },
+        {
+          "id": "drop",
+          "icon": "🚏",
+          "title": "Выйдите у входа",
+          "text": "Вас высадят у территории с кассами и перронами маршруток."
+        },
+        {
+          "id": "look",
+          "icon": "👀",
+          "title": "Ориентиры",
+          "text": "Ищите кассы, табло направлений и ряды белых/жёлтых маршруток."
+        }
+      ],
+      "tips": [
+        {
+          "id": "t1",
+          "text": "Выезжайте с запасом — лучше подождать маршрутку, чем опаздывать."
+        },
+        {
+          "id": "t2",
+          "text": "Держите наличные отдельно: билет часто оплачивают на месте."
+        },
+        {
+          "id": "t3",
+          "text": "Если багажа много, попросите водителя Bolt помочь с чемоданами до кассы."
+        }
+      ],
+      "didYouKnow": {
+        "icon": "💡",
+        "title": "Знаете ли вы?",
+        "storyTitle": "Почему маршрутка, а не поезд?",
+        "paragraphs": [
+          "На направлении Кутаиси — Кобулети удобнее и чаще ходят именно маршрутки: они отправляются по мере заполнения и привозят ближе к центру курорта.",
+          "Поезд тоже возможен, но расписание реже, а от станции до отеля часто всё равно нужен такси."
+        ]
+      },
+      "nextAction": {
+        "title": "Покупка билета",
+        "icon": "🚌",
+        "description": "Покупаем билет и находим маршрутку на Кобулети.",
+        "eventId": "event-day-03-tickets",
+        "buttonLabel": "Перейти"
+      }
+    }
+  },
+  {
+    "isPlaceholder": false,
+    "image": "/images/day03/tickets/gallery-01.jpg",
+    "price": "≈15–25 GEL",
+    "gps": null,
+    "tips": [
+      "Скажите кассиру «Кобулети».",
+      "Уточните, от какого перрона отправляется машина."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "id": "event-day-03-tickets",
+    "dayId": "trip-day-03",
+    "title": "Покупка билета и ожидание маршрутки",
+    "category": "transport",
+    "icon": "🚌",
+    "time": "10:00",
+    "duration": "≈20 минут",
+    "description": "Покупаем билет на Кобулети, находим нужную маршрутку и ждём отправления.",
+    "guideDetails": {
+      "introTitle": "Как купить билет",
+      "intro": [
+        "Билеты на маршрутки обычно продают в кассе автовокзала или у диспетчера на перроне. На популярных направлениях машины уходят часто.",
+        "Назовите город назначения — Кобулети — и уточните время ближайшего отправления."
+      ],
+      "gallery": [
+        {
+          "id": "g1",
+          "src": "/images/day03/tickets/gallery-01.jpg",
+          "alt": "Автобус и маршрутки из Кутаиси"
+        },
+        {
+          "id": "g2",
+          "src": "/images/day03/tickets/gallery-02.jpg",
+          "alt": "Ряд минибасов на станции"
+        },
+        {
+          "id": "g3",
+          "src": "/images/day03/tickets/gallery-03.jpg",
+          "alt": "Типичная грузинская маршрутка"
+        }
+      ],
+      "factsTitle": "Практика",
+      "facts": [
+        {
+          "id": "price",
+          "icon": "💰",
+          "label": "Стоимость",
+          "value": "≈15–25 GEL",
+          "note": "На человека, зависит от сезона"
+        },
+        {
+          "id": "freq",
+          "icon": "🔁",
+          "label": "Частота",
+          "value": "Каждые 20–40 минут",
+          "note": "В дневное время обычно часто"
+        },
+        {
+          "id": "pay",
+          "icon": "💵",
+          "label": "Оплата",
+          "value": "Чаще наличные GEL"
+        },
+        {
+          "id": "bag",
+          "icon": "🧳",
+          "label": "Багаж",
+          "value": "Обычно входит",
+          "note": "Крупные чемоданы — в багажник"
+        }
+      ],
+      "stepsTitle": "Что делать на месте",
+      "steps": [
+        {
+          "id": "desk",
+          "icon": "🎟️",
+          "title": "Подойдите к кассе",
+          "text": "Скажите «Кобулети». Если касса закрыта — спросите у водителей маршруток с табличкой Kobuleti / Batumi."
+        },
+        {
+          "id": "find",
+          "icon": "🚌",
+          "title": "Найдите машину",
+          "text": "На лобовом стекле обычно написан город. Маршрутки на Батуми часто идут через Кобулети — уточните высадку."
+        },
+        {
+          "id": "seat",
+          "icon": "💺",
+          "title": "Займите место",
+          "text": "Сядьте и дождитесь заполнения. Отправление часто «по набору», а не строго по минутам."
+        },
+        {
+          "id": "wait",
+          "icon": "⏳",
+          "title": "Ожидание",
+          "text": "Обычно 10–30 минут. Не уходите далеко от машины с багажом."
+        }
+      ],
+      "tips": [
+        {
+          "id": "t1",
+          "text": "Если едете с ребёнком, попросите места ближе к выходу."
+        },
+        {
+          "id": "t2",
+          "text": "На Батуми через Кобулети — нормальный вариант; скажите водителю, где выходить."
+        },
+        {
+          "id": "t3",
+          "text": "Сохраните мелкие купюры: сдачу могут давать неохотно."
+        }
+      ],
+      "warnings": {
+        "title": "⚠️ Важно",
+        "lines": [
+          "Не садитесь в машину без уточнения города назначения.",
+          "Крупный багаж кладите в багажник вместе с водителем — не оставляйте на перроне."
+        ]
+      },
+      "nextAction": {
+        "title": "Маршрутка в Кобулети",
+        "icon": "🚌",
+        "description": "Выезжаем на побережье Чёрного моря.",
+        "eventId": "event-day-03-marshrutka",
+        "buttonLabel": "Перейти"
+      }
+    }
+  },
+  {
+    "isPlaceholder": false,
+    "image": "/images/day03/marshrutka/gallery-01.jpg",
+    "price": "≈15–25 GEL",
+    "gps": null,
+    "tips": [
+      "Сообщите водителю, что выходите в Кобулети.",
+      "Держите сумку с документами при себе."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "id": "event-day-03-marshrutka",
+    "dayId": "trip-day-03",
+    "title": "Маршрутка Кутаиси → Кобулети",
+    "category": "transport",
+    "icon": "🚌",
+    "time": "10:20",
+    "duration": "≈1,5–2 часа",
+    "description": "Переезд через западную Грузию к Чёрному морю. По дороге — холмы, деревни и всё более морской воздух.",
+    "guideDetails": {
+      "introTitle": "О переезде",
+      "intro": [
+        "Расстояние примерно 90–110 км в зависимости от маршрута. В пути обычно 1,5–2 часа без длинных пробок.",
+        "Это самый простой и популярный способ добраться из Кутаиси на курортное побережье."
+      ],
+      "gallery": [
+        {
+          "id": "g1",
+          "src": "/images/day03/marshrutka/gallery-01.jpg",
+          "alt": "Грузинская маршрутка"
+        },
+        {
+          "id": "g2",
+          "src": "/images/day03/marshrutka/gallery-02.jpg",
+          "alt": "Минибас в горах Грузии"
+        },
+        {
+          "id": "g3",
+          "src": "/images/day03/marshrutka/gallery-03.jpg",
+          "alt": "Побережье ближе к Кобулети"
+        },
+        {
+          "id": "g4",
+          "src": "/images/day03/marshrutka/gallery-04.jpg",
+          "alt": "Вид на Кобулети с холмов"
+        }
+      ],
+      "factsTitle": "Ключевые факты",
+      "facts": [
+        {
+          "id": "dist",
+          "icon": "📍",
+          "label": "Расстояние",
+          "value": "≈90–110 км"
+        },
+        {
+          "id": "time",
+          "icon": "⏱",
+          "label": "Время в пути",
+          "value": "≈1,5–2 часа"
+        },
+        {
+          "id": "cost",
+          "icon": "💰",
+          "label": "Стоимость",
+          "value": "≈15–25 GEL"
+        },
+        {
+          "id": "exit",
+          "icon": "🚪",
+          "label": "Где выходить",
+          "value": "Центр / остановка у вашего отеля",
+          "note": "Скажите водителю адрес заранее"
+        },
+        {
+          "id": "pay",
+          "icon": "💵",
+          "label": "Оплата",
+          "value": "Обычно в кассе или водителю"
+        },
+        {
+          "id": "ac",
+          "icon": "❄️",
+          "label": "Комфорт",
+          "value": "Кондиционер бывает не всегда"
+        }
+      ],
+      "stepsTitle": "Советы пассажирам",
+      "steps": [
+        {
+          "id": "tell",
+          "icon": "🗣️",
+          "title": "Скажите, куда вам",
+          "text": "В начале пути покажите водителю адрес отеля на карте и слово «Кобулети»."
+        },
+        {
+          "id": "bag",
+          "icon": "🧳",
+          "title": "Следите за багажом",
+          "text": "При выходе напомните про чемодан в багажнике."
+        },
+        {
+          "id": "stop",
+          "icon": "🛑",
+          "title": "Высадка",
+          "text": "Водитель может высадить у центральной улицы или ближе к вашему отелю — уточните."
+        }
+      ],
+      "placesTitle": "Что видно по дороге",
+      "places": [
+        {
+          "id": "hills",
+          "icon": "🌿",
+          "title": "Холмы Имеретии и Гурии",
+          "description": "Зелёные склоны, деревни и чайные края западной Грузии.",
+          "image": "/images/day03/marshrutka/gallery-03.jpg"
+        },
+        {
+          "id": "sea",
+          "icon": "🌊",
+          "title": "Приближение к морю",
+          "description": "Ближе к Кобулети появляется морской горизонт и курортная застройка.",
+          "image": "/images/day03/marshrutka/gallery-04.jpg"
+        }
+      ],
+      "tips": [
+        {
+          "id": "t1",
+          "text": "Места сзади сильнее укачивает — лучше ближе к середине."
+        },
+        {
+          "id": "t2",
+          "text": "Остановки по просьбе возможны, но заранее договоритесь."
+        },
+        {
+          "id": "t3",
+          "text": "Wi‑Fi в маршрутке обычно нет — скачайте офлайн-карту."
+        }
+      ],
+      "nextAction": {
+        "title": "Переход до отеля",
+        "icon": "🚶",
+        "description": "От места высадки добираемся до отеля.",
+        "eventId": "event-day-03-walk-hotel",
+        "buttonLabel": "Перейти"
+      }
+    }
+  },
+  {
+    "isPlaceholder": false,
+    "image": "/images/day03/walk-hotel/gallery-01.jpg",
+    "price": "",
+    "gps": null,
+    "tips": [],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "id": "event-day-03-walk-hotel",
+    "dayId": "trip-day-03",
+    "title": "Переход до отеля",
+    "category": "transport",
+    "icon": "🚶",
+    "time": "12:00",
+    "duration": "≈10–20 минут",
+    "description": "От остановки маршрутки до отеля — пешком или на коротком такси, если багажа много.",
+    "guideDetails": {
+      "introTitle": "Как добраться до отеля",
+      "intro": [
+        "Многие отели Кобулети стоят в 5–15 минутах от центральной улицы и моря. С лёгким багажом удобно идти пешком.",
+        "Если чемоданов много, жарко или вы с ребёнком — возьмите Bolt/такси на последние сотни метров."
+      ],
+      "gallery": [
+        {
+          "id": "g1",
+          "src": "/images/day03/walk-hotel/gallery-01.jpg",
+          "alt": "Улицы и зелень Кобулети"
+        },
+        {
+          "id": "g2",
+          "src": "/images/day03/walk-hotel/gallery-02.jpg",
+          "alt": "Курортная часть Кобулети"
+        },
+        {
+          "id": "g3",
+          "src": "/images/day03/walk-hotel/gallery-03.jpg",
+          "alt": "Городской пейзаж у побережья"
+        }
+      ],
+      "factsTitle": "Варианты",
+      "facts": [
+        {
+          "id": "walk",
+          "icon": "🚶",
+          "label": "Пешком",
+          "value": "≈5–20 минут",
+          "note": "Если отель у центра / первой линии"
+        },
+        {
+          "id": "taxi",
+          "icon": "🚖",
+          "label": "Bolt / такси",
+          "value": "≈5–12 GEL",
+          "note": "Удобно с большим багажом"
+        },
+        {
+          "id": "heat",
+          "icon": "☀️",
+          "label": "Когда брать такси",
+          "value": "Жара, много вещей, усталость после дороги"
+        }
+      ],
+      "stepsTitle": "Что делать",
+      "steps": [
+        {
+          "id": "map",
+          "icon": "🗺️",
+          "title": "Откройте маршрут",
+          "text": "В Google Maps / Bolt вставьте адрес из бронирования."
+        },
+        {
+          "id": "decide",
+          "icon": "⚖️",
+          "title": "Оцените багаж",
+          "text": "Один рюкзак — пешком. Два чемодана + ребёнок — такси."
+        },
+        {
+          "id": "arrive",
+          "icon": "🏨",
+          "title": "Подойдите к ресепшену",
+          "text": "Сообщите фамилию и покажите подтверждение брони."
+        }
+      ],
+      "tips": [
+        {
+          "id": "t1",
+          "text": "В августе днём жарко — вода и головной убор не помешают даже на коротком пути."
+        },
+        {
+          "id": "t2",
+          "text": "Если водитель маршрутки высадил далеко, не спорьте — просто вызовите Bolt."
+        }
+      ],
+      "nextAction": {
+        "title": "Заселение",
+        "icon": "🏨",
+        "description": "Регистрируемся в отеле Кобулети.",
+        "eventId": "event-day-03-check-in",
+        "buttonLabel": "Перейти"
+      }
+    }
+  },
+  {
+    "isPlaceholder": false,
+    "image": "/images/day03/check-in/gallery-01.jpg",
+    "price": "",
+    "gps": null,
+    "tips": [
+      "Уточните Wi‑Fi и время завтрака.",
+      "Спросите короткий путь к пляжу."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "id": "event-day-03-check-in",
+    "dayId": "trip-day-03",
+    "title": "Заселение",
+    "category": "accommodation",
+    "icon": "🏨",
+    "time": "12:20",
+    "duration": "≈40 минут",
+    "description": "Регистрируемся в отеле Кобулети, получаем ключ и готовимся к морю.",
+    "hotelCheckInDetails": {
+      "subtitle": "Добро пожаловать в Кобулети!",
+      "bookingInfo": [
+        {
+          "id": "hotel",
+          "icon": "🏨",
+          "label": "Отель",
+          "value": "По вашему бронированию в Кобулети"
+        },
+        {
+          "id": "area",
+          "icon": "📍",
+          "label": "Район",
+          "value": "Курортная зона у Чёрного моря"
+        },
+        {
+          "id": "dates",
+          "icon": "📅",
+          "label": "Даты",
+          "value": "С 27.08.2026"
+        },
+        {
+          "id": "checkin",
+          "icon": "🕒",
+          "label": "Заселение",
+          "value": "Обычно с 12:00–14:00"
+        },
+        {
+          "id": "beach",
+          "icon": "🌊",
+          "label": "До пляжа",
+          "value": "Часто 2–10 минут пешком"
+        }
+      ],
+      "receptionDocuments": [
+        {
+          "id": "passport",
+          "icon": "🛂",
+          "title": "Паспорт"
+        },
+        {
+          "id": "booking",
+          "icon": "📄",
+          "title": "Подтверждение бронирования"
+        },
+        {
+          "id": "card",
+          "icon": "💳",
+          "title": "Карта для депозита (если просят)"
+        }
+      ],
+      "checkInSteps": [
+        "Подойдите к ресепшену и назовите фамилию.",
+        "Покажите паспорта и бронь.",
+        "Получите ключ / карту и уточните этаж.",
+        "Спросите пароль Wi‑Fi и время завтрака.",
+        "Уточните, где ближайший спуск к морю.",
+        "Осмотрите номер: вода, кондиционер, полотенца."
+      ],
+      "englishPhrases": [
+        {
+          "original": "We have a reservation.",
+          "translation": "У нас есть бронь."
+        },
+        {
+          "original": "What time is breakfast?",
+          "translation": "Во сколько завтрак?"
+        },
+        {
+          "original": "How do we get to the beach?",
+          "translation": "Как пройти к пляжу?"
+        },
+        {
+          "original": "Could we have the Wi‑Fi password?",
+          "translation": "Можно пароль от Wi‑Fi?"
+        }
+      ],
+      "checklist": [
+        {
+          "id": "docs",
+          "label": "Отдать документы на регистрацию"
+        },
+        {
+          "id": "keys",
+          "label": "Получить ключ"
+        },
+        {
+          "id": "wifi",
+          "label": "Подключить Wi‑Fi"
+        },
+        {
+          "id": "beach",
+          "label": "Узнать дорогу к морю"
+        },
+        {
+          "id": "safe",
+          "label": "Положить паспорта в сейф"
+        }
+      ],
+      "usefulTips": [
+        "Если номер ещё не готов, можно оставить багаж и пойти на обед.",
+        "Сразу спросите про полотенца для пляжа — иногда их выдают на ресепшене.",
+        "Сохраните контакт отеля в телефоне."
+      ],
+      "nextAction": {
+        "title": "Обед",
+        "icon": "🍽️",
+        "description": "После дороги самое время пообедать рядом с отелем или на набережной.",
+        "eventId": "event-day-03-lunch"
+      }
+    }
+  },
+  {
+    "isPlaceholder": false,
+    "image": null,
+    "price": "≈25–45 GEL",
+    "gps": null,
+    "tips": [
+      "На набережной цены чуть выше.",
+      "После обеда — море."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "id": "event-day-03-lunch",
+    "dayId": "trip-day-03",
+    "title": "Обед",
+    "category": "food",
+    "icon": "🍽️",
+    "time": "13:00",
+    "duration": "≈1 час",
+    "description": "Обед в Кобулети после переезда — рядом с отелем или на набережной.",
+    "lunchDetails": {
+      "whyHere": {
+        "title": "Почему обед сейчас",
+        "paragraphs": [
+          "После маршрутки вы уже голодны, а до ужина ещё далеко.",
+          "Лучше пообедать спокойно рядом с отелем или на набережной — и после этого идти к морю без спешки."
+        ]
+      },
+      "restaurants": [
+        {
+          "id": "promenade",
+          "rank": "🥇",
+          "name": "Кафе на набережной",
+          "subtitle": "Вид на море и лёгкие блюда после дороги.",
+          "location": "Набережная Кобулети",
+          "driveTime": "≈5–10 минут пешком от большинства отелей первой линии",
+          "reasons": [
+            "Морской воздух",
+            "Удобно совместить с прогулкой",
+            "Есть рыба, хачапури, салаты"
+          ],
+          "averageCheck": "30–50 GEL на человека"
+        },
+        {
+          "id": "local",
+          "rank": "🥈",
+          "name": "Местный ресторан у отеля",
+          "subtitle": "Быстрый вариант без долгого перехода.",
+          "location": "Рядом с вашим отелем",
+          "driveTime": "Несколько минут пешком",
+          "reasons": [
+            "Не нужно далеко идти с ребёнком",
+            "Обычно быстрее обслуживание",
+            "Хорош, если очень хочется есть сразу после заселения"
+          ],
+          "averageCheck": "25–40 GEL на человека"
+        },
+        {
+          "id": "khachapuri",
+          "rank": "🥉",
+          "name": "Хачапурная / пекарня",
+          "subtitle": "Если хочется просто и сытно.",
+          "location": "Центральные улицы Кобулети",
+          "driveTime": "≈5–15 минут пешком",
+          "reasons": [
+            "Недорого",
+            "Быстро",
+            "Отлично перед пляжем"
+          ],
+          "averageCheck": "15–30 GEL на человека"
+        }
+      ],
+      "dishes": [
+        {
+          "id": "khachapuri",
+          "icon": "🧀",
+          "title": "Хачапури"
+        },
+        {
+          "id": "fish",
+          "icon": "🐟",
+          "title": "Рыба дня"
+        },
+        {
+          "id": "salad",
+          "icon": "🥗",
+          "title": "Овощной салат"
+        },
+        {
+          "id": "khinkali",
+          "icon": "🥟",
+          "title": "Хинкали"
+        },
+        {
+          "id": "lemonade",
+          "icon": "🍋",
+          "title": "Лимонад"
+        },
+        {
+          "id": "compote",
+          "icon": "🍒",
+          "title": "Компот"
+        }
+      ],
+      "averageCheck": {
+        "perPerson": "25–45 GEL",
+        "family": "80–140 GEL",
+        "note": "На набережной чек обычно выше, чем во дворах."
+      },
+      "duration": {
+        "value": "≈45–60 минут",
+        "note": "После обеда лучше сделать паузу 20–30 минут перед морем."
+      },
+      "tips": [
+        {
+          "id": "t1",
+          "text": "Не переедайте перед первым заходом в море."
+        },
+        {
+          "id": "t2",
+          "text": "Карты принимают почти везде, но мелкий кеш полезен."
+        },
+        {
+          "id": "t3",
+          "text": "Если с ребёнком — выбирайте место с тенью и туалетом рядом."
+        }
+      ],
+      "nextAction": {
+        "title": "Первое знакомство с морем",
+        "icon": "🌊",
+        "description": "Идём на пляж Кобулети.",
+        "eventId": "event-day-03-sea",
+        "buttonLabel": "Перейти"
+      }
+    }
+  },
+  {
+    "isPlaceholder": false,
+    "image": "/images/day03/sea/gallery-01.jpg",
+    "price": "",
+    "gps": null,
+    "tips": [
+      "Обувь для гальки очень помогает.",
+      "Не заплывайте далеко в первый день."
+    ],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "id": "event-day-03-sea",
+    "dayId": "trip-day-03",
+    "title": "Первое знакомство с морем",
+    "category": "activity",
+    "icon": "🌊",
+    "time": "14:30",
+    "duration": "≈2,5 часа",
+    "description": "Первый заход в Чёрное море в Кобулети: галька, волны и долгожданная прохлада после жары.",
+    "guideDetails": {
+      "introTitle": "О пляже Кобулети",
+      "intro": [
+        "Пляж в Кобулети в основном галечный: вода обычно чистая, вход пологий, но волны могут быть ощутимыми.",
+        "Лучше начать спокойно: сначала ноги, затем купание рядом с берегом."
+      ],
+      "gallery": [
+        {
+          "id": "g1",
+          "src": "/images/day03/sea/gallery-01.jpg",
+          "alt": "Пляж Кобулети"
+        },
+        {
+          "id": "g2",
+          "src": "/images/day03/sea/gallery-02.jpg",
+          "alt": "Чёрное море у Кобулети"
+        },
+        {
+          "id": "g3",
+          "src": "/images/day03/sea/gallery-03.jpg",
+          "alt": "Береговая линия Кобулети"
+        },
+        {
+          "id": "g4",
+          "src": "/images/day03/sea/gallery-04.jpg",
+          "alt": "Морской пляж курорта"
+        },
+        {
+          "id": "g5",
+          "src": "/images/day03/sea/gallery-05.jpg",
+          "alt": "Чёрное море у берега"
+        }
+      ],
+      "factsTitle": "Практика",
+      "facts": [
+        {
+          "id": "type",
+          "icon": "🪨",
+          "label": "Пляж",
+          "value": "Галька"
+        },
+        {
+          "id": "entry",
+          "icon": "🌊",
+          "label": "Вход в воду",
+          "value": "Обычно пологий"
+        },
+        {
+          "id": "best",
+          "icon": "📍",
+          "label": "Где лучше",
+          "value": "Напротив центра / вашего отеля",
+          "note": "Меньше далеко идти с вещами"
+        },
+        {
+          "id": "shade",
+          "icon": "☂️",
+          "label": "Тень",
+          "value": "Зонты и навесы арендуют на пляже"
+        }
+      ],
+      "packingTitle": "Что взять",
+      "packingItems": [
+        {
+          "id": "swim",
+          "icon": "🩱",
+          "title": "Купальники"
+        },
+        {
+          "id": "shoes",
+          "icon": "🩴",
+          "title": "Обувь для гальки"
+        },
+        {
+          "id": "spf",
+          "icon": "🧴",
+          "title": "Крем SPF"
+        },
+        {
+          "id": "water",
+          "icon": "💧",
+          "title": "Вода"
+        },
+        {
+          "id": "towel",
+          "icon": "🧺",
+          "title": "Полотенце"
+        },
+        {
+          "id": "hat",
+          "icon": "🧢",
+          "title": "Головной убор"
+        }
+      ],
+      "stepsTitle": "Безопасность",
+      "steps": [
+        {
+          "id": "look",
+          "icon": "👀",
+          "title": "Оцените волны",
+          "text": "Если сильно штормит — лучше походить по берегу, а не заплывать."
+        },
+        {
+          "id": "enter",
+          "icon": "🦶",
+          "title": "Входите медленно",
+          "text": "Галька скользкая; держите ребёнка за руку."
+        },
+        {
+          "id": "near",
+          "icon": "🚩",
+          "title": "Оставайтесь ближе к берегу",
+          "text": "В первый день не нужно далеко заплывать."
+        },
+        {
+          "id": "sun",
+          "icon": "☀️",
+          "title": "Не перегрейтесь",
+          "text": "Чередуйте воду, тень и воду для питья."
+        }
+      ],
+      "warnings": {
+        "title": "⚠️ Важно",
+        "lines": [
+          "Чёрное море может быть прохладнее, чем кажется на солнце.",
+          "Ценности лучше не оставлять без присмотра на пляже.",
+          "После еды подождите перед активным купанием."
+        ]
+      },
+      "tips": [
+        {
+          "id": "t1",
+          "text": "Специальные тапочки для гальки сильно повышают комфорт."
+        },
+        {
+          "id": "t2",
+          "text": "После моря сполоснитесь — соль сушит кожу."
+        },
+        {
+          "id": "t3",
+          "text": "Если устали — сделайте паузу в тени набережной."
+        }
+      ],
+      "didYouKnow": {
+        "icon": "💡",
+        "title": "Знаете ли вы?",
+        "storyTitle": "Почему пляж галечный?",
+        "paragraphs": [
+          "Побережье Аджарии и Гурии формировалось реками и морским прибоем, поэтому здесь преобладает галька, а не мелкий песок.",
+          "Зато вода часто кажется прозрачнее, а после шторма берег выглядит особенно живописно."
+        ]
+      },
+      "nextAction": {
+        "title": "Прогулка по набережной",
+        "icon": "🚶",
+        "description": "Знакомимся с курортной жизнью Кобулети.",
+        "eventId": "event-day-03-promenade",
+        "buttonLabel": "Перейти"
+      }
+    }
+  },
+  {
+    "isPlaceholder": false,
+    "image": "/images/day03/promenade/gallery-01.jpg",
+    "price": "",
+    "gps": null,
+    "tips": [],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "id": "event-day-03-promenade",
+    "dayId": "trip-day-03",
+    "title": "Прогулка по набережной Кобулети",
+    "category": "walk",
+    "icon": "🚶",
+    "time": "17:00",
+    "duration": "≈2 часа",
+    "description": "Неспешная прогулка вдоль моря: кафе, виды, люди и первое ощущение курорта.",
+    "guideDetails": {
+      "introTitle": "Набережная Кобулети",
+      "intro": [
+        "Вечером набережная оживает: появляются отдыхающие, открываются террасы, а жара становится мягче.",
+        "Это лучшее время, чтобы понять ритм курорта без спешки."
+      ],
+      "gallery": [
+        {
+          "id": "g1",
+          "src": "/images/day03/promenade/gallery-01.jpg",
+          "alt": "Побережье Кобулети"
+        },
+        {
+          "id": "g2",
+          "src": "/images/day03/promenade/gallery-02.jpg",
+          "alt": "Море и берег Кобулети"
+        },
+        {
+          "id": "g3",
+          "src": "/images/day03/promenade/gallery-03.jpg",
+          "alt": "Курортный берег"
+        },
+        {
+          "id": "g4",
+          "src": "/images/day03/promenade/gallery-04.jpg",
+          "alt": "Чёрное море у Кобулети"
+        }
+      ],
+      "placesTitle": "Что посмотреть",
+      "places": [
+        {
+          "id": "seafront",
+          "icon": "🌊",
+          "title": "Линия моря",
+          "description": "Длинный открытый берег — главное пространство курорта.",
+          "image": "/images/day03/promenade/gallery-01.jpg"
+        },
+        {
+          "id": "cafes",
+          "icon": "☕",
+          "title": "Кафе и террасы",
+          "description": "Остановитесь на лимонад или кофе с видом на воду.",
+          "image": "/images/day03/promenade/gallery-02.jpg"
+        },
+        {
+          "id": "photos",
+          "icon": "📸",
+          "title": "Фототочки у воды",
+          "description": "На закате особенно красивы волна, галька и горизонт.",
+          "image": "/images/day03/promenade/gallery-03.jpg"
+        },
+        {
+          "id": "stroll",
+          "icon": "🚶",
+          "title": "Спокойный маршрут",
+          "description": "Идите вдоль берега туда-обратно — без сложной навигации.",
+          "image": "/images/day03/promenade/gallery-04.jpg"
+        }
+      ],
+      "factsTitle": "Практика",
+      "facts": [
+        {
+          "id": "time",
+          "icon": "⏱",
+          "label": "Время",
+          "value": "≈1,5–2 часа"
+        },
+        {
+          "id": "pace",
+          "icon": "👟",
+          "label": "Темп",
+          "value": "Спокойный"
+        },
+        {
+          "id": "kids",
+          "icon": "👨‍👩‍👧",
+          "label": "С детьми",
+          "value": "Удобно",
+          "note": "Ровная набережная"
+        }
+      ],
+      "tips": [
+        {
+          "id": "t1",
+          "text": "Возьмите лёгкую кофту — к вечеру у моря бывает прохладный ветер."
+        },
+        {
+          "id": "t2",
+          "text": "Заодно выберите место для ужина, пока гуляете."
+        },
+        {
+          "id": "t3",
+          "text": "На закат лучше вернуться ближе к открытому участку пляжа."
+        }
+      ],
+      "nextAction": {
+        "title": "Ужин",
+        "icon": "🍽️",
+        "description": "Ужинаем в Кобулети после первого дня у моря.",
+        "eventId": "event-day-03-dinner",
+        "buttonLabel": "Перейти"
+      }
+    }
+  },
+  {
+    "isPlaceholder": false,
+    "image": null,
+    "price": "≈30–55 GEL",
+    "gps": null,
+    "tips": [],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "id": "event-day-03-dinner",
+    "dayId": "trip-day-03",
+    "title": "Ужин",
+    "category": "food",
+    "icon": "🍽️",
+    "time": "19:00",
+    "duration": "≈1,5 часа",
+    "description": "Ужин в Кобулети: грузинская кухня, морепродукты или просто сытные блюда после пляжа.",
+    "dinnerDetails": {
+      "restaurants": [
+        {
+          "id": "seaside",
+          "rank": "🥇",
+          "name": "Ресторан у моря",
+          "subtitle": "Ужин с видом на Черное море.",
+          "location": "Набережная Кобулети",
+          "walkingTime": "≈5–15 минут пешком",
+          "reasons": [
+            "Атмосфера курорта",
+            "Свежая рыба по сезону",
+            "Удобно после прогулки"
+          ],
+          "averageCheck": "35–60 GEL на человека"
+        },
+        {
+          "id": "georgian",
+          "rank": "🥈",
+          "name": "Грузинский дворик",
+          "subtitle": "Классика: хачапури, хинкали, шашлык.",
+          "location": "Центральные улицы",
+          "walkingTime": "≈5–10 минут",
+          "reasons": [
+            "Сытно после моря",
+            "Понятное меню",
+            "Хорошо для семьи"
+          ],
+          "averageCheck": "30–50 GEL"
+        },
+        {
+          "id": "cafe",
+          "rank": "🥉",
+          "name": "Спокойное кафе",
+          "subtitle": "Если не хочется шумной набережной.",
+          "location": "Рядом с отелем",
+          "walkingTime": "Несколько минут",
+          "reasons": [
+            "Быстрее вернуться к закату",
+            "Меньше ожидания",
+            "Удобно с ребёнком"
+          ],
+          "averageCheck": "25–40 GEL"
+        }
+      ],
+      "firstOrderDishes": [
+        {
+          "id": "khachapuri",
+          "icon": "🧀",
+          "title": "Аджарули / имерули хачапури",
+          "price": "15–25 GEL",
+          "description": "Обязательный ужин на побережье."
+        },
+        {
+          "id": "fish",
+          "icon": "🐟",
+          "title": "Рыба на гриле",
+          "price": "25–45 GEL",
+          "description": "Спрашивайте свежий улов дня."
+        },
+        {
+          "id": "mtsvadi",
+          "icon": "🥩",
+          "title": "Мцвади",
+          "price": "20–35 GEL",
+          "description": "Шашлык, если хочется мяса после моря."
+        },
+        {
+          "id": "salad",
+          "icon": "🥗",
+          "title": "Овощной салат",
+          "price": "10–18 GEL",
+          "description": "Лёгкий гарнир к основным блюдам."
+        },
+        {
+          "id": "wine",
+          "icon": "🍷",
+          "title": "Бокал вина",
+          "price": "8–15 GEL",
+          "description": "Или лимонад, если без алкоголя."
+        }
+      ],
+      "tips": [
+        {
+          "id": "t1",
+          "icon": "🕰️",
+          "title": "Время",
+          "description": "На закат лучше выйти к 20:20–20:30."
+        },
+        {
+          "id": "t2",
+          "icon": "💳",
+          "title": "Оплата",
+          "description": "Карты принимают часто, но кеш всё равно полезен."
+        },
+        {
+          "id": "t3",
+          "icon": "👨‍👩‍👧",
+          "title": "Семья",
+          "description": "Большие порции — одного хачапури часто хватает на двоих."
+        }
+      ],
+      "sampleOrder": {
+        "title": "Первый ужин у моря",
+        "items": [
+          "Хачапури — 1 шт.",
+          "Рыба или мцвади",
+          "Салат",
+          "Лимонад / вино"
+        ],
+        "total": "≈70–110 GEL на двоих"
+      },
+      "checklist": [
+        {
+          "id": "c1",
+          "label": "Выбрать место до сильного голода"
+        },
+        {
+          "id": "c2",
+          "label": "Не забыть воду/лимонад"
+        },
+        {
+          "id": "c3",
+          "label": "Выйти к закату вовремя"
+        }
+      ],
+      "nextAction": {
+        "title": "Закат на пляже",
+        "icon": "🌅",
+        "description": "Завершаем день у моря красивым закатом.",
+        "eventId": "event-day-03-sunset"
+      }
+    }
+  },
+  {
+    "isPlaceholder": false,
+    "image": "/images/day03/sunset/gallery-01.jpg",
+    "price": "",
+    "gps": null,
+    "tips": [],
+    "notes": "",
+    "references": {
+      "placeId": null,
+      "transportId": null,
+      "nearbyRestaurantIds": [],
+      "documentIds": [],
+      "tipIds": []
+    },
+    "id": "event-day-03-sunset",
+    "dayId": "trip-day-03",
+    "title": "Закат на пляже",
+    "category": "walk",
+    "icon": "🌅",
+    "time": "20:30",
+    "duration": "≈30 минут",
+    "description": "Спокойный финал дня: закат над Чёрным морем и первые курортные фотографии.",
+    "guideDetails": {
+      "introTitle": "Закат в Кобулети",
+      "intro": [
+        "На открытом берегу закат видно особенно красиво: солнце уходит в море, а галька и волны дают тёплый свет для фото.",
+        "Это короткий, но один из самых приятных ритуалов каждого вечера на побережье."
+      ],
+      "gallery": [
+        {
+          "id": "g1",
+          "src": "/images/day03/sunset/gallery-01.jpg",
+          "alt": "Закат на Чёрном море"
+        },
+        {
+          "id": "g2",
+          "src": "/images/day03/sunset/gallery-02.jpg",
+          "alt": "Закат у грузинского побережья"
+        },
+        {
+          "id": "g3",
+          "src": "/images/day03/sunset/gallery-03.jpg",
+          "alt": "Вечернее небо над морем"
+        },
+        {
+          "id": "g4",
+          "src": "/images/day03/sunset/gallery-04.jpg",
+          "alt": "Панорама моря на закате"
+        }
+      ],
+      "factsTitle": "Практика",
+      "facts": [
+        {
+          "id": "when",
+          "icon": "🕗",
+          "label": "Когда выходить",
+          "value": "За 20–30 минут до заката"
+        },
+        {
+          "id": "where",
+          "icon": "📍",
+          "label": "Где смотреть",
+          "value": "Открытый участок пляжа"
+        },
+        {
+          "id": "photo",
+          "icon": "📸",
+          "label": "Фото",
+          "value": "Горизонт + силуэты волн"
+        }
+      ],
+      "tips": [
+        {
+          "id": "t1",
+          "text": "Возьмите лёгкую кофту — после заката быстро становится прохладнее."
+        },
+        {
+          "id": "t2",
+          "text": "Не заходите далеко в воду в сумерках."
+        },
+        {
+          "id": "t3",
+          "text": "После заката можно спокойно вернуться в отель пешком вдоль набережной."
+        }
+      ],
+      "didYouKnow": {
+        "icon": "💡",
+        "title": "Знаете ли вы?",
+        "storyTitle": "Почему закаты здесь такие длинные?",
+        "paragraphs": [
+          "На ровной морской линии горизонт открыт, поэтому диск солнца виден дольше, чем среди городской застройки.",
+          "Именно поэтому многие отдыхающие специально выходят на берег каждый вечер — даже если весь день провели на пляже."
+        ]
+      },
+      "nextAction": {
+        "title": "День 4",
+        "icon": "☀️",
+        "description": "Завтра продолжаем отдых в Кобулети.",
+        "eventId": "event-demo-09",
+        "to": "/trip/trip-day-04",
+        "buttonLabel": "К дню 4"
+      }
+    }
+  }
+]

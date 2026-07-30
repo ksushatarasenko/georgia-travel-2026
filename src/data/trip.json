@@ -1,0 +1,22 @@
+[
+  {
+    "id": "trip-demo-1",
+    "title": "Тестовая поездка A",
+    "startDate": "2026-08-01",
+    "endDate": "2026-08-05",
+    "origin": "Город A",
+    "destination": "Город B",
+    "travelers": ["Путешественник 1", "Путешественник 2"],
+    "status": "draft"
+  },
+  {
+    "id": "trip-demo-2",
+    "title": "Тестовая поездка B",
+    "startDate": "2026-09-10",
+    "endDate": "2026-09-12",
+    "origin": "Город C",
+    "destination": "Город D",
+    "travelers": ["Путешественник 3"],
+    "status": "planned"
+  }
+]

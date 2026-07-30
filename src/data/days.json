@@ -1,0 +1,29 @@
+[
+  {
+    "id": "day-demo-1",
+    "tripId": "trip-demo-1",
+    "date": "2026-08-01",
+    "title": "Тестовый день 1",
+    "summary": "Фиктивное описание первого дня.",
+    "placeIds": ["place-demo-1"],
+    "transportIds": ["transport-demo-1"]
+  },
+  {
+    "id": "day-demo-2",
+    "tripId": "trip-demo-1",
+    "date": "2026-08-02",
+    "title": "Тестовый день 2",
+    "summary": "Фиктивное описание второго дня.",
+    "placeIds": ["place-demo-2"],
+    "transportIds": []
+  },
+  {
+    "id": "day-demo-3",
+    "tripId": "trip-demo-2",
+    "date": "2026-09-10",
+    "title": "Тестовый день 3",
+    "summary": "Фиктивное описание третьего дня.",
+    "placeIds": [],
+    "transportIds": ["transport-demo-2"]
+  }
+]
