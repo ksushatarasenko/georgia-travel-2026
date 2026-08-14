@@ -1,4 +1,5 @@
 import type { CSSProperties, MouseEvent, ReactNode } from 'react'
+import { assetUrl } from '../../lib/assetUrl'
 import { useLightbox } from './useLightbox'
 import type { LightboxImageItem } from './types'
 
@@ -34,7 +35,11 @@ export function LightboxImage({
   onImageError,
 }: LightboxImageProps) {
   const { openLightbox } = useLightbox()
-  const gallery = images && images.length > 0 ? images : [{ src, alt }]
+  const resolvedSrc = assetUrl(src)
+  const gallery =
+    images && images.length > 0
+      ? images.map((image) => ({ ...image, src: assetUrl(image.src) }))
+      : [{ src: resolvedSrc, alt }]
 
   const handleOpen = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault()
@@ -54,7 +59,7 @@ export function LightboxImage({
       style={style}
     >
       <img
-        src={src}
+        src={resolvedSrc}
         alt={alt}
         loading={loading}
         decoding="async"

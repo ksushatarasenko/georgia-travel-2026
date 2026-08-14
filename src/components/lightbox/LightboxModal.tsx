@@ -17,6 +17,7 @@ import {
   X,
 } from 'lucide-react'
 import type { LightboxImageItem } from './types'
+import { assetUrl } from '../../lib/assetUrl'
 
 const MIN_ZOOM = 1
 const MAX_ZOOM = 4
@@ -355,7 +356,7 @@ export function LightboxModal({
           onPointerCancel={onPointerUp}
         >
           <img
-            src={current.src}
+            src={assetUrl(current.src)}
             alt={current.alt}
             draggable={false}
             className="max-h-[min(82vh,900px)] max-w-full select-none object-contain"

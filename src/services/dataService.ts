@@ -10,6 +10,7 @@ import tripData from '../data/trip.json'
 import tripDaysData from '../data/tripDays.json'
 import tripEventsData from '../data/tripEvents.json'
 import { buildAttractionCatalog } from '../lib/attractionCatalog'
+import { withAssetBase } from '../lib/assetUrl'
 import { buildRoutePlaceCatalog } from '../lib/routePlaces'
 import type {
   Beach,
@@ -33,17 +34,17 @@ export interface DataCollection {
   records: readonly unknown[]
 }
 
-const trips = tripData as Trip[]
-const days = daysData as Day[]
-const places = placesData as Place[]
-const transport = transportData as Transport[]
-const restaurants = restaurantsData as Restaurant[]
-const beaches = beachesData as Beach[]
-const documents = documentsData as Document[]
-const budget = budgetData as BudgetItem[]
-const tips = tipsData as Tip[]
-const tripDays = tripDaysData as TripDay[]
-const tripEvents = tripEventsData as TripEvent[]
+const trips = withAssetBase(tripData) as Trip[]
+const days = withAssetBase(daysData) as Day[]
+const places = withAssetBase(placesData) as Place[]
+const transport = withAssetBase(transportData) as Transport[]
+const restaurants = withAssetBase(restaurantsData) as Restaurant[]
+const beaches = withAssetBase(beachesData) as Beach[]
+const documents = withAssetBase(documentsData) as Document[]
+const budget = withAssetBase(budgetData) as BudgetItem[]
+const tips = withAssetBase(tipsData) as Tip[]
+const tripDays = withAssetBase(tripDaysData) as TripDay[]
+const tripEvents = withAssetBase(tripEventsData) as TripEvent[]
 const attractionCatalog = buildAttractionCatalog(tripEvents)
 const routePlaces = buildRoutePlaceCatalog(tripEvents)
 
