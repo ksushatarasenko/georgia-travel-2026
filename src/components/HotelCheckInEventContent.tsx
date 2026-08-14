@@ -88,7 +88,18 @@ export function HotelCheckInEventContent({
                   {item.label}
                 </p>
                 <p className="mt-2 font-semibold leading-6 text-stone-800">
-                  {item.value}
+                  {item.value.startsWith('http') ? (
+                    <a
+                      href={item.value}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-emerald-800 underline decoration-emerald-200 underline-offset-2 hover:text-emerald-950"
+                    >
+                      Открыть в Google Maps
+                    </a>
+                  ) : (
+                    item.value
+                  )}
                 </p>
               </article>
             ))}

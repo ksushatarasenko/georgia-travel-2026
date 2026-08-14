@@ -17,11 +17,10 @@ const filters: { value: CatalogFilter; label: string; icon?: string }[] = [
   })),
 ]
 
-const catalog = dataService.getRoutePlaces()
-
 export function AttractionsPage() {
   const [activeFilter, setActiveFilter] = useState<CatalogFilter>('all')
   const [searchQuery, setSearchQuery] = useState('')
+  const catalog = dataService.getRoutePlaces()
 
   const visiblePlaces = useMemo(() => {
     const normalizedQuery = searchQuery.trim().toLocaleLowerCase('ru-RU')
@@ -41,7 +40,7 @@ export function AttractionsPage() {
 
       return matchesCategory && matchesSearch
     })
-  }, [activeFilter, searchQuery])
+  }, [activeFilter, catalog, searchQuery])
 
   return (
     <main className="min-h-screen bg-[#f7f8f4]">

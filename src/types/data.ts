@@ -85,7 +85,7 @@ export interface FlightEventDetails {
   }
   checkIn: string
   documents: FlightDocumentAttachment[]
-  cabinBag: {
+  cabinBag?: {
     dimensions: string
     imagePath: string
     imageAvailable: boolean
@@ -93,13 +93,37 @@ export interface FlightEventDetails {
   packingLists: PassengerPackingList[]
   cabinBagReminders: string[]
   checklist: FlightChecklistItem[]
-  airportTransfer: {
+  airportTransfer?: {
     method: string
     duration: string
     cost: string
     callTime: string
   }
+  airportGuide?: FlightAirportGuide
   usefulTips: string[]
+}
+
+export interface FlightAirportStep {
+  time: string
+  title: string
+  signEn: string
+  signPl: string
+  body: string
+  alert?: string
+}
+
+export interface FlightAirportCheck {
+  number: string
+  en: string
+  pl: string
+  checks: string
+}
+
+export interface FlightAirportGuide {
+  title: string
+  subtitle: string
+  steps: FlightAirportStep[]
+  checks: FlightAirportCheck[]
 }
 
 export interface ArrivalRequiredDocument {
@@ -124,15 +148,41 @@ export interface ArrivalEventDetails {
     icon: string
   }[]
   checklist: FlightChecklistItem[]
-  requiredDocuments: ArrivalRequiredDocument[]
-  nextActions: {
+  requiredDocuments?: ArrivalRequiredDocument[]
+  nextActions?: {
     id: string
     title: string
     icon: string
     description: string
     eventId: string
   }[]
+  simPurchase?: ArrivalSimPurchase
   usefulTips: string[]
+}
+
+export interface ArrivalSimPurchase {
+  operator: string
+  where: string
+  askFor: string
+  recommended: {
+    title: string
+    data: string
+    calls: string
+    price: string
+    validity: string
+    note: string
+  }
+  alternatives: {
+    title: string
+    detail: string
+  }[]
+  avoid: string
+  steps: string[]
+  phrases: {
+    original: string
+    translation: string
+  }[]
+  tips: string[]
 }
 
 export interface AtmEventDetails {

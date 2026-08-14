@@ -10,17 +10,33 @@ export interface DataCollection {
   records: readonly unknown[]
 }
 
-const tripDays = withAssetBase(tripDaysData) as TripDay[]
-const tripEvents = withAssetBase(tripEventsData) as TripEvent[]
-const routePlaces = buildRoutePlaceCatalog(tripEvents)
-
 export const dataService = {
-  getTripDays: (): readonly TripDay[] => tripDays,
-  getTripEvents: (): readonly TripEvent[] => tripEvents,
-  getRoutePlaces: (): readonly RoutePlaceCard[] => routePlaces,
+  getTripDays: (): readonly TripDay[] =>
+    withAssetBase(tripDaysData) as TripDay[],
+  getTripEvents: (): readonly TripEvent[] =>
+    withAssetBase(tripEventsData) as TripEvent[],
+  getRoutePlaces: (): readonly RoutePlaceCard[] =>
+    buildRoutePlaceCatalog(dataService.getTripEvents() as TripEvent[]),
 
   getCollections: (): DataCollection[] => [
-    { fileName: 'tripDays.json', label: 'Дни поездки', records: tripDays },
-    { fileName: 'tripEvents.json', label: 'События', records: tripEvents },
+    {
+      fileName: 'tripDays.json',
+      label: 'Дни поездки',
+      records: dataService.getTripDays(),
+    },
+    {
+      fileName: 'tripEvents.json',
+      label: 'События',
+      records: dataService.getTripEvents(),
+    },
   ],
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept('../data/tripEvents.json', () => {
+    import.meta.hot?.invalidate()
+  })
+  import.meta.hot.accept('../data/tripDays.json', () => {
+    import.meta.hot?.invalidate()
+  })
 }

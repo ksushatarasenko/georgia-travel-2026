@@ -7,7 +7,6 @@ import {
   CarTaxiFront,
   Check,
   Coins,
-  ExternalLink,
   FileText,
   Image as ImageIcon,
   Lightbulb,
@@ -19,6 +18,8 @@ import {
 } from 'lucide-react'
 import { useEffect, useState, type ReactNode } from 'react'
 import type { FlightEventDetails } from '../types/data'
+import { AirportGuide } from './AirportGuide'
+import { DocumentLinkCard } from './DocumentLinkCard'
 import { LightboxImage, useLightbox } from './lightbox'
 
 const checklistStorageKey =
@@ -28,6 +29,7 @@ const packingStorageKey =
 
 interface FlightEventContentProps {
   details: FlightEventDetails
+  tips?: string[]
 }
 
 interface FlightSectionProps {
@@ -60,7 +62,11 @@ function formatFlightDate(date: string) {
   }).format(new Date(`${date}T12:00:00`))
 }
 
-export function FlightEventContent({ details }: FlightEventContentProps) {
+export function FlightEventContent({
+  details,
+  tips,
+}: FlightEventContentProps) {
+  const visibleTips = tips && tips.length > 0 ? tips : details.usefulTips
   const { openLightbox } = useLightbox()
   const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>(
     () => {
@@ -187,57 +193,27 @@ export function FlightEventContent({ details }: FlightEventContentProps) {
         </FlightSection>
       </div>
 
-      <FlightSection
-        icon={<FileText size={22} aria-hidden="true" />}
-        title="Документы"
-      >
-        <div className="space-y-3">
-          {details.documents.map((document) => (
-            <article
-              key={document.id}
-              className="rounded-2xl border border-stone-200 bg-stone-50 p-4"
-            >
-              <div className="flex items-start gap-3">
-                <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-white text-lg shadow-sm">
-                  {document.icon}
-                </span>
-                <div className="min-w-0 flex-1">
-                  <h3 className="font-semibold leading-6 text-stone-900">
-                    {document.title}
-                  </h3>
-                  {!document.available && (
-                    <p className="mt-1 text-xs text-stone-400">
-                      Документ пока не добавлен
-                    </p>
-                  )}
-                </div>
-              </div>
+      <div className="lg:col-span-2">
+        <FlightSection
+          icon={<FileText size={22} aria-hidden="true" />}
+          title="Документы"
+        >
+          <div className="grid gap-3 sm:grid-cols-2">
+            {details.documents.map((document) => (
+              <DocumentLinkCard
+                key={document.id}
+                title={document.title}
+                icon={document.icon}
+                filePath={document.filePath}
+                available={document.available}
+              />
+            ))}
+          </div>
+        </FlightSection>
+      </div>
 
-              {document.available ? (
-                <a
-                  href={document.filePath}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-emerald-800 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-900"
-                >
-                  Открыть
-                  <ExternalLink size={15} aria-hidden="true" />
-                </a>
-              ) : (
-                <button
-                  type="button"
-                  disabled
-                  className="mt-4 inline-flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-full bg-stone-200 px-4 py-2.5 text-sm font-semibold text-stone-400"
-                >
-                  Открыть
-                  <ExternalLink size={15} aria-hidden="true" />
-                </button>
-              )}
-            </article>
-          ))}
-        </div>
-      </FlightSection>
-
+      {details.cabinBag && (
+      <div className="lg:col-span-2">
       <FlightSection
         icon={<Luggage size={22} aria-hidden="true" />}
         title="Ручная кладь"
@@ -266,7 +242,7 @@ export function FlightEventContent({ details }: FlightEventContentProps) {
             type="button"
             disabled={!details.cabinBag.imageAvailable}
             onClick={() => {
-              if (!details.cabinBag.imageAvailable) return
+              if (!details.cabinBag?.imageAvailable) return
               openLightbox({
                 images: [
                   {
@@ -291,6 +267,8 @@ export function FlightEventContent({ details }: FlightEventContentProps) {
           )}
         </div>
       </FlightSection>
+      </div>
+      )}
 
       <div className="lg:col-span-2">
         <FlightSection
@@ -374,24 +352,26 @@ export function FlightEventContent({ details }: FlightEventContentProps) {
           </div>
 
           <aside className="mt-6 rounded-[1.5rem] bg-stone-950 p-5 text-white sm:p-7">
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-emerald-300">
-                  Ручная кладь
-                </p>
-                <p className="mt-2 text-2xl font-semibold tracking-[-0.035em]">
-                  {details.cabinBag.dimensions}
-                </p>
+            {details.cabinBag && (
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.15em] text-emerald-300">
+                    Ручная кладь
+                  </p>
+                  <p className="mt-2 text-2xl font-semibold tracking-[-0.035em]">
+                    {details.cabinBag.dimensions}
+                  </p>
+                </div>
+                <Luggage
+                  size={34}
+                  className="text-emerald-300"
+                  strokeWidth={1.6}
+                  aria-hidden="true"
+                />
               </div>
-              <Luggage
-                size={34}
-                className="text-emerald-300"
-                strokeWidth={1.6}
-                aria-hidden="true"
-              />
-            </div>
+            )}
 
-            <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+            <ul className={`grid gap-3 sm:grid-cols-2 ${details.cabinBag ? 'mt-6' : ''}`}>
               {details.cabinBagReminders.map((reminder) => (
                 <li
                   key={reminder}
@@ -473,6 +453,8 @@ export function FlightEventContent({ details }: FlightEventContentProps) {
         </FlightSection>
       </div>
 
+      {details.airportTransfer && (
+      <div className="lg:col-span-2">
       <FlightSection
         icon={<CarTaxiFront size={22} aria-hidden="true" />}
         title="Дорога в аэропорт"
@@ -522,23 +504,33 @@ export function FlightEventContent({ details }: FlightEventContentProps) {
           ))}
         </dl>
       </FlightSection>
+      </div>
+      )}
 
-      <FlightSection
-        icon={<Lightbulb size={22} aria-hidden="true" />}
-        title="Полезные советы"
-      >
-        <ul className="space-y-3">
-          {details.usefulTips.map((tip) => (
-            <li
-              key={tip}
-              className="flex gap-3 rounded-2xl bg-emerald-50/60 p-4 text-sm leading-6 text-stone-700"
-            >
-              <span className="mt-2 size-1.5 shrink-0 rounded-full bg-emerald-600" />
-              {tip}
-            </li>
-          ))}
-        </ul>
-      </FlightSection>
+      {details.airportGuide ? (
+        <div className="lg:col-span-2">
+          <AirportGuide guide={details.airportGuide} />
+        </div>
+      ) : (
+        <div className="lg:col-span-2">
+        <FlightSection
+          icon={<Lightbulb size={22} aria-hidden="true" />}
+          title="Полезные советы"
+        >
+          <ul className="space-y-3">
+            {visibleTips.map((tip, index) => (
+              <li
+                key={`${index}-${tip}`}
+                className="flex gap-3 rounded-2xl bg-emerald-50/60 p-4 text-sm leading-6 text-stone-700"
+              >
+                <span className="mt-2 size-1.5 shrink-0 rounded-full bg-emerald-600" />
+                {tip}
+              </li>
+            ))}
+          </ul>
+        </FlightSection>
+        </div>
+      )}
     </div>
   )
 }

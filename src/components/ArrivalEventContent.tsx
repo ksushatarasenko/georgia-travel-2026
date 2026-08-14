@@ -1,19 +1,16 @@
 import {
   ArrowDown,
-  ArrowRight,
   BadgeCheck,
   CalendarDays,
   Check,
   Clock3,
-  ExternalLink,
-  FileText,
   Lightbulb,
   Luggage,
   MapPin,
   PlaneLanding,
+  Smartphone,
 } from 'lucide-react'
 import { useEffect, useState, type ReactNode } from 'react'
-import { Link } from 'react-router-dom'
 import type { ArrivalEventDetails } from '../types/data'
 
 const arrivalChecklistStorageKey =
@@ -222,93 +219,129 @@ export function ArrivalEventContent({ details }: ArrivalEventContentProps) {
         </ArrivalSection>
       </div>
 
-      <ArrivalSection
-        icon={<FileText size={22} aria-hidden="true" />}
-        title="Что понадобится"
-      >
-        <div className="space-y-3">
-          {details.requiredDocuments.map((document) => (
-            <article
-              key={document.id}
-              className="rounded-2xl border border-stone-200 bg-stone-50 p-4"
-            >
-              <div className="flex items-start gap-3">
-                <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-white text-lg shadow-sm">
-                  {document.icon}
-                </span>
-                <div className="min-w-0 flex-1">
-                  <h3 className="font-semibold text-stone-900">
-                    {document.title}
-                  </h3>
-                  {!document.available && (
-                    <p className="mt-1 text-xs text-stone-400">
-                      Документ пока не добавлен
-                    </p>
-                  )}
-                </div>
-              </div>
-              {document.available && document.filePath ? (
-                <a
-                  href={document.filePath}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-emerald-800 px-4 py-2.5 text-sm font-semibold text-white"
-                >
-                  Открыть
-                  <ExternalLink size={15} aria-hidden="true" />
-                </a>
-              ) : (
-                <button
-                  type="button"
-                  disabled
-                  className="mt-4 inline-flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-full bg-stone-200 px-4 py-2.5 text-sm font-semibold text-stone-400"
-                >
-                  Открыть
-                  <ExternalLink size={15} aria-hidden="true" />
-                </button>
-              )}
-            </article>
-          ))}
-        </div>
-      </ArrivalSection>
+      {details.simPurchase && (
+        <div className="lg:col-span-2">
+          <ArrivalSection
+            icon={<Smartphone size={22} aria-hidden="true" />}
+            title={`Купить SIM-карту — ${details.simPurchase.operator}`}
+          >
+            <p className="text-sm leading-6 text-stone-600">
+              {details.simPurchase.where}
+            </p>
+            <p className="mt-3 rounded-2xl bg-emerald-50 px-4 py-3 text-sm font-medium leading-6 text-emerald-950">
+              Скажите: «{details.simPurchase.askFor}»
+            </p>
 
-      <ArrivalSection
-        icon={<ArrowRight size={22} aria-hidden="true" />}
-        title="Следующие действия"
-      >
-        <div className="space-y-3">
-          {details.nextActions.map((action, index) => (
-            <div key={action.id}>
-              <Link
-                to={`/trip/event/${action.eventId}`}
-                className="group flex items-center gap-4 rounded-2xl border border-stone-200 bg-stone-50 p-4 transition hover:border-emerald-200 hover:bg-emerald-50/60 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700"
-              >
-                <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-white text-xl shadow-sm">
-                  {action.icon}
-                </span>
-                <span className="min-w-0 flex-1">
-                  <span className="block font-semibold text-stone-900">
-                    {action.title}
-                  </span>
-                  <span className="mt-1 block text-sm leading-5 text-stone-500">
-                    {action.description}
-                  </span>
-                </span>
-                <ArrowRight
-                  size={18}
-                  className="shrink-0 text-stone-300 transition group-hover:translate-x-1 group-hover:text-emerald-700"
-                  aria-hidden="true"
-                />
-              </Link>
-              {index < details.nextActions.length - 1 && (
-                <div className="flex h-7 items-center justify-center text-stone-300">
-                  <ArrowDown size={16} aria-hidden="true" />
-                </div>
-              )}
+            <div className="mt-5 rounded-[1.5rem] bg-stone-950 p-5 text-white sm:p-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-emerald-300">
+                Что просить
+              </p>
+              <h3 className="mt-2 text-2xl font-semibold tracking-[-0.03em]">
+                {details.simPurchase.recommended.title}
+              </h3>
+              <dl className="mt-5 grid gap-3 sm:grid-cols-2">
+                {[
+                  {
+                    label: 'Интернет',
+                    value: details.simPurchase.recommended.data,
+                  },
+                  {
+                    label: 'Звонки',
+                    value: details.simPurchase.recommended.calls,
+                  },
+                  {
+                    label: 'Цена',
+                    value: details.simPurchase.recommended.price,
+                  },
+                  {
+                    label: 'Срок',
+                    value: details.simPurchase.recommended.validity,
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.label}
+                    className="rounded-2xl bg-white/10 p-4"
+                  >
+                    <dt className="text-xs font-semibold uppercase tracking-[0.12em] text-emerald-300">
+                      {item.label}
+                    </dt>
+                    <dd className="mt-1 text-sm font-semibold">{item.value}</dd>
+                  </div>
+                ))}
+              </dl>
+              <p className="mt-4 text-sm leading-6 text-stone-300">
+                {details.simPurchase.recommended.note}
+              </p>
             </div>
-          ))}
+
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              {details.simPurchase.alternatives.map((item) => (
+                <article
+                  key={item.title}
+                  className="rounded-2xl border border-stone-200 bg-stone-50 p-4"
+                >
+                  <h4 className="font-semibold text-stone-950">{item.title}</h4>
+                  <p className="mt-1 text-sm leading-6 text-stone-600">
+                    {item.detail}
+                  </p>
+                </article>
+              ))}
+            </div>
+
+            <p className="mt-4 rounded-2xl bg-amber-50 px-4 py-3 text-sm font-medium leading-6 text-amber-950">
+              {details.simPurchase.avoid}
+            </p>
+
+            <h3 className="mt-7 text-base font-semibold text-stone-950">
+              Как купить
+            </h3>
+            <ol className="mt-3 space-y-2">
+              {details.simPurchase.steps.map((step, index) => (
+                <li
+                  key={step}
+                  className="flex gap-3 rounded-2xl border border-stone-200 bg-stone-50 p-4 text-sm leading-6 text-stone-700"
+                >
+                  <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-emerald-800 text-xs font-semibold text-white">
+                    {index + 1}
+                  </span>
+                  {step}
+                </li>
+              ))}
+            </ol>
+
+            <h3 className="mt-7 text-base font-semibold text-stone-950">
+              Фразы на стойке
+            </h3>
+            <div className="mt-3 grid gap-3 sm:grid-cols-2">
+              {details.simPurchase.phrases.map((phrase) => (
+                <article
+                  key={phrase.original}
+                  className="rounded-2xl bg-stone-950 p-4 text-white"
+                >
+                  <p className="text-sm font-semibold leading-6">
+                    {phrase.original}
+                  </p>
+                  <p className="mt-2 border-t border-white/10 pt-2 text-sm leading-6 text-stone-300">
+                    {phrase.translation}
+                  </p>
+                </article>
+              ))}
+            </div>
+
+            <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+              {details.simPurchase.tips.map((tip) => (
+                <li
+                  key={tip}
+                  className="flex gap-3 rounded-2xl bg-emerald-50/60 p-4 text-sm leading-6 text-stone-700"
+                >
+                  <span className="mt-2 size-1.5 shrink-0 rounded-full bg-emerald-600" />
+                  {tip}
+                </li>
+              ))}
+            </ul>
+          </ArrivalSection>
         </div>
-      </ArrivalSection>
+      )}
 
       <div className="lg:col-span-2">
         <ArrivalSection

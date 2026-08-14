@@ -4,9 +4,6 @@ import { Breadcrumbs } from '../components/Breadcrumbs'
 import { dataService } from '../services/dataService'
 import type { TripEvent } from '../types/data'
 
-const tripDays = dataService.getTripDays()
-const tripEvents = dataService.getTripEvents()
-
 function parseDate(date: string) {
   return new Date(`${date}T12:00:00`)
 }
@@ -47,6 +44,8 @@ function formatEventCount(count: number) {
 
 export function TripDayPage() {
   const { dayId } = useParams()
+  const tripDays = dataService.getTripDays()
+  const tripEvents = dataService.getTripEvents()
   const day = tripDays.find((item) => item.id === dayId)
 
   if (!day) {

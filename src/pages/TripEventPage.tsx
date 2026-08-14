@@ -35,9 +35,6 @@ import { dataService } from '../services/dataService'
 import type { TripEvent, TripEventCategory } from '../types/data'
 import { TripEventPlaceholderPage } from './TripEventPlaceholderPage'
 
-const tripDays = dataService.getTripDays()
-const tripEvents = dataService.getTripEvents()
-
 const categoryLabels: Record<TripEventCategory, string> = {
   flight: 'Перелёт',
   arrival: 'Прибытие',
@@ -110,6 +107,8 @@ export function TripEventPage() {
   const { eventId } = useParams()
   const [searchParams] = useSearchParams()
   const fromSights = searchParams.get('from') === 'sights'
+  const tripDays = dataService.getTripDays()
+  const tripEvents = dataService.getTripEvents()
   const event = tripEvents.find((item) => item.id === eventId)
   const day = event
     ? tripDays.find((item) => item.id === event.dayId)
@@ -237,7 +236,10 @@ export function TripEventPage() {
           )}
 
           {event.flightDetails ? (
-            <FlightEventContent details={event.flightDetails} />
+            <FlightEventContent
+              details={event.flightDetails}
+              tips={event.tips}
+            />
           ) : event.arrivalDetails ? (
             <ArrivalEventContent details={event.arrivalDetails} />
           ) : event.atmDetails ? (

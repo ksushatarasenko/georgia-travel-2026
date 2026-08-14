@@ -2,9 +2,9 @@ import { ArrowLeft, Database, FileJson } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { dataService } from '../services/dataService'
 
-const collections = dataService.getCollections()
-
 export function DeveloperPage() {
+  const collections = dataService.getCollections()
+
   return (
     <main className="min-h-screen bg-[#f7f8f4] px-5 py-6 sm:px-8 sm:py-10 lg:px-12">
       <div className="mx-auto max-w-6xl">

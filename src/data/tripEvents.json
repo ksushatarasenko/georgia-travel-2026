@@ -12,10 +12,10 @@
     "price": "Будет заполнено позже.",
     "gps": null,
     "tips": [
-      "Приехать заранее.",
-      "Держать паспорт под рукой.",
-      "После регистрации проверить номер выхода.",
-      "Проверить размер ручной клади."
+      "05:45 — в аэропорту. Сразу Access Control и Security, без очереди Wizz Air.",
+      "Security пройти до 06:45. После ленты сразу Non-Schengen / паспорт, не магазины.",
+      "На паспортном контроле: биометрический паспорт + карта CUKR.",
+      "07:30 у Gate. Посадка заканчивается в 07:45. Вылет 08:15."
     ],
     "notes": "Автоматическая регистрация куплена.",
     "references": {
@@ -58,36 +58,73 @@
           "id": "boarding-pass-oksana",
           "title": "Посадочный талон — Оксана",
           "icon": "🎫",
-          "filePath": "/documents/flight/boarding-pass-oksana.pdf",
-          "available": false
+          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQTu6__TofI2QKB25DFb_U0QATay58UfUxqXbejNbzuJfz4",
+          "available": true
         },
         {
           "id": "boarding-pass-marina",
           "title": "Посадочный талон — Марина",
           "icon": "🎫",
-          "filePath": "/documents/flight/boarding-pass-marina.pdf",
-          "available": false
+          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQSFLL19uNRfRZQlTL1xZ93SAcRIuJOUlKX3_jYs78tTVDU",
+          "available": true
         },
         {
           "id": "boarding-pass-kyrylo",
           "title": "Посадочный талон — Kyrylo",
           "icon": "🎫",
-          "filePath": "/documents/flight/boarding-pass-kyrylo.pdf",
+          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQSw4H-mThRzQZo8ggfpCQ6TATvkUwGOYJhnTrBdblefJT8",
+          "available": true
+        },
+        {
+          "id": "passport-oksana",
+          "title": "Паспорт — Оксана",
+          "icon": "📘",
+          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQSGBL0JsSmyTq5gzovXj0JtAfAM6HRFmrvTgMbu-KEnI8g",
+          "available": false
+        },
+        {
+          "id": "passport-marina",
+          "title": "Паспорт — Марина",
+          "icon": "📘",
+          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQT1OLhGe3BCQo8YF-5Px5jcAVVLPwkdpGJSgwMOb62H5Y8",
+          "available": false
+        },
+        {
+          "id": "passport-kyrylo",
+          "title": "Паспорт — Кирилл",
+          "icon": "📘",
+          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQSVYRa5EiDCTanIXVmczcbRAQQw8OwLMzFM4QpX08vJsHA",
+          "available": false
+        },
+        {
+          "id": "cukr-oksana",
+          "title": "Карта CUKR — Оксана",
+          "icon": "💳",
+          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQR9Av-ZNZDiQY20e38l1iFGASWXno7NB3ktTI7NL44kAV0",
+          "available": false
+        },
+        {
+          "id": "cukr-marina",
+          "title": "Карта CUKR — Марина",
+          "icon": "💳",
+          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQR0xPak4GxVS5P5U6Cv716hAfMVUd7oieQXGqZHa5klNxk",
+          "available": false
+        },
+        {
+          "id": "cukr-kyrylo",
+          "title": "Карта CUKR — Кирилл",
+          "icon": "💳",
+          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQQzFpbxofp3So6RtPG5ycmqAe7iKFv6mV5d9Bmg29su6Y8",
           "available": false
         },
         {
           "id": "flight-insurance",
           "title": "Страховка",
           "icon": "🛡️",
-          "filePath": "/documents/flight/insurance.pdf",
+          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQSNIoSxM3MnQID-_miPw5FRAaWhi-CD-elBrDXn61neTng",
           "available": false
         }
       ],
-      "cabinBag": {
-        "dimensions": "40 × 30 × 20 см",
-        "imagePath": "/images/airport/cabin-bag.png",
-        "imageAvailable": false
-      },
       "packingLists": [
         {
           "id": "kirill",
@@ -210,17 +247,100 @@
           "label": "Вызвать Bolt"
         }
       ],
-      "airportTransfer": {
-        "method": "Bolt",
-        "duration": "Будет заполнено позже.",
-        "cost": "Будет заполнено позже.",
-        "callTime": "Будет заполнено позже."
+      "airportGuide": {
+        "title": "Пошагово в аэропорту",
+        "subtitle": "Poznań Ławica · вылет 08:15 · Wizz Air → Kutaisi",
+        "steps": [
+          {
+            "time": "05:45",
+            "title": "Вход в аэропорт",
+            "signEn": "Airport Terminal / Departures",
+            "signPl": "Terminal / Hala Odlotów",
+            "body": "Заходите в здание. На табло ищите Departures / Odloty — это вылеты. Находите свой рейс: Wizz Air → Kutaisi. Gate может ещё быть пустым (— —): выход на посадку объявят позже."
+          },
+          {
+            "time": "сразу",
+            "title": "Регистрацию пропускаете",
+            "signEn": "Check-in",
+            "signPl": "Odprawa",
+            "body": "Стойки авиакомпаний вам не нужны: онлайн check-in уже есть, посадочный в телефоне, багаж не сдаёте. Не стоите в очереди Wizz Air. Сразу идёте к контролю доступа."
+          },
+          {
+            "time": "~05:50",
+            "title": "Контроль доступа",
+            "signEn": "Access Control",
+            "signPl": "Kontrola dostępu",
+            "body": "Это ещё не паспортный контроль. Здесь только проверяют, что у вас есть право войти в зону security. В начале очереди Departure Hall Terminal T2 подходите к автомату, открываете посадочный Wizz Air и показываете QR-код. Пик — проходите дальше."
+          },
+          {
+            "time": "до 06:45",
+            "title": "Контроль безопасности",
+            "signEn": "Security Check",
+            "signPl": "Kontrola bezpieczeństwa",
+            "body": "Здесь ленты, лотки и рамки. В лоток: верхняя одежда, головной убор, часы, ремень, телефон, ноутбук или планшет, ручная кладь. Вещи едут в сканер, вы проходите через рамку. Дополнительная проверка — это нормально. Пройти security нужно сразу, не позже 06:45."
+          },
+          {
+            "time": "после security",
+            "title": "Зона вылета и Duty Free",
+            "signEn": "Departure Area / Duty Free",
+            "signPl": "Hala Odlotów / Sklep wolnocłowy",
+            "body": "После ленты вы попадаете в магазины. Это ещё Польша, граница не пройдена. Duty Free ≠ паспортный контроль. Сразу смотрите табло: если рейс уже показывает Gate 7–11 / Non-Schengen — идите туда. Магазины и туалет — уже после паспорта, у Gate.",
+            "alert": "Не оставляйте паспортный контроль на последнюю минуту. Сначала граница, потом магазины."
+          },
+          {
+            "time": "сразу дальше",
+            "title": "Паспортный контроль Non-Schengen",
+            "signEn": "Passport Control / Border Control",
+            "signPl": "Kontrola paszportowa / Straż Graniczna",
+            "body": "Грузия вне Schengen, ваш рейс идёт через Gates 7–11. Перед входом в Non-Schengen — пограничная служба Польши. Сразу даёте биометрический паспорт и карту CUKR. Автоматические ворота ABC Gates — для граждан ЕС, на них не рассчитывайте."
+          },
+          {
+            "time": "07:30",
+            "title": "Выход на посадку",
+            "signEn": "Gate",
+            "signPl": "Bramka",
+            "body": "После паспорта вы в зоне вылета Non-Schengen, Gate 7–11. Находите свой выход на табло (Kutaisi, Wizz Air) и садитесь рядом. Здесь уже можно спокойно ждать, сходить в туалет или за водой."
+          },
+          {
+            "time": "до 07:45",
+            "title": "Посадка",
+            "signEn": "Boarding",
+            "signPl": "Wejście na pokład",
+            "body": "Посадка заканчивается в 07:45, вылет в 08:15. У сотрудника показываете посадочный и паспорт. Сканируют boarding pass — идёте к самолёту."
+          }
+        ],
+        "checks": [
+          {
+            "number": "1",
+            "en": "Access Control",
+            "pl": "Kontrola dostępu",
+            "checks": "Только посадочный талон / QR-код."
+          },
+          {
+            "number": "2",
+            "en": "Security Check",
+            "pl": "Kontrola bezpieczeństwa",
+            "checks": "Вас и вещи: лоток, лента, рамка."
+          },
+          {
+            "number": "3",
+            "en": "Passport Control",
+            "pl": "Kontrola paszportowa",
+            "checks": "Паспорт и карта CUKR. Это граница."
+          },
+          {
+            "number": "4",
+            "en": "Boarding",
+            "pl": "Wejście na pokład",
+            "checks": "Посадочный + паспорт у выхода на рейс."
+          }
+        ]
       },
       "usefulTips": [
-        "Приехать заранее.",
-        "Держать паспорт под рукой.",
-        "После регистрации проверить номер выхода.",
-        "Проверить размер ручной клади."
+        "05:45 — в аэропорту. Сразу Access Control и Security, без очереди Wizz Air.",
+        "Security пройти до 06:45. После ленты сразу Non-Schengen / паспорт, не магазины.",
+        "На паспортном контроле: биометрический паспорт + карта CUKR.",
+        "07:30 у Gate. Посадка заканчивается в 07:45. Вылет 08:15."
       ]
     }
   },
@@ -278,8 +398,8 @@
         },
         {
           "id": "cash-and-sim",
-          "title": "Банкомат + SIM-карта Magti",
-          "icon": "💳"
+          "title": "SIM-карта Magti",
+          "icon": "📱"
         },
         {
           "id": "bolt",
@@ -298,7 +418,7 @@
         },
         {
           "id": "cash",
-          "label": "Снять наличные"
+          "label": "Обменять 100 у.е."
         },
         {
           "id": "sim",
@@ -313,176 +433,66 @@
           "label": "Сообщить родным, что прилетели"
         }
       ],
-      "requiredDocuments": [
-        {
-          "id": "passport",
-          "title": "Паспорт",
-          "icon": "🛂",
-          "filePath": null,
-          "available": false
+      "simPurchase": {
+        "operator": "Magti",
+        "where": "Стойка Magti в зоне прилёта аэропорта Кутаиси, сразу после выхода из терминала. Работает, пока приземляются рейсы.",
+        "askFor": "50 GB internet and calls in Georgia, cheapest tourist package",
+        "recommended": {
+          "title": "Туристический пакет Magti",
+          "data": "≈50 ГБ или unlimited",
+          "calls": "Звонки внутри Грузии",
+          "price": "ориентир 42 ₾",
+          "validity": "14 дней",
+          "note": "Отдельного пакета «ровно 50 ГБ» на стойке может не быть. Просите максимум интернета и звонки по Грузии за меньшие деньги. В Кутаиси часто дают 14 дней unlimited ≈ 42 ₾ — SIM уже включена, это больше 50 ГБ и как раз на вашу поездку."
         },
-        {
-          "id": "boarding-pass",
-          "title": "Посадочный талон",
-          "icon": "🎫",
-          "filePath": null,
-          "available": false
-        },
-        {
-          "id": "insurance",
-          "title": "Страховка",
-          "icon": "🩺",
-          "filePath": null,
-          "available": false
-        },
-        {
-          "id": "hotel-address",
-          "title": "Адрес отеля",
-          "icon": "🏨",
-          "filePath": null,
-          "available": false
-        }
-      ],
-      "nextActions": [
-        {
-          "id": "atm",
-          "title": "Банкомат",
-          "icon": "💳",
-          "description": "Снять наличные в лари.",
-          "eventId": "event-day-01-atm"
-        },
-        {
-          "id": "magti",
-          "title": "Magti",
-          "icon": "📱",
-          "description": "Купить SIM-карту и подключить интернет.",
-          "eventId": "event-day-01-sim"
-        },
-        {
-          "id": "bolt",
-          "title": "Bolt",
-          "icon": "🚖",
-          "description": "Вызвать такси до отеля.",
-          "eventId": "event-day-01-bolt"
-        }
-      ],
+        "alternatives": [
+          {
+            "title": "14 дней unlimited ≈ 42 ₾",
+            "detail": "Лучший вариант на 10 дней: интернет без лимита, SIM в цене."
+          },
+          {
+            "title": "30 дней unlimited ≈ 60 ₾",
+            "detail": "Если 14-дневного нет. Иногда с безлимитными звонками по Грузии."
+          }
+        ],
+        "avoid": "Не берите Welcome 3 ГБ / 5 ГБ за 15–30 ₾ — интернета не хватит на Maps, Bolt и раздачу.",
+        "steps": [
+          "Найдите стойку Magti в зоне прилёта.",
+          "Дайте паспорт — без него SIM не оформят.",
+          "Скажите фразу ниже. Если предлагают 3 или 5 ГБ — откажитесь и попросите 50 GB или unlimited + local calls.",
+          "Оплатите картой или лари.",
+          "Вставьте SIM или активируйте eSIM на месте.",
+          "Сразу у стойки проверьте интернет, Google Maps и Bolt."
+        ],
+        "phrases": [
+          {
+            "original": "I'd like a Magti SIM with 50 GB internet and calls in Georgia.",
+            "translation": "Мне нужна SIM Magti с 50 ГБ интернета и звонками по Грузии."
+          },
+          {
+            "original": "The cheapest tourist package with a lot of data, please. Unlimited for 14 days is OK.",
+            "translation": "Самый выгодный туристический пакет с большим интернетом. Unlimited на 14 дней тоже подходит."
+          },
+          {
+            "original": "I don't need 3 GB. I need 50 GB or unlimited.",
+            "translation": "Мне не нужны 3 ГБ. Нужно 50 ГБ или безлимит."
+          },
+          {
+            "original": "Can you activate it now?",
+            "translation": "Можете активировать сейчас?"
+          }
+        ],
+        "tips": [
+          "Одной SIM хватит на семью, если раздать интернет с телефона.",
+          "Не выбрасывайте упаковку до конца поездки — на ней номер и PIN/PUK.",
+          "Если интернет не заработал — сразу попросите сотрудника помочь."
+        ]
+      },
       "usefulTips": [
         "Не выбрасывайте посадочный талон до выхода из аэропорта.",
         "Если возникнут вопросы — сотрудники аэропорта обычно говорят по-английски.",
         "Подключите интернет как можно раньше.",
         "Перед вызовом Bolt убедитесь, что определилось ваше местоположение."
-      ]
-    }
-  },
-  {
-    "id": "event-day-01-atm",
-    "dayId": "trip-day-01",
-    "isPlaceholder": false,
-    "title": "Банкомат",
-    "category": "activity",
-    "icon": "💳",
-    "time": "—",
-    "duration": "",
-    "description": "После выхода из терминала необходимо снять небольшую сумму наличных в грузинских лари (GEL) для первых расходов.",
-    "image": "/images/airport/bankomats.jpg",
-    "price": "",
-    "gps": null,
-    "tips": [
-      "Не снимайте слишком большую сумму сразу.",
-      "Банкоматы находятся прямо в терминале аэропорта.",
-      "Если банкомат удерживает карту — сразу обращайтесь к сотрудникам банка.",
-      "Большинство магазинов и ресторанов в Грузии принимают банковские карты, поэтому крупную сумму наличных носить с собой не обязательно."
-    ],
-    "notes": "",
-    "references": {
-      "placeId": null,
-      "transportId": null,
-      "nearbyRestaurantIds": [],
-      "documentIds": [],
-      "tipIds": []
-    },
-    "atmDetails": {
-      "airport": "Kutaisi International Airport",
-      "banks": [
-        {
-          "id": "tbc",
-          "name": "TBC Bank",
-          "icon": "🏦",
-          "location": "В зоне прилета",
-          "hours": "Работает 24/7"
-        },
-        {
-          "id": "liberty",
-          "name": "Liberty Bank",
-          "icon": "🏦",
-          "location": "В зоне прилета",
-          "hours": "Работает 24/7"
-        }
-      ],
-      "supportedCards": [
-        {
-          "id": "visa",
-          "name": "Visa",
-          "icon": "💳",
-          "status": "Поддерживается"
-        },
-        {
-          "id": "mastercard",
-          "name": "Mastercard",
-          "icon": "💳",
-          "status": "Поддерживается"
-        }
-      ],
-      "cardNote": "Перед поездкой желательно убедиться, что на карте разрешены международные операции.",
-      "recommendedAmount": "300 GEL",
-      "recommendedUses": [
-        "Такси",
-        "Небольшие покупки",
-        "Кафе",
-        "Расходы, если где-то нельзя оплатить картой"
-      ],
-      "amountNote": "При необходимости позже можно снять еще наличные в городе.",
-      "dccAdvice": {
-        "warning": "Если банкомат предложит выполнить конвертацию (Dynamic Currency Conversion), ❌ отказаться.",
-        "choices": [
-          "Without conversion",
-          "Charge in GEL"
-        ],
-        "explanation": "Конвертацию должен выполнять ваш банк. Это часто позволяет получить более выгодный курс."
-      },
-      "checklist": [
-        {
-          "id": "atm-found",
-          "label": "Банкомат найден"
-        },
-        {
-          "id": "card-inserted",
-          "label": "Карта вставлена"
-        },
-        {
-          "id": "cash-withdrawn",
-          "label": "Сняты наличные"
-        },
-        {
-          "id": "cash-counted",
-          "label": "Деньги пересчитаны"
-        },
-        {
-          "id": "card-taken",
-          "label": "Карта забрана"
-        }
-      ],
-      "nextAction": {
-        "title": "SIM-карта Magti",
-        "icon": "📱",
-        "description": "Купить SIM-карту и подключить интернет.",
-        "eventId": "event-day-01-sim"
-      },
-      "usefulTips": [
-        "Не снимайте слишком большую сумму сразу.",
-        "Банкоматы находятся прямо в терминале аэропорта.",
-        "Если банкомат удерживает карту — сразу обращайтесь к сотрудникам банка.",
-        "Большинство магазинов и ресторанов в Грузии принимают банковские карты, поэтому крупную сумму наличных носить с собой не обязательно."
       ]
     }
   },
@@ -754,9 +764,9 @@
         }
       ],
       "nextAction": {
-        "title": "Заселение в отель",
+        "title": "Заселение в Apartment 9 32",
         "icon": "🏨",
-        "description": "После приезда зарегистрироваться в гостинице и получить ключи.",
+        "description": "9 Varlamishvili Street, 1 этаж. Заезд с 13:00.",
         "eventId": "event-day-01-check-in"
       },
       "usefulTips": [
@@ -772,24 +782,26 @@
     "id": "event-day-01-check-in",
     "dayId": "trip-day-01",
     "isPlaceholder": false,
-    "title": "Заселение в отель",
+    "title": "Заселение в Apartment 9 32",
     "category": "accommodation",
     "icon": "🏨",
-    "time": "—",
+    "time": "13:00",
     "duration": "",
-    "description": "Теперь осталось зарегистрироваться, получить ключ и начать отдых.",
+    "description": "Апартаменты на ул. Варламишвили, 9, 1 этаж. Заезд 25 августа 13:00–23:00, выезд 27 августа до 12:00.",
     "image": "/images/hotel/check-in.jpg",
-    "price": "",
-    "gps": null,
+    "price": "145,80 ₾ за 2 ночи",
+    "gps": {
+      "latitude": 42.273633,
+      "longitude": 42.704767
+    },
     "tips": [
-      "Проверьте номер сразу после заселения.",
-      "Подключитесь к Wi-Fi.",
-      "Уточните пароль от Wi-Fi, если его нет в номере.",
-      "Узнайте время завтрака.",
-      "Спросите, где находится ближайший супермаркет.",
-      "Сохраните визитку или адрес отеля в телефоне."
+      "В Bolt: 9 Varlamishvili Street, Kutaisi.",
+      "Бронь: 6501.191.661, PIN 0692, гость Maryna Tarasenko.",
+      "Завтрак не входит — продукты купите после заселения.",
+      "Wi-Fi бесплатный по всей территории.",
+      "Сохраните телефон хозяев: +995 514 20 67 67."
     ],
-    "notes": "",
+    "notes": "Подтверждение Booking.com 6501.191.661 · PIN 0692",
     "references": {
       "placeId": null,
       "transportId": null,
@@ -798,95 +810,133 @@
       "tipIds": []
     },
     "hotelCheckInDetails": {
-      "subtitle": "Добро пожаловать!",
+      "subtitle": "Apartment 9 32 · Кутаиси",
       "bookingInfo": [
         {
           "id": "hotel-name",
           "icon": "🏨",
-          "label": "Название отеля",
-          "value": "Будет заполнено позже"
+          "label": "Жильё",
+          "value": "Apartment 9 32"
         },
         {
           "id": "address",
           "icon": "📍",
           "label": "Адрес",
-          "value": "Будет заполнено позже"
+          "value": "9 Varlamishvili Street, 1 этаж, 6402 Кутаиси"
         },
         {
           "id": "dates",
           "icon": "📅",
-          "label": "Даты проживания",
-          "value": "25.08.2026 - 27.09.2026"
+          "label": "Даты",
+          "value": "25.08.2026 → 27.08.2026 · 2 ночи"
         },
         {
           "id": "guests",
           "icon": "👥",
           "label": "Гости",
-          "value": "Будет заполнено позже"
+          "value": "2 взрослых, 1 ребёнок (11 лет) · бронь на Maryna Tarasenko"
         },
         {
           "id": "phone",
           "icon": "☎",
           "label": "Телефон",
-          "value": "Будет заполнено позже"
+          "value": "+995 514 20 67 67"
         },
         {
           "id": "check-in-time",
           "icon": "🕒",
-          "label": "Время заселения",
-          "value": "Будет заполнено позже"
+          "label": "Заезд",
+          "value": "25 августа, 13:00–23:00"
+        },
+        {
+          "id": "check-out-time",
+          "icon": "🕛",
+          "label": "Выезд",
+          "value": "27 августа, 08:00–12:00"
+        },
+        {
+          "id": "confirmation",
+          "icon": "🔢",
+          "label": "Номер брони / PIN",
+          "value": "6501.191.661 · PIN 0692"
+        },
+        {
+          "id": "price",
+          "icon": "₾",
+          "label": "Стоимость",
+          "value": "145,80 ₾ (≈208 zł) за 3 гостей, 2 ночи. Оплата на месте в лари."
+        },
+        {
+          "id": "meals",
+          "icon": "🍳",
+          "label": "Питание",
+          "value": "Не входит. Есть кухня, холодильник, обеденный стол."
+        },
+        {
+          "id": "wifi",
+          "icon": "📶",
+          "label": "Wi-Fi",
+          "value": "Бесплатно по всей территории"
+        },
+        {
+          "id": "maps",
+          "icon": "🗺️",
+          "label": "Карта",
+          "value": "https://maps.google.com/?q=42.273633,42.704767"
         }
       ],
       "receptionDocuments": [
         {
           "id": "passport",
           "icon": "🛂",
-          "title": "Паспорт"
+          "title": "Паспорта",
+          "note": "2 взрослых и ребёнок 11 лет"
         },
         {
           "id": "booking",
           "icon": "📄",
-          "title": "Подтверждение бронирования"
+          "title": "Подтверждение Booking.com",
+          "note": "Номер 6501.191.661, PIN 0692"
         },
         {
           "id": "card",
           "icon": "💳",
-          "title": "Банковская карта",
-          "note": "Если потребуется депозит"
+          "title": "Карта или лари",
+          "note": "Полная сумма 145,80 ₾ оплачивается жилью в GEL"
         }
       ],
       "checkInSteps": [
-        "Подойти к стойке регистрации",
-        "Передать паспорт",
-        "Назвать фамилию",
-        "Получить ключ или карту",
-        "Уточнить номер комнаты",
-        "Подняться в номер"
+        "В Bolt укажите адрес: 9 Varlamishvili Street, Kutaisi.",
+        "Если у входа никого нет — позвоните +995 514 20 67 67.",
+        "Назовите бронь Maryna Tarasenko и номер 6501.191.661 (PIN 0692).",
+        "Покажите паспорта трёх гостей.",
+        "Получите ключ от апартаментов на 1 этаже.",
+        "Проверьте Wi-Fi, кондиционер, кухню и что всё на месте."
       ],
       "englishPhrases": [
         {
-          "original": "Hello!",
-          "translation": "Здравствуйте!"
+          "original": "Hello! We have a booking at Apartment 9 32.",
+          "translation": "Здравствуйте! У нас бронь в Apartment 9 32."
         },
         {
-          "original": "I have a reservation.",
-          "translation": "У меня есть бронирование."
+          "original": "The booking is under Maryna Tarasenko.",
+          "translation": "Бронь на имя Maryna Tarasenko."
         },
         {
-          "original": "My name is...",
-          "translation": "Меня зовут..."
+          "original": "Confirmation number 6501.191.661, PIN 0692.",
+          "translation": "Номер подтверждения 6501.191.661, PIN 0692."
         },
         {
-          "original": "Can I check in now?",
-          "translation": "Могу ли я сейчас заселиться?"
+          "original": "We are 2 adults and 1 child.",
+          "translation": "Нас двое взрослых и один ребёнок."
         },
         {
-          "original": "What time is breakfast?",
-          "translation": "Во сколько завтрак?"
+          "original": "What is the Wi-Fi password?",
+          "translation": "Какой пароль от Wi-Fi?"
         },
         {
-          "original": "Where is the elevator?",
-          "translation": "Где находится лифт?"
+          "original": "Where is the nearest supermarket?",
+          "translation": "Где ближайший супермаркет?"
         },
         {
           "original": "Thank you!",
@@ -895,12 +945,12 @@
       ],
       "checklist": [
         {
-          "id": "approach-reception",
-          "label": "Подойти к стойке регистрации"
+          "id": "call-if-needed",
+          "label": "Доехать на 9 Varlamishvili Street"
         },
         {
           "id": "show-passport",
-          "label": "Показать паспорт"
+          "label": "Показать паспорта и номер брони"
         },
         {
           "id": "receive-key",
@@ -908,30 +958,29 @@
         },
         {
           "id": "learn-room-number",
-          "label": "Узнать номер комнаты"
+          "label": "Зайти в апартаменты на 1 этаже"
         },
         {
           "id": "check-wifi",
-          "label": "Проверить Wi-Fi"
+          "label": "Подключить Wi-Fi"
         },
         {
           "id": "check-in-complete",
-          "label": "Заселиться"
+          "label": "Проверить кухню и кондиционер"
         }
       ],
       "nextAction": {
         "title": "Первый магазин",
         "icon": "🛒",
-        "description": "Купить воду, продукты и все необходимое после заселения.",
+        "description": "Завтрак не входит — купить воду и продукты.",
         "eventId": "event-day-01-groceries"
       },
       "usefulTips": [
-        "Проверьте номер сразу после заселения.",
-        "Подключитесь к Wi-Fi.",
-        "Уточните пароль от Wi-Fi, если его нет в номере.",
-        "Узнайте время завтрака.",
-        "Спросите, где находится ближайший супермаркет.",
-        "Сохраните визитку или адрес отеля в телефоне."
+        "Заезд с 13:00, не раньше. Прилёт в 13:50 — к жилью будете уже в окне заезда.",
+        "Завтрак не включён: есть своя кухня, стиральная машина, холодильник.",
+        "Wi-Fi бесплатный. Парковка на территории 2 ₾/день, без брони.",
+        "Сохраните в телефоне: +995 514 20 67 67 и адрес 9 Varlamishvili Street.",
+        "Бесплатная отмена уже недоступна — бронь на полную сумму 145,80 ₾."
       ]
     }
   },
@@ -1450,7 +1499,9 @@
           "rank": "🥇",
           "name": "Palaty",
           "subtitle": "Лучшее сочетание цены, качества и атмосферы.",
-          "location": "Центр Кутаиси",
+          "category": "restaurant",
+          "coverImage": "/images/day01/dinner/palaty.jpg",
+          "location": "2 Alexander Pushkin Street, Кутаиси (у Белого моста)",
           "walkingTime": "От площади Колхиды ≈ 3 минуты пешком",
           "reasons": [
             "Очень популярное место среди туристов и местных жителей.",
@@ -1460,16 +1511,24 @@
             "Хорошее обслуживание."
           ],
           "averageCheck": "35–55 GEL на человека",
-          "category": "restaurant",
           "averagePrice": "35–55 GEL на человека",
-          "familyFriendly": true
+          "familyFriendly": true,
+          "phone": "+995 431 24 33 80",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Palaty%20Restaurant%202%20Pushkin%20Street%20Kutaisi",
+          "organicMapsUrl": "https://omaps.app/map?v=1&ll=42.268912%2C42.702111&n=Palaty",
+          "gps": {
+            "latitude": 42.2689123,
+            "longitude": 42.7021112
+          }
         },
         {
           "id": "sisters",
           "rank": "🥈",
           "name": "Sisters",
           "subtitle": "Уютный семейный ресторан.",
-          "location": "Старый город",
+          "category": "restaurant",
+          "coverImage": "/images/day01/dinner/sisters.jpg",
+          "location": "35 Zakharia Paliashvili Street, Кутаиси",
           "walkingTime": "5–7 минут пешком",
           "reasons": [
             "Домашняя кухня.",
@@ -1477,16 +1536,18 @@
             "Отличные отзывы."
           ],
           "averageCheck": "30–45 GEL",
-          "category": "restaurant",
           "averagePrice": "30–45 GEL",
-          "familyFriendly": true
+          "familyFriendly": true,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sisters%20Restaurant%2035%20Paliashvili%20Street%20Kutaisi"
         },
         {
           "id": "el-depo",
           "rank": "🥉",
           "name": "El Depo",
           "subtitle": "Если хочется вкусно и недорого.",
-          "location": "Центр города",
+          "category": "restaurant",
+          "coverImage": "/images/day01/dinner/el-depo.jpg",
+          "location": "10 Ioseb Grishashvili Street, Кутаиси",
           "walkingTime": "Несколько минут пешком",
           "reasons": [
             "Демократичные цены.",
@@ -1494,9 +1555,10 @@
             "Популярное место у местных жителей."
           ],
           "averageCheck": "25–40 GEL",
-          "category": "restaurant",
           "averagePrice": "25–40 GEL",
-          "familyFriendly": true
+          "familyFriendly": true,
+          "phone": "+995 431 24 42 73",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=El%20Depo%2010%20Grishashvili%20Street%20Kutaisi"
         }
       ],
       "firstOrderDishes": [
@@ -13648,7 +13710,7 @@
     "price": "",
     "gps": null,
     "tips": [
-      "Документы и бронь Guest House Citrus держите в ручной сумке.",
+      "Документы и бронь Hotel Simpatia держите в ручной сумке.",
       "Зарядите телефон и power bank.",
       "TODO: уточнить точное время выселения в отеле Кутаиси."
     ],
@@ -13667,14 +13729,14 @@
     "icon": "🌅",
     "time": "07:30",
     "duration": "≈30 минут",
-    "description": "Спокойное утро в Кутаиси: дособираем вещи перед переездом в Guest House Citrus (Кобулети).",
+    "description": "Спокойное утро в Кутаиси: дособираем вещи перед переездом в Hotel Simpatia (Кобулети).",
     "morningDetails": {
       "morningPlan": [
         {
           "id": "wake",
           "time": "🕢 07:30",
           "title": "Подъём",
-          "description": "Без спешки: сегодня переезд в Guest House Citrus, а не ранний тур."
+          "description": "Без спешки: сегодня переезд в Hotel Simpatia, а не ранний тур."
         },
         {
           "id": "pack",
@@ -13684,7 +13746,7 @@
             "Зарядки",
             "Купальники",
             "Паспорта",
-            "Бронь Citrus (скрин/письмо)",
+            "Бронь Hotel Simpatia (скрин/письмо)",
             "Лекарства"
           ]
         },
@@ -13698,7 +13760,7 @@
           "id": "checkout",
           "time": "🏨 09:00",
           "title": "Выселение и выезд на автовокзал",
-          "description": "Цель дня: заселение в Guest House Citrus, ул. Тамар Мепе 136."
+          "description": "Цель дня: заселение в Hotel Simpatia, ул. Тамар Мепе, 122."
         }
       ],
       "packingItems": [
@@ -13741,16 +13803,16 @@
           "description": "Маршрутка Кутаиси → Кобулети ≈1,5–2 часа."
         },
         {
-          "id": "citrus",
+          "id": "simpatia",
           "icon": "🏨",
-          "title": "Citrus",
-          "description": "Заселение 27.08.2026, Tamar Mepe Street 136, Kobuleti."
+          "title": "Hotel Simpatia",
+          "description": "Заселение 27.08.2026, Tamar Mepe Street 122, Kobuleti."
         },
         {
           "id": "sea",
           "icon": "🌊",
           "title": "Море",
-          "description": "У Citrus — первая линия / private beach area (≈4 мин пешком до пляжа)."
+          "description": "У Hotel Simpatia — рядом с пляжем (≈1–2 минуты пешком до пляжа)."
         }
       ],
       "checklist": [
@@ -13768,13 +13830,13 @@
         },
         {
           "id": "booking",
-          "label": "Сохранить адрес: Tamar Mepe Street 136, Kobuleti"
+          "label": "Сохранить адрес: Tamar Mepe Street 122, Kobuleti"
         }
       ],
       "usefulTips": [
-        "Адрес на сегодня: ул. Тамар Мепе, 136, Кобулети (Tamar Mepe Street 136).",
+        "Адрес на сегодня: ул. Тамар Мепе, 122, Кобулети (Tamar Mepe Street 122).",
         "Билет на маршрутку удобнее покупать наличными.",
-        "Купальники сверху — после заселения можно сразу к морю у Citrus."
+        "Купальники сверху — после заселения можно сразу к морю у Hotel Simpatia."
       ],
       "nextAction": {
         "title": "Завтрак",
@@ -13791,7 +13853,7 @@
     "price": "",
     "gps": null,
     "tips": [
-      "Поешьте плотно — до обеда у Citrus ещё несколько часов в пути.",
+      "Поешьте плотно — до обеда у Hotel Simpatia ещё несколько часов в пути.",
       "Возьмите воду с собой.",
       "TODO: подтвердить, включён ли завтрак в отеле Кутаиси."
     ],
@@ -13810,10 +13872,10 @@
     "icon": "🍳",
     "time": "08:00",
     "duration": "≈1 час",
-    "description": "Последний завтрак в Кутаиси перед переездом в Guest House Citrus.",
+    "description": "Последний завтрак в Кутаиси перед переездом в Hotel Simpatia.",
     "breakfastDetails": {
       "title": "Завтрак",
-      "description": "Последний завтрак в Кутаиси. После него — выселение и дорога к Guest House Citrus (Тамар Мепе 136).",
+      "description": "Последний завтрак в Кутаиси. После него — выселение и дорога к Hotel Simpatia (Тамар Мепе, 122).",
       "schedule": [
         {
           "id": "t",
@@ -13874,9 +13936,9 @@
           "price": "TODO"
         },
         {
-          "id": "citrus-later",
-          "label": "Завтрак в Citrus (с 28.08)",
-          "price": "опционально ≈28 PLN / чел."
+          "id": "simpatia-later",
+          "label": "Завтрак в Hotel Simpatia (с 28.08)",
+          "price": "включён в бронь"
         }
       ],
       "checklist": [
@@ -13895,7 +13957,7 @@
       ],
       "usefulTips": [
         "Не пропускайте завтрак — до обеда в Кобулети далеко.",
-        "Вечером/завтра можно взять завтрак в Guest House Citrus (Завтрак опционально · ≈28 PLN / чел. (по бронированию))."
+        "С 28 августа завтрак в Hotel Simpatia уже включён в бронь."
       ],
       "nextAction": {
         "title": "Сбор вещей и выселение",
@@ -13914,7 +13976,7 @@
     "tips": [
       "Проверьте шкафы, сейф и ванную.",
       "Сдайте ключ-карту на ресепшене.",
-      "Адрес назначения: Tamar Mepe Street 136, Kobuleti."
+      "Адрес назначения: Tamar Mepe Street 122, Kobuleti."
     ],
     "notes": "",
     "references": {
@@ -13931,12 +13993,12 @@
     "icon": "🧳",
     "time": "09:00",
     "duration": "≈45 минут",
-    "description": "Освобождаем номер в Кутаиси и выезжаем к Guest House Citrus в Кобулети.",
+    "description": "Освобождаем номер в Кутаиси и выезжаем к Hotel Simpatia в Кобулети.",
     "guideDetails": {
       "introTitle": "Перед выездом",
       "intro": [
         "TODO: точное время check-out отеля в Кутаиси (название отеля пока не заполнено).",
-        "Сегодня цель — Guest House Citrus, ул. Тамар Мепе, 136, Кобулети (Tamar Mepe Street 136). Заселение с 12:00."
+        "Сегодня цель — Hotel Simpatia, ул. Тамар Мепе, 122, Кобулети (Tamar Mepe Street 122). Заселение с 14:00."
       ],
       "factsTitle": "Что проверить",
       "facts": [
@@ -13950,13 +14012,13 @@
           "id": "docs",
           "icon": "🛂",
           "label": "Документы",
-          "value": "Паспорта + бронь Citrus"
+          "value": "Паспорта + бронь 6107.512.599"
         },
         {
           "id": "dest",
           "icon": "📍",
           "label": "Куда едем",
-          "value": "Tamar Mepe Street 136, Kobuleti"
+          "value": "Tamar Mepe Street 122, Kobuleti"
         },
         {
           "id": "keys",
@@ -13999,7 +14061,7 @@
         },
         {
           "id": "t2",
-          "text": "Офлайн на телефоне: ул. Тамар Мепе, 136, Кобулети (Tamar Mepe Street 136)."
+          "text": "Офлайн на телефоне: ул. Тамар Мепе, 122, Кобулети (Tamar Mepe Street 122)."
         },
         {
           "id": "t3",
@@ -14040,7 +14102,7 @@
     "gps": null,
     "tips": [
       "В Bolt: Kutaisi Bus Station / Central Bus Station.",
-      "Дальше цель: Tamar Mepe Street 136, Kobuleti.",
+      "Дальше цель: Tamar Mepe Street 122, Kobuleti.",
       "С багажом надёжнее ехать, а не идти пешком."
     ],
     "notes": "",
@@ -14058,7 +14120,7 @@
     "icon": "🚖",
     "time": "09:45",
     "duration": "≈15 минут",
-    "description": "Доезжаем на Bolt до Central Bus Station (Кутаиси), оттуда маршрутки на Кобулети к Citrus.",
+    "description": "Доезжаем на Bolt до Central Bus Station (Кутаиси), оттуда маршрутки на Кобулети.",
     "guideDetails": {
       "introTitle": "Куда ехать",
       "intro": [
@@ -14175,7 +14237,7 @@
     "gps": null,
     "tips": [
       "Скажите кассиру «Кобулети».",
-      "Покажите водителю адрес: Tamar Mepe Street 136, Kobuleti.",
+      "Покажите водителю адрес: Tamar Mepe Street 122, Kobuleti.",
       "Уточните перрон отправления."
     ],
     "notes": "",
@@ -14259,7 +14321,7 @@
           "id": "find",
           "icon": "🚌",
           "title": "Найдите машину",
-          "text": "На лобовом стекле — город. Уточните высадку ближе к Tamar Mepe Street 136, Kobuleti (не в Батуми)."
+          "text": "На лобовом стекле — город. Уточните высадку ближе к Tamar Mepe Street 122, Kobuleti (не в Батуми)."
         },
         {
           "id": "seat",
@@ -14310,7 +14372,7 @@
     "price": "≈15–25 GEL",
     "gps": null,
     "tips": [
-      "Скажите водителю высадку: Tamar Mepe Street 136, Kobuleti.",
+      "Скажите водителю высадку: Tamar Mepe Street 122, Kobuleti.",
       "Держите документы при себе.",
       "Напомните про багаж в багажнике при выходе."
     ],
@@ -14329,12 +14391,12 @@
     "icon": "🚌",
     "time": "10:20",
     "duration": "≈1,5–2 часа",
-    "description": "Переезд Кутаиси → Кобулети к Guest House Citrus (Tamar Mepe Street 136, Kobuleti).",
+    "description": "Переезд Кутаиси → Кобулети к Hotel Simpatia (Tamar Mepe Street 122, Kobuleti).",
     "guideDetails": {
       "introTitle": "О переезде",
       "intro": [
         "Расстояние ≈90–110 км, в пути обычно 1,5–2 часа.",
-        "Конечная точка дня: Guest House Citrus, ул. Тамар Мепе, 136, Кобулети (Tamar Mepe Street 136)."
+        "Конечная точка дня: Hotel Simpatia, ул. Тамар Мепе, 122, Кобулети (Tamar Mepe Street 122)."
       ],
       "gallery": [
         {
@@ -14383,7 +14445,7 @@
           "id": "exit",
           "icon": "🚪",
           "label": "Высадка",
-          "value": "Tamar Mepe Street 136, Kobuleti",
+          "value": "Tamar Mepe Street 122, Kobuleti",
           "note": "Покажите адрес на карте водителю"
         },
         {
@@ -14405,7 +14467,7 @@
           "id": "tell",
           "icon": "🗣️",
           "title": "Скажите, куда вам",
-          "text": "В начале пути покажите водителю на карте: ул. Тамар Мепе, 136, Кобулети (Tamar Mepe Street 136)."
+          "text": "В начале пути покажите водителю на карте: ул. Тамар Мепе, 122, Кобулети (Tamar Mepe Street 122)."
         },
         {
           "id": "bag",
@@ -14417,7 +14479,7 @@
           "id": "stop",
           "icon": "🛑",
           "title": "Высадка",
-          "text": "Просите высадку у ул. Тамар Мепе / ближе к дому 136 (Guest House Citrus), а не «где-нибудь в центре»."
+          "text": "Просите высадку у ул. Тамар Мепе / ближе к дому 122 (Hotel Simpatia), а не «где-нибудь в центре»."
         }
       ],
       "placesTitle": "Что видно по дороге",
@@ -14465,13 +14527,13 @@
     "image": "/images/day03/walk-hotel/gallery-01.jpg",
     "price": "",
     "gps": {
-      "latitude": 41.8328,
-      "longitude": 41.7761
+      "latitude": 41.828367,
+      "longitude": 41.775667
     },
     "tips": [
-      "В Maps / Bolt вставьте: Tamar Mepe Street 136, Kobuleti.",
+      "В Maps / Bolt вставьте: Tamar Mepe Street 122, Kobuleti.",
       "С большим багажом — короткий Bolt до двери.",
-      "TODO: уточнить типичную точку высадки маршрутки у Тамар Мепе 136."
+      "TODO: уточнить типичную точку высадки маршрутки у Тамар Мепе, 122."
     ],
     "notes": "",
     "references": {
@@ -14488,12 +14550,12 @@
     "icon": "🚶",
     "time": "12:00",
     "duration": "≈10–20 минут",
-    "description": "От места высадки маршрутки до Guest House Citrus (Tamar Mepe Street 136, Kobuleti).",
+    "description": "От места высадки маршрутки до Hotel Simpatia (Tamar Mepe Street 122, Kobuleti).",
     "guideDetails": {
-      "introTitle": "Как дойти до Guest House Citrus",
+      "introTitle": "Как дойти до Hotel Simpatia",
       "intro": [
-        "Guest House Citrus стоит на первой линии: ул. Тамар Мепе, 136, Кобулети (Tamar Mepe Street 136).",
-        "Если водитель высадил на центральной улице/у вокзала — доберите Bolt до Тамар Мепе 136. Если высадил на набережной рядом — часто 5–15 минут пешком."
+        "Hotel Simpatia стоит на первой линии: ул. Тамар Мепе, 122, Кобулети (Tamar Mepe Street 122).",
+        "Если водитель высадил на центральной улице/у вокзала — доберите Bolt до Тамар Мепе, 122. Если высадил на набережной рядом — часто 5–15 минут пешком."
       ],
       "gallery": [
         {
@@ -14518,7 +14580,7 @@
           "id": "addr",
           "icon": "📍",
           "label": "Адрес",
-          "value": "Tamar Mepe Street 136, Kobuleti"
+          "value": "Tamar Mepe Street 122, Kobuleti"
         },
         {
           "id": "walk",
@@ -14538,7 +14600,7 @@
           "id": "beach",
           "icon": "🌊",
           "label": "До пляжа",
-          "value": "≈4 минуты / private beach area у объекта"
+          "value": "≈1–2 минуты пешком"
         }
       ],
       "stepsTitle": "Что делать",
@@ -14547,7 +14609,7 @@
           "id": "map",
           "icon": "🗺️",
           "title": "Откройте маршрут",
-          "text": "Google Maps / Bolt: «Guest House Citrus» или Tamar Mepe Street 136, Kobuleti."
+          "text": "Google Maps / Bolt: «Hotel Simpatia» или 122 Tamar Mepe Street, Kobuleti."
         },
         {
           "id": "decide",
@@ -14559,17 +14621,17 @@
           "id": "arrive",
           "icon": "🏨",
           "title": "Подойдите к ресепшену",
-          "text": "Назовите фамилию бронирования и покажите подтверждение (скрин брони)."
+          "text": "Назовите бронь Maryna Tarasenko, номер 6107.512.599 (PIN 9587) и покажите паспорта."
         }
       ],
       "tips": [
         {
           "id": "t1",
-          "text": "Сохраните пин: ≈41.8328, 41.7761 (ориентир по соседним домам 134–138 на Тамар Мепе)."
+          "text": "GPS отеля: 41.828367, 41.775667 (122 Tamar Mepe Street, Hotel Simpatia)."
         },
         {
           "id": "t2",
-          "text": "Если высадка далеко — не спорьте с водителем, просто вызовите Bolt на 136 Tamar Mepe."
+          "text": "Если высадка далеко — не спорьте с водителем, просто вызовите Bolt на 122 Tamar Mepe."
         }
       ],
       "nextAction": {
@@ -14584,16 +14646,19 @@
   {
     "isPlaceholder": false,
     "image": "/images/day03/check-in/gallery-01.jpg",
-    "price": "1 152 GEL",
-    "gps": null,
+    "price": "1 152 ₾ за 6 ночей",
+    "gps": {
+      "latitude": 41.828367,
+      "longitude": 41.775667
+    },
     "tips": [
-      "Адрес: 122 Tamar Mepe Street, Kobuleti.",
-      "Телефон: +34 674 01 18 29",
-      "Завтрак включён.",
-      "Заселение с 14:00 (окно 14:00–00:00).",
-      "Спросите короткий путь к пляжу."
+      "В Bolt / Maps: 122 Tamar Mepe Street, Kobuleti.",
+      "Бронь: 6107.512.599, PIN 9587, гость Maryna Tarasenko.",
+      "Оплата на месте в лари, предоплаты нет. Visa принимают.",
+      "Завтрак включён. Wi-Fi и парковка бесплатные.",
+      "Сохраните телефон: +34 674 01 18 29."
     ],
-    "notes": "",
+    "notes": "Подтверждение Booking.com 6107.512.599 · PIN 9587",
     "references": {
       "placeId": null,
       "transportId": null,
@@ -14603,17 +14668,17 @@
     },
     "id": "event-day-03-check-in",
     "dayId": "trip-day-03",
-    "title": "Заселение",
+    "title": "Заселение в Hotel Simpatia",
     "category": "accommodation",
     "icon": "🏨",
     "time": "14:00",
     "duration": "≈40 минут",
-    "description": "Заселение в Hotel Simpatia: получаем ключ и готовимся к морю.",
+    "description": "Hotel Simpatia, ул. Тамар Мепе, 122. Заезд 27 августа с 14:00, выезд 2 сентября до 12:00. 6 ночей, завтрак включён.",
     "hotelCheckInDetails": {
-      "subtitle": "Добро пожаловать в Hotel Simpatia!",
+      "subtitle": "Hotel Simpatia · Кобулети",
       "bookingInfo": [
         {
-          "id": "hotel",
+          "id": "hotel-name",
           "icon": "🏨",
           "label": "Отель",
           "value": "Hotel Simpatia"
@@ -14622,205 +14687,192 @@
           "id": "address",
           "icon": "📍",
           "label": "Адрес",
-          "value": "122 Tamar Mepe Street, Kobuleti"
+          "value": "122 Tamar Mepe Street, 8900 Кобулети"
         },
         {
           "id": "dates",
           "icon": "📅",
           "label": "Даты",
-          "value": "27.08.2026 → 02.09.2026 (6 ночей)"
+          "value": "27.08.2026 → 02.09.2026 · 6 ночей"
         },
         {
           "id": "guests",
           "icon": "👥",
           "label": "Гости",
-          "value": "2 взрослых + 1 ребёнок (11 лет)"
-        },
-        {
-          "id": "room",
-          "icon": "🛏️",
-          "label": "Номер",
-          "value": "Triple Room"
-        },
-        {
-          "id": "checkin",
-          "icon": "🕒",
-          "label": "Заселение",
-          "value": "27 Aug 2026, 14:00–00:00"
-        },
-        {
-          "id": "checkout",
-          "icon": "🚪",
-          "label": "Выезд",
-          "value": "2 Sep 2026, until 12:00"
-        },
-        {
-          "id": "breakfast",
-          "icon": "🍳",
-          "label": "Завтрак",
-          "value": "Included"
-        },
-        {
-          "id": "price",
-          "icon": "💳",
-          "label": "Стоимость",
-          "value": "1 152 GEL"
-        },
-        {
-          "id": "cancel",
-          "icon": "🆓",
-          "label": "Бесплатная отмена",
-          "value": "до 25 Aug 2026, 23:59"
-        },
-        {
-          "id": "late-cancel",
-          "icon": "⚠️",
-          "label": "Поздняя отмена",
-          "value": "Первая ночь — 198 GEL"
+          "value": "2 взрослых, 1 ребёнок (11 лет) · бронь на Maryna Tarasenko"
         },
         {
           "id": "phone",
           "icon": "☎",
           "label": "Телефон",
           "value": "+34 674 01 18 29"
+        },
+        {
+          "id": "check-in-time",
+          "icon": "🕒",
+          "label": "Заезд",
+          "value": "27 августа, 14:00–00:00"
+        },
+        {
+          "id": "check-out-time",
+          "icon": "🕛",
+          "label": "Выезд",
+          "value": "2 сентября, до 12:00"
+        },
+        {
+          "id": "confirmation",
+          "icon": "🔢",
+          "label": "Номер брони / PIN",
+          "value": "6107.512.599 · PIN 9587"
+        },
+        {
+          "id": "room",
+          "icon": "🛏️",
+          "label": "Номер",
+          "value": "Трёхместный: 3 односпальные кровати 90–130 см, балкон, вид на море и сад"
+        },
+        {
+          "id": "price",
+          "icon": "₾",
+          "label": "Стоимость",
+          "value": "1 152 ₾ (≈1643 zł) за 3 гостей, 6 ночей. Оплата на месте в лари, предоплаты нет. Visa."
+        },
+        {
+          "id": "meals",
+          "icon": "🍳",
+          "label": "Питание",
+          "value": "Завтрак включён каждый день"
+        },
+        {
+          "id": "wifi",
+          "icon": "📶",
+          "label": "Wi-Fi и парковка",
+          "value": "Бесплатно. Частная парковка на территории."
+        },
+        {
+          "id": "amenities",
+          "icon": "❄️",
+          "label": "В номере",
+          "value": "Кондиционер, сейф, холодильник, звукоизоляция, отдельный вход, ванная"
+        },
+        {
+          "id": "request",
+          "icon": "🚬",
+          "label": "Запрос",
+          "value": "Просили курящий номер (smoking room)"
+        },
+        {
+          "id": "cancel",
+          "icon": "🆓",
+          "label": "Отмена",
+          "value": "Бесплатно до 25.08.2026 23:59. С 26.08 00:00 — первая ночь 198 ₾. Даты менять нельзя."
+        },
+        {
+          "id": "maps",
+          "icon": "🗺️",
+          "label": "Карта",
+          "value": "https://www.google.com/maps/search/?api=1&query=41.828367,41.775667"
         }
       ],
       "receptionDocuments": [
         {
           "id": "passport",
           "icon": "🛂",
-          "title": "Паспорта (3 гостя)"
+          "title": "Паспорта",
+          "note": "2 взрослых и ребёнок 11 лет"
         },
         {
           "id": "booking",
           "icon": "📄",
-          "title": "Подтверждение брони Hotel Simpatia"
+          "title": "Подтверждение Booking.com",
+          "note": "Номер 6107.512.599, PIN 9587"
         },
         {
           "id": "card",
           "icon": "💳",
-          "title": "Банковская карта",
-          "note": "Если потребуется депозит"
+          "title": "Карта или лари",
+          "note": "Полная сумма 1 152 ₾ оплачивается жилью в GEL. Предоплаты нет."
         }
       ],
       "checkInSteps": [
-        "Подойдите к ресепшену Hotel Simpatia и назовите фамилию брони.",
-        "Покажите паспорта и подтверждение бронирования.",
-        "Уточните номер комнаты (Triple Room) и получите ключ.",
-        "Спросите пароль Wi‑Fi и время завтрака (завтрак включён).",
-        "Уточните, где ближайший спуск к морю.",
-        "Осмотрите номер."
+        "В Bolt укажите адрес: 122 Tamar Mepe Street, Kobuleti.",
+        "Подойдите к ресепшену Hotel Simpatia. Если никого нет — позвоните +34 674 01 18 29.",
+        "Назовите бронь Maryna Tarasenko и номер 6107.512.599 (PIN 9587).",
+        "Покажите паспорта трёх гостей.",
+        "Уточните трёхместный номер, ключ, Wi-Fi и часы завтрака (завтрак включён).",
+        "Напомните про запрос курящего номера и спросите короткий путь к морю.",
+        "Осмотрите номер: 3 кровати, балкон, кондиционер, сейф, холодильник."
       ],
       "englishPhrases": [
         {
-          "original": "We have a reservation at Hotel Simpatia.",
-          "translation": "У нас бронь в Hotel Simpatia."
+          "original": "Hello! We have a reservation at Hotel Simpatia.",
+          "translation": "Здравствуйте! У нас бронь в Hotel Simpatia."
         },
         {
-          "original": "The booking is for a triple room.",
-          "translation": "Бронь на трёхместный номер."
+          "original": "The booking is under Maryna Tarasenko.",
+          "translation": "Бронь на имя Maryna Tarasenko."
         },
         {
-          "original": "We are two adults and one child (11 years).",
+          "original": "Confirmation number 6107.512.599, PIN 9587.",
+          "translation": "Номер подтверждения 6107.512.599, PIN 9587."
+        },
+        {
+          "original": "We are 2 adults and 1 child (11 years).",
           "translation": "Нас двое взрослых и ребёнок 11 лет."
-        },
-        {
-          "original": "Is breakfast included?",
-          "translation": "Завтрак включён?"
-        },
-        {
-          "original": "What time is breakfast?",
-          "translation": "Во сколько завтрак?"
-        },
-        {
-          "original": "How do we get to the beach?",
-          "translation": "Как пройти к пляжу?"
-        },
-        {
-          "original": "Could we have the Wi‑Fi password?",
-          "translation": "Можно пароль от Wi‑Fi?"
-        },
-        {
-          "original": "Hello! We have a reservation under the name…",
-          "translation": "Здравствуйте! У нас бронь на фамилию…"
         },
         {
           "original": "We booked a triple room for six nights.",
           "translation": "Мы забронировали трёхместный номер на шесть ночей."
         },
         {
-          "original": "Our check-in is from 14:00.",
-          "translation": "Наше заселение с 14:00."
+          "original": "We requested a smoking room.",
+          "translation": "Мы просили курящий номер."
         },
         {
-          "original": "Is breakfast included every morning?",
-          "translation": "Завтрак включён каждое утро?"
+          "original": "Is breakfast included?",
+          "translation": "Завтрак включён?"
         },
         {
           "original": "What time is breakfast served?",
           "translation": "Во сколько подают завтрак?"
         },
         {
-          "original": "Could you show us the way to our room?",
-          "translation": "Покажите, пожалуйста, дорогу до номера."
+          "original": "We will pay at the property in GEL.",
+          "translation": "Оплатим на месте в лари."
         },
         {
-          "original": "Is there a safe in the room?",
-          "translation": "Есть ли сейф в номере?"
+          "original": "What is the Wi-Fi password?",
+          "translation": "Какой пароль от Wi-Fi?"
         },
         {
-          "original": "Where can we leave our luggage if the room is not ready?",
-          "translation": "Куда можно оставить багаж, если номер ещё не готов?"
+          "original": "How do we get to the beach?",
+          "translation": "Как пройти к пляжу?"
         },
         {
-          "original": "Do you have beach towels?",
-          "translation": "Есть ли пляжные полотенца?"
-        },
-        {
-          "original": "Is there parking for guests?",
-          "translation": "Есть ли парковка для гостей?"
-        },
-        {
-          "original": "How far is the beach from the hotel?",
-          "translation": "Как далеко пляж от отеля?"
-        },
-        {
-          "original": "Can you call a taxi / Bolt for us?",
-          "translation": "Можете вызвать нам такси / Bolt?"
-        },
-        {
-          "original": "What is the Wi‑Fi password?",
-          "translation": "Какой пароль от Wi‑Fi?"
-        },
-        {
-          "original": "Could you write the address in Georgian, please?",
-          "translation": "Напишите адрес по-грузински, пожалуйста."
+          "original": "Is parking free for guests?",
+          "translation": "Парковка для гостей бесплатная?"
         },
         {
           "original": "We will check out on 2 September before 12:00.",
           "translation": "Мы выезжаем 2 сентября до 12:00."
         },
         {
-          "original": "Is late check-out possible?",
-          "translation": "Возможен ли поздний выезд?"
-        },
-        {
-          "original": "Please charge it to the room.",
-          "translation": "Запишите на счёт номера."
-        },
-        {
-          "original": "Emergency number: who should we call?",
-          "translation": "Экстренный номер: кому звонить?"
+          "original": "Thank you!",
+          "translation": "Спасибо!"
         }
       ],
       "checklist": [
         {
+          "id": "arrive",
+          "label": "Доехать на 122 Tamar Mepe Street"
+        },
+        {
           "id": "docs",
-          "label": "Отдать паспорта на регистрацию"
+          "label": "Показать паспорта и номер брони 6107.512.599"
         },
         {
           "id": "keys",
-          "label": "Получить ключ"
+          "label": "Получить ключ от трёхместного номера"
         },
         {
           "id": "breakfast",
@@ -14828,11 +14880,15 @@
         },
         {
           "id": "wifi",
-          "label": "Подключить Wi‑Fi"
+          "label": "Подключить Wi-Fi"
         },
         {
           "id": "beach",
           "label": "Узнать дорогу к морю"
+        },
+        {
+          "id": "smoking",
+          "label": "Напомнить про курящий номер"
         },
         {
           "id": "phone",
@@ -14840,12 +14896,12 @@
         }
       ],
       "usefulTips": [
-        "Заселение: 27 Aug 2026, с 14:00 (окно до 00:00).",
-        "Выезд: 2 Sep 2026, until 12:00.",
-        "Завтрак включён в стоимость.",
-        "Итого по брони: 1 152 GEL.",
-        "Бесплатная отмена до 25 Aug 2026, 23:59; позже — первая ночь 198 GEL.",
-        "Контакт: +34 674 01 18 29"
+        "Заезд 27 августа с 14:00 до 00:00. Выезд 2 сентября до 12:00.",
+        "Завтрак включён. С 28 августа можно завтракать в отеле, не искать кафе.",
+        "Оплата 1 152 ₾ на месте в лари, предоплаты нет. Visa принимают.",
+        "Wi-Fi и частная парковка бесплатные. В номере: кондиционер, сейф, холодильник, балкон, вид на море.",
+        "Бесплатная отмена до 25 августа 23:59. С 26 августа 00:00 — первая ночь 198 ₾. Даты менять нельзя.",
+        "Сохраните: +34 674 01 18 29, бронь 6107.512.599, PIN 9587, GPS 41.828367, 41.775667."
       ],
       "nextAction": {
         "title": "Обед",
@@ -15110,13 +15166,13 @@
     "image": "/images/day03/sea/gallery-01.jpg",
     "price": "",
     "gps": {
-      "latitude": 41.8328,
-      "longitude": 41.7761
+      "latitude": 41.828367,
+      "longitude": 41.775667
     },
     "tips": [
       "Обувь для гальки.",
       "Не заплывайте далеко в первый день.",
-      "Старт — от private beach area / спуска у Citrus, без поездок по городу."
+      "Старт — от спуска к морю у Hotel Simpatia, без поездок по городу."
     ],
     "notes": "",
     "references": {
@@ -15133,11 +15189,11 @@
     "icon": "🌊",
     "time": "14:30",
     "duration": "≈2,5 часа",
-    "description": "Первый заход в Чёрное море у Guest House Citrus: объект на берегу, до пляжа ≈4 минуты.",
+    "description": "Первый заход в Чёрное море у Hotel Simpatia: объект на берегу, до пляжа ≈1–2 минуты.",
     "guideDetails": {
-      "introTitle": "Пляж у Guest House Citrus",
+      "introTitle": "Пляж у Hotel Simpatia",
       "intro": [
-        "Guest House Citrus расположен на beachfront (Тамар Мепе 136): у объекта заявлены private beach area и сад/терраса.",
+        "Hotel Simpatia расположен на beachfront (Тамар Мепе, 122): до моря около 1–2 минут пешком, есть сад и терраса.",
         "Пляж Кобулети в основном галечный. Начинайте спокойно у своего спуска — без поиска «чужого» участка города."
       ],
       "gallery": [
@@ -15178,14 +15234,14 @@
         {
           "id": "from",
           "icon": "🏨",
-          "label": "От Citrus",
-          "value": "≈4 минуты пешком / private beach area"
+          "label": "От Hotel Simpatia",
+          "value": "≈1–2 минуты пешком"
         },
         {
           "id": "addr",
           "icon": "📍",
           "label": "Ориентир",
-          "value": "Tamar Mepe Street 136, Kobuleti"
+          "value": "Tamar Mepe Street 122, Kobuleti"
         },
         {
           "id": "shade",
@@ -15233,7 +15289,7 @@
           "id": "look",
           "icon": "👀",
           "title": "Оцените волны",
-          "text": "Оцените волны у спуска рядом с Citrus. Если штормит — прогулка по берегу вместо заплыва."
+          "text": "Оцените волны у спуска рядом с Hotel Simpatia. Если штормит — прогулка по берегу вместо заплыва."
         },
         {
           "id": "enter",
@@ -15269,7 +15325,7 @@
         },
         {
           "id": "t2",
-          "text": "После моря можно быстро вернуться в номер Citrus (душ в номере есть)."
+          "text": "После моря можно быстро вернуться в номер Hotel Simpatia (душ в номере есть)."
         },
         {
           "id": "t3",
@@ -15299,8 +15355,8 @@
     "image": "/images/day03/promenade/gallery-01.jpg",
     "price": "",
     "gps": {
-      "latitude": 41.8328,
-      "longitude": 41.7761
+      "latitude": 41.828367,
+      "longitude": 41.775667
     },
     "tips": [],
     "notes": "",
@@ -15318,11 +15374,11 @@
     "icon": "🚶",
     "time": "17:00",
     "duration": "≈2 часа",
-    "description": "Прогулка по набережной Тамар Мепе от Guest House Citrus (дом 136) вдоль моря.",
+    "description": "Прогулка по набережной Тамар Мепе от Hotel Simpatia (дом 122) вдоль моря.",
     "guideDetails": {
-      "introTitle": "Набережная от Citrus",
+      "introTitle": "Набережная от Hotel Simpatia",
       "intro": [
-        "Стартуйте от Guest House Citrus (Tamar Mepe Street 136, Kobuleti) и идите вдоль ул. Тамар Мепе / набережной.",
+        "Стартуйте от Hotel Simpatia (Tamar Mepe Street 122, Kobuleti) и идите вдоль ул. Тамар Мепе / набережной.",
         "Это та же улица, где жильё: кафе и виды на море без отдельного трансфера."
       ],
       "gallery": [
@@ -15350,10 +15406,10 @@
       "placesTitle": "Что посмотреть",
       "places": [
         {
-          "id": "citrus-start",
+          "id": "simpatia-start",
           "icon": "🏨",
-          "title": "Старт: Guest House Citrus",
-          "description": "Тамар Мепе 136 — beachfront, private beach area рядом.",
+          "title": "Старт: Hotel Simpatia",
+          "description": "Тамар Мепе, 122 — рядом с пляжем, ≈1–2 минуты пешком.",
           "image": "/images/day03/promenade/gallery-01.jpg"
         },
         {
@@ -15373,7 +15429,7 @@
         {
           "id": "photos",
           "icon": "📸",
-          "title": "Берег у Citrus",
+          "title": "Берег у Hotel Simpatia",
           "description": "Фото на закате — прямо у вашего участка пляжа, без поездки.",
           "image": "/images/day03/promenade/gallery-04.jpg"
         }
@@ -15407,17 +15463,17 @@
         },
         {
           "id": "t2",
-          "text": "По пути можно зайти в Lexi (№94) или вернуться ужинать в ресторан Citrus."
+          "text": "По пути можно зайти в Lexi (№94) или вернуться ужинать в Hotel Simpatia."
         },
         {
           "id": "t3",
-          "text": "На закат возвращайтесь к открытому берегу у дома 136."
+          "text": "На закат возвращайтесь к открытому берегу у дома 122."
         }
       ],
       "nextAction": {
         "title": "Ужин",
         "icon": "🍽️",
-        "description": "Ужин в шаговой доступности от Guest House Citrus.",
+        "description": "Ужин в шаговой доступности от Hotel Simpatia.",
         "eventId": "event-day-03-dinner",
         "buttonLabel": "Перейти"
       }
@@ -15686,8 +15742,8 @@
     "image": "/images/day03/sunset/gallery-01.jpg",
     "price": "",
     "gps": {
-      "latitude": 41.8328,
-      "longitude": 41.7761
+      "latitude": 41.828367,
+      "longitude": 41.775667
     },
     "tips": [],
     "notes": "",
@@ -15705,11 +15761,11 @@
     "icon": "🌅",
     "time": "20:30",
     "duration": "≈30 минут",
-    "description": "Закат над Чёрным морем у Guest House Citrus (Тамар Мепе 136).",
+    "description": "Закат над Чёрным морем у Hotel Simpatia (Тамар Мепе, 122).",
     "guideDetails": {
-      "introTitle": "Закат у Citrus",
+      "introTitle": "Закат у Hotel Simpatia",
       "intro": [
-        "Спускайтесь к берегу от Guest House Citrus — объект на beachfront, отдельный трансфер не нужен.",
+        "Спускайтесь к берегу от Hotel Simpatia — объект на beachfront, отдельный трансфер не нужен.",
         "Короткий вечерний ритуал прямо у вашего жилья."
       ],
       "gallery": [
@@ -15746,13 +15802,13 @@
           "id": "where",
           "icon": "📍",
           "label": "Где",
-          "value": "Пляж у Tamar Mepe Street 136, Kobuleti"
+          "value": "Пляж у Tamar Mepe Street 122, Kobuleti"
         },
         {
           "id": "walk",
           "icon": "🚶",
           "label": "От номера",
-          "value": "≈4 минуты"
+          "value": "≈1–2 минуты"
         }
       ],
       "tips": [
@@ -15766,7 +15822,7 @@
         },
         {
           "id": "t3",
-          "text": "После заката возвращайтесь в Guest House Citrus пешком — жильё на той же линии пляжа (Тамар Мепе 136)."
+          "text": "После заката возвращайтесь в Hotel Simpatia пешком — жильё на той же линии пляжа (Тамар Мепе, 122)."
         }
       ],
       "didYouKnow": {
@@ -15775,13 +15831,13 @@
         "storyTitle": "Почему закаты здесь такие длинные?",
         "paragraphs": [
           "На ровной морской линии у Тамар Мепе горизонт открыт, поэтому диск солнца виден дольше, чем среди городской застройки.",
-          "У Guest House Citrus можно выходить к закату каждый вечер прямо от жилья — без отдельной поездки."
+          "У Hotel Simpatia можно выходить к закату каждый вечер прямо от жилья — без отдельной поездки."
         ]
       },
       "nextAction": {
         "title": "День 4",
         "icon": "☀️",
-        "description": "Продолжаем проживание в Guest House Citrus (до 02.09.2026).",
+        "description": "Продолжаем проживание в Hotel Simpatia (до 02.09.2026).",
         "eventId": "event-demo-09",
         "to": "/trip/trip-day-04",
         "buttonLabel": "К дню 4"

@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom'
 import { Breadcrumbs } from '../components/Breadcrumbs'
 import { dataService } from '../services/dataService'
 
-const tripDays = dataService.getTripDays()
-
 function parseDate(date: string) {
   return new Date(`${date}T12:00:00`)
 }
@@ -41,6 +39,8 @@ function formatEventCount(count: number) {
 }
 
 export function TripPage() {
+  const tripDays = dataService.getTripDays()
+
   return (
     <main className="min-h-screen bg-[#f7f8f4]">
       <header className="relative overflow-hidden border-b border-stone-200/70 bg-white px-5 pb-14 pt-6 sm:px-8 sm:pb-20 sm:pt-10 lg:px-12">

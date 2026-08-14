@@ -361,10 +361,15 @@ function TripPlaceCard({ data }: { data: PlaceCardData }) {
           phoneHref) && (
           <div className="mt-5 flex flex-wrap gap-2">
             {googleMapsUrl ? (
-              <ExternalActionLink href={googleMapsUrl}>
+              <a
+                href={googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-800 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-900 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700"
+              >
                 <MapPin size={15} aria-hidden="true" />
-                Карты Google
-              </ExternalActionLink>
+                Открыть карту
+              </a>
             ) : null}
             {organicMapsUrl ? (
               <ExternalActionLink href={organicMapsUrl}>
