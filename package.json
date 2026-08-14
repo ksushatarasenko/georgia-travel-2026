@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "postbuild": "node -e \"import { copyFileSync } from 'node:fs'; copyFileSync('dist/index.html', 'dist/404.html')\"",
+    "postbuild": "node -e \"import { copyFileSync, rmSync } from 'node:fs'; copyFileSync('dist/index.html', 'dist/404.html'); rmSync('dist/documents', { recursive: true, force: true })\"",
     "lint": "oxlint",
     "preview": "vite preview",
     "check:images": "node scripts/check-attraction-images.mjs"
