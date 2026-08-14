@@ -21,9 +21,6 @@ export interface AppSection {
 
 /** Cards shown on the Home screen, in display order. */
 export const homeSectionPaths = [
-  '/documents',
-  '/map',
-  '/accommodation',
   '/sights',
   '/checklist',
   '/budget',
