@@ -1,34 +1,43 @@
 import { useMemo, useState } from 'react'
-import { ArrowLeft, Landmark, Search } from 'lucide-react'
+import { ArrowLeft, Compass, Search } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { AttractionCatalogCard } from '../components/AttractionCatalogCard'
+import { RoutePlaceCardView } from '../components/RoutePlaceCard'
 import { dataService } from '../services/dataService'
-import type { AttractionCatalogCategory } from '../types/data'
+import { ROUTE_PLACE_CATEGORIES } from '../lib/routePlaces'
+import type { RoutePlaceCategory } from '../types/data'
 
-type CatalogFilter = 'all' | AttractionCatalogCategory
+type CatalogFilter = 'all' | RoutePlaceCategory
 
-const filters: { value: CatalogFilter; label: string }[] = [
+const filters: { value: CatalogFilter; label: string; icon?: string }[] = [
   { value: 'all', label: 'Все' },
-  { value: 'attraction', label: 'Достопримечательности' },
-  { value: 'evening', label: 'Вечерние прогулки' },
+  ...ROUTE_PLACE_CATEGORIES.map((category) => ({
+    value: category.value as CatalogFilter,
+    label: category.label,
+    icon: category.icon,
+  })),
 ]
 
-const catalog = dataService.getAttractionCatalog()
+const catalog = dataService.getRoutePlaces()
 
 export function AttractionsPage() {
   const [activeFilter, setActiveFilter] = useState<CatalogFilter>('all')
   const [searchQuery, setSearchQuery] = useState('')
 
-  const visibleEntries = useMemo(() => {
+  const visiblePlaces = useMemo(() => {
     const normalizedQuery = searchQuery.trim().toLocaleLowerCase('ru-RU')
 
-    return catalog.filter((entry) => {
+    return catalog.filter((place) => {
       const matchesCategory =
-        activeFilter === 'all' || entry.category === activeFilter
+        activeFilter === 'all' || place.category === activeFilter
       const matchesSearch =
         normalizedQuery.length === 0 ||
-        entry.title.toLocaleLowerCase('ru-RU').includes(normalizedQuery) ||
-        entry.description.toLocaleLowerCase('ru-RU').includes(normalizedQuery)
+        place.title.toLocaleLowerCase('ru-RU').includes(normalizedQuery) ||
+        place.description
+          .toLocaleLowerCase('ru-RU')
+          .includes(normalizedQuery) ||
+        place.categoryLabel
+          .toLocaleLowerCase('ru-RU')
+          .includes(normalizedQuery)
 
       return matchesCategory && matchesSearch
     })
@@ -51,17 +60,17 @@ export function AttractionsPage() {
 
           <div className="py-12 sm:py-16">
             <span className="flex size-14 items-center justify-center rounded-2xl bg-rose-700 text-white shadow-[0_10px_25px_rgba(190,18,60,0.2)]">
-              <Landmark size={26} strokeWidth={1.8} aria-hidden="true" />
+              <Compass size={26} strokeWidth={1.8} aria-hidden="true" />
             </span>
             <p className="mt-7 text-sm font-semibold uppercase tracking-[0.18em] text-rose-700">
-              Достопримечательности
+              Гид поездки
             </p>
             <h1 className="mt-3 text-4xl font-semibold tracking-[-0.055em] text-stone-950 sm:text-6xl">
               Места маршрута
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-7 text-stone-500 sm:text-lg">
-              Все готовые локации путешествия. Каждая карточка открывает ту же
-              страницу, что и в плане поездки — без дублирования.
+              Центральный гид по локациям путешествия. Каждая карточка открывает
+              ту же страницу, что и в плане поездки — без дублирования.
             </p>
           </div>
         </div>
@@ -81,7 +90,7 @@ export function AttractionsPage() {
                 type="search"
                 value={searchQuery}
                 onChange={(event) => setSearchQuery(event.target.value)}
-                placeholder="Поиск по названию"
+                placeholder="Поиск по названию или описанию"
                 className="w-full rounded-2xl border border-stone-200 bg-[#f7f8f4] py-3.5 pl-12 pr-4 text-base text-stone-900 outline-none transition placeholder:text-stone-400 focus:border-emerald-500 focus:bg-white focus:ring-4 focus:ring-emerald-100"
               />
             </label>
@@ -106,6 +115,11 @@ export function AttractionsPage() {
                         : 'bg-stone-100 text-stone-600 hover:bg-emerald-50 hover:text-emerald-800'
                     }`}
                   >
+                    {filter.icon ? (
+                      <span className="mr-1.5" aria-hidden="true">
+                        {filter.icon}
+                      </span>
+                    ) : null}
                     {filter.label}
                   </button>
                 )
@@ -115,14 +129,14 @@ export function AttractionsPage() {
 
           <div className="mb-6 mt-10 flex items-center justify-between gap-4">
             <h2 className="text-2xl font-semibold tracking-[-0.035em] text-stone-950">
-              Найдено: {visibleEntries.length}
+              Найдено: {visiblePlaces.length}
             </h2>
           </div>
 
-          {visibleEntries.length > 0 ? (
+          {visiblePlaces.length > 0 ? (
             <div className="grid gap-5 pb-16 sm:grid-cols-2 lg:grid-cols-3">
-              {visibleEntries.map((entry) => (
-                <AttractionCatalogCard key={entry.id} entry={entry} />
+              {visiblePlaces.map((place) => (
+                <RoutePlaceCardView key={place.id} place={place} />
               ))}
             </div>
           ) : (

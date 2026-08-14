@@ -10,6 +10,7 @@ import tripData from '../data/trip.json'
 import tripDaysData from '../data/tripDays.json'
 import tripEventsData from '../data/tripEvents.json'
 import { buildAttractionCatalog } from '../lib/attractionCatalog'
+import { buildRoutePlaceCatalog } from '../lib/routePlaces'
 import type {
   Beach,
   BudgetItem,
@@ -23,6 +24,7 @@ import type {
   TripDay,
   TripEvent,
   AttractionCatalogEntry,
+  RoutePlaceCard,
 } from '../types/data'
 
 export interface DataCollection {
@@ -43,6 +45,7 @@ const tips = tipsData as Tip[]
 const tripDays = tripDaysData as TripDay[]
 const tripEvents = tripEventsData as TripEvent[]
 const attractionCatalog = buildAttractionCatalog(tripEvents)
+const routePlaces = buildRoutePlaceCatalog(tripEvents)
 
 export const dataService = {
   getTrips: (): readonly Trip[] => trips,
@@ -59,6 +62,8 @@ export const dataService = {
   /** Auto-built from trip events that own a full location page. */
   getAttractionCatalog: (): readonly AttractionCatalogEntry[] =>
     attractionCatalog,
+  /** Central «Места маршрута» guide — index in places.ts, content from events. */
+  getRoutePlaces: (): readonly RoutePlaceCard[] => routePlaces,
 
   getCollections: (): DataCollection[] => [
     { fileName: 'trip.json', label: 'Trip', records: trips },

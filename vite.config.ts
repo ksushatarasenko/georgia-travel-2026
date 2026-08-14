@@ -4,41 +4,38 @@ import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  // GitHub Pages project site: /georgia-travel-2026/
+  // Local dev and Vercel stay at `/`.
+  base: process.env.BASE_PATH || '/',
+  build: {
+    chunkSizeWarningLimit: 1200,
+  },
   plugins: [
     react(),
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['app-icon.svg'],
-      manifest: {
-        name: 'Georgia Travel 2026',
-        short_name: 'Georgia 2026',
-        description: 'Путешествие в Грузию, 25 августа — 3 сентября 2026',
-        theme_color: '#ffffff',
-        background_color: '#f7f8f4',
-        display: 'standalone',
-        start_url: '/',
-        scope: '/',
-        lang: 'ru',
-        icons: [
-          {
-            src: '/app-icon.svg',
-            sizes: 'any',
-            type: 'image/svg+xml',
-            purpose: 'any',
-          },
-          {
-            src: '/app-icon.svg',
-            sizes: 'any',
-            type: 'image/svg+xml',
-            purpose: 'maskable',
-          },
+      strategies: 'injectManifest',
+      srcDir: 'src',
+      filename: 'sw.ts',
+      // Static manifest lives in /public/manifest.webmanifest
+      manifest: false,
+      includeAssets: [
+        'app-icon.svg',
+        'apple-touch-icon.png',
+        'icons/icon-192.png',
+        'icons/icon-512.png',
+        'icons/icon-512-maskable.png',
+        'manifest.webmanifest',
+      ],
+      injectManifest: {
+        globPatterns: [
+          '**/*.{js,css,html,ico,svg,png,jpg,jpeg,webp,gif,woff,woff2,ttf,otf,json,webmanifest,txt,map,pdf}',
         ],
+        maximumFileSizeToCacheInBytes: 20 * 1024 * 1024,
       },
-      workbox: {
-        mode: 'development',
-        navigateFallback: '/index.html',
-        globPatterns: ['**/*.{js,css,html,svg,woff2}'],
+      devOptions: {
+        enabled: false,
       },
     }),
   ],

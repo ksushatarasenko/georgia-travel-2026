@@ -1,14 +1,12 @@
 import {
   BedDouble,
-  BusFront,
-  Coffee,
+  ClipboardList,
   Compass,
   FileText,
   Landmark,
   Map,
   MapPinned,
   Settings,
-  Umbrella,
   WalletCards,
   type LucideIcon,
 } from 'lucide-react'
@@ -21,6 +19,16 @@ export interface AppSection {
   accent: string
 }
 
+/** Cards shown on the Home screen, in display order. */
+export const homeSectionPaths = [
+  '/documents',
+  '/map',
+  '/accommodation',
+  '/sights',
+  '/checklist',
+  '/budget',
+] as const
+
 export const sections: AppSection[] = [
   {
     path: '/plan',
@@ -30,6 +38,13 @@ export const sections: AppSection[] = [
     accent: 'bg-emerald-50 text-emerald-700',
   },
   {
+    path: '/documents',
+    title: 'Документы',
+    description: 'Все важные документы поездки в одном месте',
+    icon: FileText,
+    accent: 'bg-blue-50 text-blue-700',
+  },
+  {
     path: '/map',
     title: 'Карта',
     description: 'Важные места под рукой',
@@ -37,51 +52,30 @@ export const sections: AppSection[] = [
     accent: 'bg-sky-50 text-sky-700',
   },
   {
-    path: '/transport',
-    title: 'Транспорт',
-    description: 'Информация о передвижениях',
-    icon: BusFront,
-    accent: 'bg-amber-50 text-amber-700',
-  },
-  {
     path: '/accommodation',
-    title: 'Жилье',
+    title: 'Жильё',
     description: 'Все детали проживания',
     icon: BedDouble,
     accent: 'bg-violet-50 text-violet-700',
   },
   {
     path: '/sights',
-    title: 'Достопримечательности',
-    description: 'Места, которые хочется увидеть',
+    title: 'Места маршрута',
+    description: 'Центральный гид по локациям поездки',
     icon: Landmark,
     accent: 'bg-rose-50 text-rose-700',
   },
   {
-    path: '/beaches',
-    title: 'Пляжи',
-    description: 'Отдых у моря',
-    icon: Umbrella,
-    accent: 'bg-cyan-50 text-cyan-700',
-  },
-  {
-    path: '/cafes',
-    title: 'Кафе',
-    description: 'Места для вкусных остановок',
-    icon: Coffee,
-    accent: 'bg-orange-50 text-orange-700',
-  },
-  {
-    path: '/documents',
-    title: 'Документы',
-    description: 'Важные данные в одном разделе',
-    icon: FileText,
-    accent: 'bg-blue-50 text-blue-700',
+    path: '/checklist',
+    title: 'Чек-лист',
+    description: 'Документы, вещи и покупки перед поездкой.',
+    icon: ClipboardList,
+    accent: 'bg-indigo-50 text-indigo-700',
   },
   {
     path: '/budget',
     title: 'Бюджет',
-    description: 'Расходы путешествия',
+    description: 'Расходы путешествия и конвертер валют',
     icon: WalletCards,
     accent: 'bg-lime-50 text-lime-700',
   },

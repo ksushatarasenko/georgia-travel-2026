@@ -1,14 +1,14 @@
 import {
-  ArrowRight,
   Check,
   CircleDollarSign,
   Lightbulb,
-  Moon,
   UtensilsCrossed,
 } from 'lucide-react'
 import { useEffect, useState, type ReactNode } from 'react'
-import { Link } from 'react-router-dom'
 import type { DinnerEventDetails } from '../types/data'
+import { EventNavFooter } from './EventNavFooter'
+import { PlaceCard } from './PlaceCard'
+import { ScheduleCard } from './ScheduleCard'
 
 const dinnerChecklistStorageKey =
   'georgia-travel-2026:georgian-dinner:checklist'
@@ -68,61 +68,24 @@ export function DinnerEventContent({ details }: DinnerEventContentProps) {
 
   return (
     <div className="grid gap-5 lg:grid-cols-2">
+      {details.timeline ? (
+        <div className="lg:col-span-2">
+          <ScheduleCard
+            title={details.timeline.title}
+            range={details.timeline.range}
+            steps={details.timeline.steps}
+          />
+        </div>
+      ) : null}
+
       <div className="lg:col-span-2">
         <DinnerSection
           icon={<UtensilsCrossed size={22} aria-hidden="true" />}
-          title="Лучшие рестораны в центре"
+          title={details.restaurantsTitle ?? 'Рекомендуемые рестораны'}
         >
           <div className="grid gap-5 lg:grid-cols-3">
             {details.restaurants.map((restaurant) => (
-              <article
-                key={restaurant.id}
-                className="flex flex-col overflow-hidden rounded-[1.5rem] border border-stone-200 bg-stone-50"
-              >
-                <div className="border-b border-stone-200 bg-white p-5">
-                  <div className="flex items-center gap-3">
-                    <span className="flex size-12 items-center justify-center rounded-xl bg-amber-50 text-2xl">
-                      {restaurant.rank}
-                    </span>
-                    <div>
-                      <h3 className="text-xl font-semibold tracking-[-0.03em] text-stone-950">
-                        {restaurant.name}
-                      </h3>
-                      <p className="mt-1 text-sm leading-6 text-stone-500">
-                        {restaurant.subtitle}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex flex-1 flex-col p-5">
-                  <div className="space-y-2 text-sm text-stone-600">
-                    <p>📍 {restaurant.location}</p>
-                    <p>🚶 {restaurant.walkingTime}</p>
-                  </div>
-
-                  <p className="mt-5 text-sm font-semibold text-stone-900">
-                    Почему стоит выбрать
-                  </p>
-                  <ul className="mt-3 space-y-2">
-                    {restaurant.reasons.map((reason) => (
-                      <li
-                        key={reason}
-                        className="flex gap-2 text-sm leading-6 text-stone-600"
-                      >
-                        <span className="mt-2 size-1.5 shrink-0 rounded-full bg-emerald-600" />
-                        {reason}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <div className="mt-auto pt-5">
-                    <p className="rounded-2xl bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-900">
-                      👤 Средний чек: {restaurant.averageCheck}
-                    </p>
-                  </div>
-                </div>
-              </article>
+              <PlaceCard key={restaurant.id} data={restaurant} />
             ))}
           </div>
         </DinnerSection>
@@ -330,37 +293,7 @@ export function DinnerEventContent({ details }: DinnerEventContentProps) {
         </DinnerSection>
       </div>
 
-      <div className="lg:col-span-2">
-        <DinnerSection
-          icon={<Moon size={22} aria-hidden="true" />}
-          title="Следующий шаг"
-        >
-          <Link
-            to={`/trip/event/${details.nextAction.eventId}`}
-            className="group flex items-center gap-4 rounded-[1.5rem] bg-emerald-900 p-5 text-white shadow-[0_15px_40px_rgba(20,83,45,0.18)] transition hover:-translate-y-0.5 hover:bg-emerald-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 sm:p-7"
-          >
-            <span className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-2xl">
-              {details.nextAction.icon}
-            </span>
-            <span className="min-w-0 flex-1">
-              <span className="block text-xl font-semibold">
-                {details.nextAction.title}
-              </span>
-              <span className="mt-1 block text-sm leading-6 text-emerald-100/80">
-                {details.nextAction.description}
-              </span>
-            </span>
-            <span className="inline-flex shrink-0 items-center gap-2 text-sm font-semibold">
-              Перейти
-              <ArrowRight
-                size={18}
-                className="transition group-hover:translate-x-1"
-                aria-hidden="true"
-              />
-            </span>
-          </Link>
-        </DinnerSection>
-      </div>
+      <EventNavFooter action={details.nextAction} />
     </div>
   )
 }

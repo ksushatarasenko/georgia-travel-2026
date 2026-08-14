@@ -1,26 +1,15 @@
 import { ArrowRight, CalendarDays, CalendarRange, Plane } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { SectionCard } from '../components/SectionCard'
-import { sections } from '../config/sections'
+import { homeSectionPaths, sections } from '../config/sections'
 
-const documentsSection = sections.find(
-  (section) => section.path === '/documents',
-)
-
-const homeSections = [
-  ...(documentsSection
-    ? [
-        {
-          ...documentsSection,
-          description: 'Все важные документы поездки в одном месте',
-        },
-      ]
-    : []),
-  ...sections.filter(
-    (section) =>
-      section.path !== '/plan' && section.path !== '/documents',
-  ),
-]
+const homeSections = homeSectionPaths.map((path) => {
+  const section = sections.find((item) => item.path === path)
+  if (!section) {
+    throw new Error(`Home section not found: ${path}`)
+  }
+  return section
+})
 
 export function HomePage() {
   return (

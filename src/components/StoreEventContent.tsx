@@ -1,16 +1,14 @@
 import {
-  ArrowRight,
   Check,
   CircleDollarSign,
   Info,
   Lightbulb,
-  ShoppingBasket,
   ShoppingCart,
   Store,
 } from 'lucide-react'
 import { useEffect, useState, type ReactNode } from 'react'
-import { Link } from 'react-router-dom'
 import type { StoreEventDetails } from '../types/data'
+import { EventNavFooter } from './EventNavFooter'
 
 const storeChecklistStorageKey =
   'georgia-travel-2026:first-store:checklist'
@@ -366,32 +364,7 @@ export function StoreEventContent({ details }: StoreEventContentProps) {
         </StoreSection>
       </div>
 
-      <div className="lg:col-span-2">
-        <StoreSection
-          icon={<ShoppingBasket size={22} aria-hidden="true" />}
-          title="Следующий шаг"
-        >
-          <Link
-            to={`/trip/event/${details.nextAction.eventId}`}
-            className="group flex items-center gap-4 rounded-[1.5rem] bg-emerald-900 p-5 text-white shadow-[0_15px_40px_rgba(20,83,45,0.18)] transition hover:-translate-y-0.5 hover:bg-emerald-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 sm:p-7"
-          >
-            <span className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-2xl">
-              {details.nextAction.icon}
-            </span>
-            <span className="min-w-0 flex-1 text-xl font-semibold">
-              {details.nextAction.title}
-            </span>
-            <span className="inline-flex shrink-0 items-center gap-2 text-sm font-semibold">
-              Перейти
-              <ArrowRight
-                size={18}
-                className="transition group-hover:translate-x-1"
-                aria-hidden="true"
-              />
-            </span>
-          </Link>
-        </StoreSection>
-      </div>
+      <EventNavFooter action={details.nextAction} />
     </div>
   )
 }

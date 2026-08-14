@@ -342,16 +342,18 @@ export interface WalkEventDetails {
 }
 
 export interface DinnerEventDetails {
-  restaurants: {
-    id: string
-    rank: string
-    name: string
-    subtitle: string
-    location: string
-    walkingTime: string
-    reasons: string[]
-    averageCheck: string
-  }[]
+  /** Section heading above restaurant PlaceCards. */
+  restaurantsTitle?: string
+  timeline?: {
+    title: string
+    range: string
+    steps: {
+      id: string
+      time: string
+      label: string
+    }[]
+  }
+  restaurants: PlaceCardData[]
   firstOrderDishes: {
     id: string
     icon: string
@@ -382,23 +384,75 @@ export interface DinnerEventDetails {
   }
 }
 
+/** Categories supported by the reusable trip PlaceCard. */
+export type PlaceCardCategory =
+  | 'restaurant'
+  | 'cafe'
+  | 'beach'
+  | 'hotel'
+  | 'waterfall'
+  | 'market'
+  | 'attraction'
+
+export interface PlaceCardGalleryImage {
+  id: string
+  src: string
+  alt: string
+}
+
+/**
+ * Rich place payload for restaurants, cafes, beaches, hotels, etc.
+ * Used by PlaceCard (trip/detail variant) and lunch restaurant lists.
+ */
+export interface PlaceCardData {
+  id: string
+  name: string
+  category: PlaceCardCategory
+  /** Optional display override; otherwise derived from category. */
+  categoryLabel?: string
+  /** Cover / hero photo for the card. */
+  coverImage?: string | null
+  rating?: number | null
+  distance?: string | null
+  walkingTime?: string | null
+  averagePrice?: string | null
+  /** @deprecated Prefer averagePrice — kept for older lunch JSON. */
+  averageCheck?: string
+  recommendedDishes?: string[]
+  familyFriendly?: boolean
+  googleMapsUrl?: string | null
+  organicMapsUrl?: string | null
+  websiteUrl?: string | null
+  /** Official site or Facebook page. */
+  facebookUrl?: string | null
+  phone?: string | null
+  openingHours?: string | null
+  notes?: string | null
+  /** Short tip shown on the card. */
+  travelTip?: string | null
+  /** Lunch-card extras (visual rank / reasons). */
+  rank?: string
+  /** Short description under the title. */
+  subtitle?: string
+  location?: string
+  /** @deprecated Prefer walkingTime. */
+  driveTime?: string
+  reasons?: string[]
+  note?: string
+  gallery?: PlaceCardGalleryImage[]
+  gps?: {
+    latitude: number
+    longitude: number
+  } | null
+}
+
 /** Daytime meal stop on a trip day (e.g. after Martvili Canyon). */
 export interface LunchEventDetails {
   whyHere: {
     title: string
     paragraphs: string[]
   }
-  restaurants: {
-    id: string
-    rank: string
-    name: string
-    subtitle: string
-    location: string
-    driveTime: string
-    reasons: string[]
-    averageCheck: string
-    note?: string
-  }[]
+  restaurants: PlaceCardData[]
   dishes: {
     id: string
     icon: string
@@ -416,6 +470,10 @@ export interface LunchEventDetails {
   tips: {
     id: string
     text: string
+  }[]
+  englishPhrases?: {
+    original: string
+    translation: string
   }[]
   nextAction: {
     title: string
@@ -525,6 +583,15 @@ export interface EveningCityEventDetails {
 export interface GuideEventDetails {
   introTitle?: string
   intro?: string[]
+  timeline?: {
+    title: string
+    range: string
+    steps: {
+      id: string
+      time: string
+      label: string
+    }[]
+  }
   gallery?: {
     id: string
     src: string
@@ -553,6 +620,9 @@ export interface GuideEventDetails {
     description: string
     image?: string
   }[]
+  /** Standard PlaceCards (hotel, beach, cafe…). */
+  placeCardsTitle?: string
+  placeCards?: PlaceCardData[]
   packingTitle?: string
   packingItems?: {
     id: string
@@ -563,6 +633,7 @@ export interface GuideEventDetails {
     title: string
     lines: string[]
   }
+  tipsTitle?: string
   tips: {
     id: string
     text: string
@@ -639,6 +710,125 @@ export interface MorningEventDetails {
     icon: string
     description: string
     eventId: string
+  }
+}
+
+/** Calm beach morning (e.g. Day 4 at Hotel Simpatia / Kobuleti Beach). */
+export interface BeachMorningEventDetails {
+  subtitle: string
+  timeline?: {
+    title: string
+    range: string
+    steps: {
+      id: string
+      time: string
+      label: string
+    }[]
+  }
+  location: {
+    hotelName: string
+    hotelAddress: string
+    beachName: string
+    googleMapsUrl: string
+    organicMapsUrl: string
+  }
+  breakfast: {
+    title: string
+    paragraphs: string[]
+    items: {
+      id: string
+      icon: string
+      title: string
+      note?: string
+    }[]
+  }
+  beachOverview: {
+    title: string
+    paragraphs: string[]
+    facts: {
+      id: string
+      icon: string
+      label: string
+      value: string
+      note?: string
+    }[]
+  }
+  whatToBring: {
+    title: string
+    items: {
+      id: string
+      icon: string
+      title: string
+    }[]
+  }
+  whatToLeave: {
+    title: string
+    items: {
+      id: string
+      icon: string
+      title: string
+    }[]
+  }
+  dailyTip: {
+    title: string
+    text: string
+  }
+  gallery?: {
+    id: string
+    src: string
+    alt: string
+  }[]
+  nextAction: {
+    title: string
+    icon: string
+    description: string
+    eventId: string
+    buttonLabel?: string
+  }
+}
+
+/** Fresh Black Sea fish lunch at a seafood restaurant (Day 4 Kobuleti). */
+export interface SeafoodLunchEventDetails {
+  timeline: {
+    title: string
+    range: string
+    steps: {
+      id: string
+      time: string
+      label: string
+    }[]
+  }
+  restaurantSectionTitle: string
+  restaurant: PlaceCardData
+  dishesSectionTitle: string
+  dishes: {
+    id: string
+    name: string
+    description: string
+    cookingMethod: string
+    price?: string | null
+    image: string
+    imageAlt: string
+  }[]
+  familyOrder: {
+    title: string
+    items: string[]
+  }
+  budget: {
+    title: string
+    familyNote: string
+    estimate: string
+    breakdown?: string[]
+  }
+  travelTip: {
+    title: string
+    text: string
+  }
+  nextAction: {
+    title: string
+    description: string
+    eventId: string
+    buttonLabel?: string
   }
 }
 
@@ -844,6 +1034,8 @@ export interface TripEvent {
   guideDetails?: GuideEventDetails
   hotelReturnDetails?: HotelReturnEventDetails
   morningDetails?: MorningEventDetails
+  beachMorningDetails?: BeachMorningEventDetails
+  seafoodLunchDetails?: SeafoodLunchEventDetails
   breakfastDetails?: BreakfastEventDetails
   attractionDetails?: AttractionEventDetails
 }
@@ -860,8 +1052,8 @@ export type PlaceCategory =
   | 'other'
 
 /**
- * Catalog card for the «Достопримечательности» section.
- * Detail content always lives on the linked trip event page (single source of truth).
+ * Catalog card for the «Достопримечательности» section (legacy).
+ * Prefer RoutePlace* types from places.ts.
  */
 export type AttractionCatalogCategory = 'attraction' | 'evening'
 
@@ -877,6 +1069,60 @@ export interface AttractionCatalogEntry {
   categoryLabel: string
   duration?: string
   price?: string
+  /** Always `/trip/event/:eventId` — same page as the trip timeline. */
+  href: string
+}
+
+/** Categories for the central «Места маршрута» guide. */
+export type RoutePlaceCategory =
+  | 'attraction'
+  | 'beach'
+  | 'mountain'
+  | 'waterfall'
+  | 'cafe'
+  | 'restaurant'
+  | 'shopping'
+  | 'evening'
+  | 'transport'
+  | 'airport'
+
+export type RoutePlaceBadge =
+  | 'free'
+  | 'family'
+  | 'best-photo'
+  | 'sunset'
+  | 'swim'
+  | 'marshrutka'
+  | 'bolt'
+  | 'walk'
+
+/** Lightweight index entry — display fields resolve from the linked trip event. */
+export interface RoutePlaceSource {
+  id: string
+  /** Opens the existing trip event page (single source of truth). */
+  eventId: string
+  category: RoutePlaceCategory
+  badges?: readonly RoutePlaceBadge[]
+  /** Only when known; otherwise taken from placeCards on the event. */
+  rating?: number
+}
+
+/** Resolved catalog card ready for the UI. */
+export interface RoutePlaceCard {
+  id: string
+  eventId: string
+  dayId: string
+  title: string
+  description: string
+  image: string | null
+  icon: string
+  category: RoutePlaceCategory
+  categoryLabel: string
+  categoryIcon: string
+  duration?: string
+  price?: string
+  rating?: number
+  badges: RoutePlaceBadge[]
   /** Always `/trip/event/:eventId` — same page as the trip timeline. */
   href: string
 }

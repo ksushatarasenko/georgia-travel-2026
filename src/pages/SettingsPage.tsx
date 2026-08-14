@@ -1,6 +1,13 @@
-import { ArrowLeft, Braces, ChevronRight, Sparkles } from 'lucide-react'
+import {
+  ArrowLeft,
+  Braces,
+  ChevronRight,
+  Share,
+  Smartphone,
+} from 'lucide-react'
 import { Link } from 'react-router-dom'
 import type { AppSection } from '../config/sections'
+import { usePwaInstall } from '../hooks/usePwaInstall'
 
 interface SettingsPageProps {
   section: AppSection
@@ -8,6 +15,7 @@ interface SettingsPageProps {
 
 export function SettingsPage({ section }: SettingsPageProps) {
   const Icon = section.icon
+  const { canInstall, install, installed, isIos } = usePwaInstall()
 
   return (
     <main className="relative flex min-h-screen overflow-hidden bg-[#f7f8f4] px-5 py-6 sm:px-8 sm:py-10">
@@ -35,17 +43,49 @@ export function SettingsPage({ section }: SettingsPageProps) {
               {section.title}
             </h1>
             <p className="mx-auto mt-4 max-w-md text-base leading-7 text-stone-500 sm:text-lg">
-              {section.description}
+              Установите гид на телефон или планшет — он откроется как обычное
+              приложение и будет работать без интернета.
             </p>
 
-            <button
-              type="button"
-              disabled
-              className="mt-9 inline-flex cursor-default items-center gap-2 rounded-full bg-emerald-800 px-6 py-3 text-sm font-semibold text-white shadow-[0_10px_25px_rgba(22,101,52,0.2)]"
-            >
-              <Sparkles size={17} aria-hidden="true" />
-              Скоро будет
-            </button>
+            {installed ? (
+              <p className="mt-9 rounded-2xl bg-emerald-50 px-5 py-4 text-sm leading-6 text-emerald-900">
+                Приложение уже на домашнем экране. Открывайте иконку
+                «Georgia 2026».
+              </p>
+            ) : canInstall ? (
+              <button
+                type="button"
+                onClick={() => void install()}
+                className="mt-9 inline-flex items-center gap-2 rounded-full bg-emerald-800 px-6 py-3 text-sm font-semibold text-white shadow-[0_10px_25px_rgba(22,101,52,0.2)] transition hover:bg-emerald-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700"
+              >
+                <Smartphone size={17} aria-hidden="true" />
+                Установить на устройство
+              </button>
+            ) : (
+              <div className="mt-9 space-y-3 text-left">
+                {isIos ? (
+                  <p className="rounded-2xl border border-stone-200 bg-[#f7f8f4] px-5 py-4 text-sm leading-6 text-stone-600">
+                    <Share
+                      size={16}
+                      className="mr-1.5 inline -mt-0.5 text-emerald-700"
+                      aria-hidden="true"
+                    />
+                    На iPhone или iPad откройте этот сайт в Safari, нажмите
+                    «Поделиться», затем «На экран „Домой“».
+                  </p>
+                ) : (
+                  <p className="rounded-2xl border border-stone-200 bg-[#f7f8f4] px-5 py-4 text-sm leading-6 text-stone-600">
+                    <Smartphone
+                      size={16}
+                      className="mr-1.5 inline -mt-0.5 text-emerald-700"
+                      aria-hidden="true"
+                    />
+                    В Chrome на телефоне или планшете откройте меню и выберите
+                    «Установить приложение» или «Добавить на главный экран».
+                  </p>
+                )}
+              </div>
+            )}
 
             <div className="mt-8 border-t border-stone-200 pt-6 text-left">
               <Link

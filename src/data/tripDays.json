@@ -40,7 +40,7 @@
     "id": "trip-day-03",
     "date": "2026-08-27",
     "title": "Переезд в Кобулети",
-    "description": "Сегодня мы покидаем Кутаиси и отправляемся в Кобулети — уютный курорт на побережье Чёрного моря. После заселения в отель нас ждёт первое знакомство с морем, прогулка по набережной и спокойный вечер на пляже.",
+    "description": "Переезд из Кутаиси в Guest House Citrus (ул. Тамар Мепе 136, Кобулети). Заселение 27.08.2026, проживание до 02.09.2026 (6 ночей). После заселения — обед рядом с Citrus, пляж у дома и вечер на набережной Тамар Мепе.",
     "icon": "🏖️",
     "eventIds": [
       "event-day-03-morning",
@@ -61,74 +61,122 @@
   {
     "id": "trip-day-04",
     "date": "2026-08-28",
-    "title": "День прогулок",
-    "description": "Тестовый маршрут без реальных объектов.",
-    "icon": "🚶",
+    "title": "Спокойный день в Кобулети",
+    "description": "Полный спокойный день у моря: утро на пляже, рыбный обед, сиеста в Hotel Simpatia, вечерний пляж, ужин и прогулка по набережной.",
+    "icon": "🌊",
     "eventIds": [
-      "event-demo-09",
-      "event-demo-10"
+      "event-day-04-beach-morning",
+      "event-day-04-seafood-lunch",
+      "event-day-04-siesta",
+      "event-day-04-evening-beach",
+      "event-day-04-dinner",
+      "event-day-04-evening-walk"
     ]
   },
   {
     "id": "trip-day-05",
     "date": "2026-08-29",
-    "title": "День отдыха",
-    "description": "Фиктивный спокойный день путешествия.",
-    "icon": "☀️",
+    "title": "Батуми — город у моря",
+    "description": "Сегодня отправляемся в Батуми — самый известный курорт Грузии. Нас ждут панорамные виды, прогулка по Приморскому бульвару, Старый город, символы Батуми и вечерние поющие фонтаны.",
+    "icon": "🌆",
     "eventIds": [
-      "event-demo-11",
-      "event-demo-12"
+      "event-day-05-breakfast",
+      "event-day-05-transfer-batumi",
+      "event-day-05-argo",
+      "event-day-05-old-town",
+      "event-day-05-lunch",
+      "event-day-05-boulevard",
+      "event-day-05-coffee",
+      "event-day-05-free-time",
+      "event-day-05-fountains",
+      "event-day-05-return",
+      "event-day-05-day-end"
     ]
   },
   {
     "id": "trip-day-06",
     "date": "2026-08-30",
-    "title": "Свободный день",
-    "description": "Тестовые события со свободным расписанием.",
-    "icon": "✨",
+    "title": "Магнитный пляж Шекветили",
+    "description": "Сегодня мы отправимся на один из самых необычных пляжей Грузии с черным магнитным песком.",
+    "icon": "🏖",
     "eventIds": [
-      "event-demo-13",
-      "event-demo-14"
+      "event-day-06-breakfast",
+      "event-day-06-morning-sea",
+      "event-day-06-hotel-return",
+      "event-day-06-lunch",
+      "event-day-06-transfer",
+      "event-day-06-beach",
+      "event-day-06-sunset",
+      "event-day-06-return",
+      "event-day-06-dinner",
+      "event-day-06-day-end"
     ]
   },
   {
     "id": "trip-day-07",
     "date": "2026-08-31",
-    "title": "День впечатлений",
-    "description": "Фиктивная дневная и вечерняя программа.",
-    "icon": "📷",
+    "title": "Вкусы Аджарии",
+    "description": "День местных вкусов в Кобулети: семейная винодельня, фермерский рынок, спокойный обед, отдых в отеле и вечер у моря.",
+    "icon": "🍷",
     "eventIds": [
-      "event-demo-15",
-      "event-demo-16"
+      "event-day-07-breakfast",
+      "event-day-07-winery",
+      "event-day-07-market",
+      "event-day-07-lunch",
+      "event-day-07-siesta",
+      "event-day-07-evening-sea",
+      "event-day-07-dinner",
+      "event-day-07-day-end"
     ]
   },
   {
     "id": "trip-day-08",
     "date": "2026-09-01",
-    "title": "Спокойный день",
-    "description": "Тестовый план без привязки к реальным местам.",
-    "icon": "🌿",
+    "title": "Путешествие в облака — Гомис-Мта",
+    "description": "Самый зрелищный день поездки: подъём на Гомис-Мта ≈2100 м, виды выше облаков и возвращение к морю.",
+    "icon": "⛰",
     "eventIds": [
-      "event-demo-17",
-      "event-demo-18"
+      "event-day-08-wake",
+      "event-day-08-breakfast",
+      "event-day-08-departure",
+      "event-day-08-stop",
+      "event-day-08-ascent",
+      "event-day-08-summit",
+      "event-day-08-lunch",
+      "event-day-08-viewpoints",
+      "event-day-08-return",
+      "event-day-08-kobuleti",
+      "event-day-08-dinner",
+      "event-day-08-day-end"
     ]
   },
   {
     "id": "trip-day-09",
     "date": "2026-09-02",
-    "title": "Завершающий день",
-    "description": "Фиктивная программа перед возвращением.",
-    "icon": "🎒",
+    "title": "Последний день у моря",
+    "description": "Спокойный прощальный день: последнее купание, сборы, сувениры и переезд к аэропорту Кутаиси.",
+    "icon": "🌊",
     "eventIds": [
-      "event-demo-19",
-      "event-demo-20"
+      "event-day-09-breakfast",
+      "event-day-09-swim",
+      "event-day-09-shower",
+      "event-day-09-packing",
+      "event-day-09-checkout",
+      "event-day-09-lunch",
+      "event-day-09-souvenirs",
+      "event-day-09-coffee",
+      "event-day-09-transfer",
+      "event-day-09-hotel",
+      "event-day-09-dinner",
+      "event-day-09-sleep",
+      "event-day-09-day-end"
     ]
   },
   {
     "id": "trip-day-10",
     "date": "2026-09-03",
     "title": "Возвращение домой",
-    "description": "Тестовый план заключительного дня поездки.",
+    "description": "Выезд и дорога домой.",
     "icon": "🏠",
     "eventIds": [
       "event-demo-21",

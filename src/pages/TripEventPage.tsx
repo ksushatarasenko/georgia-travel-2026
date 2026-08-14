@@ -13,6 +13,7 @@ import { Link, Navigate, useParams, useSearchParams } from 'react-router-dom'
 import { ArrivalEventContent } from '../components/ArrivalEventContent'
 import { AttractionEventContent } from '../components/AttractionEventContent'
 import { AtmEventContent } from '../components/AtmEventContent'
+import { BeachMorningEventContent } from '../components/BeachMorningEventContent'
 import { BoltEventContent } from '../components/BoltEventContent'
 import { BreakfastEventContent } from '../components/BreakfastEventContent'
 import { Breadcrumbs } from '../components/Breadcrumbs'
@@ -28,6 +29,7 @@ import { LinkedEntityCard } from '../components/LinkedEntityCard'
 import { MorningEventContent } from '../components/MorningEventContent'
 import { PlaceCard } from '../components/PlaceCard'
 import { ReturnDriveEventContent } from '../components/ReturnDriveEventContent'
+import { SeafoodLunchEventContent } from '../components/SeafoodLunchEventContent'
 import { SimEventContent } from '../components/SimEventContent'
 import { StoreEventContent } from '../components/StoreEventContent'
 import { WalkEventContent } from '../components/WalkEventContent'
@@ -180,10 +182,15 @@ export function TripEventPage() {
       event.eveningCityDetails ||
       event.guideDetails ||
       event.hotelReturnDetails ||
-      event.attractionDetails,
+      event.attractionDetails ||
+      event.beachMorningDetails ||
+      event.seafoodLunchDetails,
   )
   const hideOuterHeader = Boolean(
-    event.breakfastDetails || event.morningDetails,
+    event.breakfastDetails ||
+      event.morningDetails ||
+      event.beachMorningDetails ||
+      event.seafoodLunchDetails,
   )
 
   const breadcrumbItems = fromSights
@@ -310,6 +317,13 @@ export function TripEventPage() {
             <HotelReturnEventContent details={event.hotelReturnDetails} />
           ) : event.morningDetails ? (
             <MorningEventContent details={event.morningDetails} />
+          ) : event.beachMorningDetails ? (
+            <BeachMorningEventContent
+              details={event.beachMorningDetails}
+              favoriteId={event.id}
+            />
+          ) : event.seafoodLunchDetails ? (
+            <SeafoodLunchEventContent details={event.seafoodLunchDetails} />
           ) : event.breakfastDetails ? (
             <BreakfastEventContent
               details={event.breakfastDetails}
@@ -426,7 +440,7 @@ export function TripEventPage() {
                         {nearbyRestaurants.map((restaurant) => (
                           <LinkedEntityCard
                             key={restaurant.id}
-                            to="/cafes"
+                            to="/sights"
                             icon="🍽️"
                             eyebrow="Ресторан"
                             title={restaurant.name}

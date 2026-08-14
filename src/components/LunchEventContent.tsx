@@ -1,14 +1,15 @@
 import {
-  ArrowRight,
   CircleDollarSign,
   Clock3,
+  Languages,
   Lightbulb,
   MapPin,
   UtensilsCrossed,
 } from 'lucide-react'
 import type { ReactNode } from 'react'
-import { Link } from 'react-router-dom'
 import type { LunchEventDetails } from '../types/data'
+import { EventNavFooter } from './EventNavFooter'
+import { PlaceCard } from './PlaceCard'
 
 interface LunchEventContentProps {
   details: LunchEventDetails
@@ -64,64 +65,36 @@ export function LunchEventContent({ details }: LunchEventContentProps) {
         >
           <div className="grid gap-4 sm:grid-cols-2">
             {details.restaurants.map((restaurant) => (
-              <article
-                key={restaurant.id}
-                className="flex h-full flex-col overflow-hidden rounded-[1.5rem] border border-stone-200 bg-stone-50"
-              >
-                <div className="border-b border-stone-200 bg-white p-5">
-                  <div className="flex items-start gap-3">
-                    <span className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-amber-50 text-2xl">
-                      {restaurant.rank}
-                    </span>
-                    <div className="min-w-0">
-                      <h3 className="text-lg font-semibold tracking-[-0.03em] text-stone-950 sm:text-xl">
-                        {restaurant.name}
-                      </h3>
-                      <p className="mt-1 text-sm leading-6 text-stone-500">
-                        {restaurant.subtitle}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex flex-1 flex-col p-5">
-                  <div className="space-y-2 text-sm text-stone-600">
-                    <p>📍 {restaurant.location}</p>
-                    <p>🚗 {restaurant.driveTime}</p>
-                  </div>
-
-                  <p className="mt-5 text-sm font-semibold text-stone-900">
-                    Почему стоит выбрать
-                  </p>
-                  <ul className="mt-3 space-y-2">
-                    {restaurant.reasons.map((reason) => (
-                      <li
-                        key={reason}
-                        className="flex gap-2 text-sm leading-6 text-stone-600"
-                      >
-                        <span className="mt-2 size-1.5 shrink-0 rounded-full bg-emerald-600" />
-                        {reason}
-                      </li>
-                    ))}
-                  </ul>
-
-                  {restaurant.note && (
-                    <p className="mt-4 rounded-2xl bg-amber-50 px-4 py-3 text-sm leading-6 text-amber-900">
-                      {restaurant.note}
-                    </p>
-                  )}
-
-                  <div className="mt-auto pt-5">
-                    <p className="rounded-2xl bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-900">
-                      👤 Средний чек: {restaurant.averageCheck}
-                    </p>
-                  </div>
-                </div>
-              </article>
+              <PlaceCard key={restaurant.id} data={restaurant} />
             ))}
           </div>
         </LunchSection>
       </div>
+
+      {details.englishPhrases && details.englishPhrases.length > 0 ? (
+        <div className="lg:col-span-2">
+          <LunchSection
+            icon={<Languages size={22} aria-hidden="true" />}
+            title="🗣 English phrases"
+          >
+            <ul className="grid gap-3 sm:grid-cols-2">
+              {details.englishPhrases.map((phrase) => (
+                <li
+                  key={phrase.original}
+                  className="rounded-[1.25rem] border border-stone-200 bg-stone-50 p-4"
+                >
+                  <p className="text-sm font-semibold text-stone-950">
+                    {phrase.original}
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-stone-500">
+                    {phrase.translation}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </LunchSection>
+        </div>
+      ) : null}
 
       <div className="lg:col-span-2">
         <LunchSection
@@ -211,37 +184,7 @@ export function LunchEventContent({ details }: LunchEventContentProps) {
         </LunchSection>
       </div>
 
-      <div className="lg:col-span-2">
-        <LunchSection
-          icon={<ArrowRight size={22} aria-hidden="true" />}
-          title="➡️ Следующий шаг"
-        >
-          <Link
-            to={`/trip/event/${details.nextAction.eventId}`}
-            className="group flex items-center gap-4 rounded-[1.5rem] bg-emerald-900 p-5 text-white shadow-[0_15px_40px_rgba(20,83,45,0.18)] transition hover:-translate-y-0.5 hover:bg-emerald-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 sm:p-7"
-          >
-            <span className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-2xl">
-              {details.nextAction.icon}
-            </span>
-            <span className="min-w-0 flex-1">
-              <span className="block text-xl font-semibold">
-                {details.nextAction.title}
-              </span>
-              <span className="mt-1 block text-sm leading-6 text-emerald-100/80">
-                {details.nextAction.description}
-              </span>
-            </span>
-            <span className="inline-flex shrink-0 items-center gap-2 text-sm font-semibold">
-              {details.nextAction.buttonLabel}
-              <ArrowRight
-                size={18}
-                className="transition group-hover:translate-x-1"
-                aria-hidden="true"
-              />
-            </span>
-          </Link>
-        </LunchSection>
-      </div>
+      <EventNavFooter action={details.nextAction} />
     </div>
   )
 }

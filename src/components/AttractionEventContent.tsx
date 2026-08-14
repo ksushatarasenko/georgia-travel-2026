@@ -1,5 +1,4 @@
 import {
-  ArrowRight,
   Building2,
   Check,
   Clock3,
@@ -11,8 +10,8 @@ import {
   Ticket,
 } from 'lucide-react'
 import { useEffect, useMemo, useState, type ReactNode } from 'react'
-import { Link } from 'react-router-dom'
 import type { AttractionEventDetails } from '../types/data'
+import { EventNavFooter } from './EventNavFooter'
 import { LightboxImage } from './lightbox'
 
 interface AttractionEventContentProps {
@@ -810,37 +809,7 @@ export function AttractionEventContent({
         </AttractionSection>
       </div>
 
-      <div className="lg:col-span-2">
-        <AttractionSection
-          icon={<Mountain size={22} aria-hidden="true" />}
-          title="Следующий шаг"
-        >
-          <Link
-            to={`/trip/event/${details.nextAction.eventId}`}
-            className="group flex items-center gap-4 rounded-[1.5rem] bg-emerald-900 p-5 text-white shadow-[0_15px_40px_rgba(20,83,45,0.18)] transition hover:-translate-y-0.5 hover:bg-emerald-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 sm:p-7"
-          >
-            <span className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-2xl">
-              {details.nextAction.icon}
-            </span>
-            <span className="min-w-0 flex-1">
-              <span className="block text-xl font-semibold">
-                {details.nextAction.title}
-              </span>
-              <span className="mt-1 block text-sm leading-6 text-emerald-100/80">
-                {details.nextAction.description}
-              </span>
-            </span>
-            <span className="inline-flex shrink-0 items-center gap-2 text-sm font-semibold">
-              {details.nextAction.buttonLabel}
-              <ArrowRight
-                size={18}
-                className="transition group-hover:translate-x-1"
-                aria-hidden="true"
-              />
-            </span>
-          </Link>
-        </AttractionSection>
-      </div>
+      <EventNavFooter action={details.nextAction} />
     </div>
   )
 }

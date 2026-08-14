@@ -1,5 +1,4 @@
 import {
-  ArrowRight,
   Camera,
   Check,
   Lightbulb,
@@ -7,9 +6,11 @@ import {
   MapPin,
 } from 'lucide-react'
 import { useEffect, useMemo, useState, type ReactNode } from 'react'
-import { Link } from 'react-router-dom'
 import type { GuideEventDetails } from '../types/data'
+import { EventNavFooter } from './EventNavFooter'
 import { LightboxImage } from './lightbox'
+import { PlaceCard } from './PlaceCard'
+import { ScheduleCard } from './ScheduleCard'
 
 interface GuideEventContentProps {
   details: GuideEventDetails
@@ -88,6 +89,16 @@ export function GuideEventContent({
 
   return (
     <div className="grid gap-5 lg:grid-cols-2">
+      {details.timeline ? (
+        <div className="lg:col-span-2">
+          <ScheduleCard
+            title={details.timeline.title}
+            range={details.timeline.range}
+            steps={details.timeline.steps}
+          />
+        </div>
+      ) : null}
+
       {details.intro && details.intro.length > 0 && (
         <div className="lg:col-span-2">
           <Section
@@ -252,6 +263,25 @@ export function GuideEventContent({
         </div>
       )}
 
+      {details.placeCards && details.placeCards.length > 0 ? (
+        <div className="lg:col-span-2">
+          <Section
+            icon={<MapPin size={22} aria-hidden="true" />}
+            title={details.placeCardsTitle ?? 'Места'}
+          >
+            <div
+              className={`grid gap-5 ${
+                details.placeCards.length > 1 ? 'lg:grid-cols-2' : ''
+              }`}
+            >
+              {details.placeCards.map((place) => (
+                <PlaceCard key={place.id} data={place} />
+              ))}
+            </div>
+          </Section>
+        </div>
+      ) : null}
+
       {details.packingItems && details.packingItems.length > 0 && (
         <div className="lg:col-span-2">
           <Section
@@ -301,7 +331,7 @@ export function GuideEventContent({
         <div className="lg:col-span-2">
           <Section
             icon={<Lightbulb size={22} aria-hidden="true" />}
-            title="💡 Полезные советы"
+            title={details.tipsTitle ?? 'Полезные советы'}
           >
             <ul className="grid gap-3 sm:grid-cols-2">
               {details.tips.map((tip) => (
@@ -413,40 +443,7 @@ export function GuideEventContent({
         </div>
       )}
 
-      <div className="lg:col-span-2">
-        <Section
-          icon={<ArrowRight size={22} aria-hidden="true" />}
-          title="➡️ Следующий шаг"
-        >
-          <Link
-            to={
-              details.nextAction.to ??
-              `/trip/event/${details.nextAction.eventId}`
-            }
-            className="group flex items-center gap-4 rounded-[1.5rem] bg-emerald-900 p-5 text-white shadow-[0_15px_40px_rgba(20,83,45,0.18)] transition hover:-translate-y-0.5 hover:bg-emerald-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 sm:p-7"
-          >
-            <span className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-2xl">
-              {details.nextAction.icon}
-            </span>
-            <span className="min-w-0 flex-1">
-              <span className="block text-xl font-semibold">
-                {details.nextAction.title}
-              </span>
-              <span className="mt-1 block text-sm leading-6 text-emerald-100/80">
-                {details.nextAction.description}
-              </span>
-            </span>
-            <span className="inline-flex shrink-0 items-center gap-2 text-sm font-semibold">
-              {details.nextAction.buttonLabel}
-              <ArrowRight
-                size={18}
-                className="transition group-hover:translate-x-1"
-                aria-hidden="true"
-              />
-            </span>
-          </Link>
-        </Section>
-      </div>
+      <EventNavFooter action={details.nextAction} />
     </div>
   )
 }

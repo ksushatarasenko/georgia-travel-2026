@@ -103,7 +103,7 @@ export function TripDayPage() {
               План дня
             </p>
             <h2 className="mt-2 text-3xl font-semibold tracking-[-0.04em] text-stone-950">
-              Timeline
+              Расписание дня
             </h2>
           </div>
 
@@ -111,51 +111,96 @@ export function TripDayPage() {
             <div className="absolute bottom-8 left-[5.45rem] top-8 w-px bg-emerald-200 sm:left-[7.25rem]" />
 
             <div className="space-y-5">
-              {events.map((event) => (
-                <div
-                  key={event.id}
-                  className="relative grid grid-cols-[3.6rem_2.75rem_minmax(0,1fr)] items-start gap-2 sm:grid-cols-[5rem_3rem_minmax(0,1fr)] sm:gap-3"
-                >
-                  <time className="pt-4 text-sm font-semibold text-stone-700 sm:text-base">
-                    {event.isPlaceholder && !event.isTimeConfirmed
-                      ? '—'
-                      : event.time}
-                  </time>
+              {events.map((event) => {
+                const isDayEnd =
+                  event.title === 'День завершён' ||
+                  event.title.includes('До свидания')
 
-                  <span className="relative z-10 flex size-11 items-center justify-center rounded-full border-4 border-[#f7f8f4] bg-white text-lg shadow-[0_4px_16px_rgba(28,43,34,0.12)] sm:size-12">
-                    {event.icon}
-                  </span>
-
-                  <Link
-                    to={`/trip/event/${event.id}`}
-                    className="group min-w-0 rounded-[1.5rem] border border-stone-200/80 bg-white p-5 shadow-[0_8px_28px_rgba(28,43,34,0.06)] transition duration-300 hover:-translate-y-0.5 hover:border-emerald-200 hover:shadow-[0_16px_38px_rgba(28,43,34,0.10)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 sm:p-6"
+                return (
+                  <div
+                    key={event.id}
+                    className="relative grid grid-cols-[3.6rem_2.75rem_minmax(0,1fr)] items-start gap-2 sm:grid-cols-[5rem_3rem_minmax(0,1fr)] sm:gap-3"
                   >
-                    <div className="flex items-start justify-between gap-3">
-                      <div className="min-w-0">
-                        <h3 className="text-lg font-semibold tracking-[-0.025em] text-stone-950 sm:text-xl">
-                          {event.title}
-                        </h3>
-                        {!event.isPlaceholder && event.description && (
-                          <p className="mt-2 line-clamp-2 text-sm leading-6 text-stone-500">
-                            {event.description}
-                          </p>
-                        )}
+                    <time className="pt-4 text-sm font-semibold text-stone-700 sm:text-base">
+                      {event.isPlaceholder && !event.isTimeConfirmed
+                        ? '—'
+                        : event.time}
+                    </time>
+
+                    <span className="relative z-10 flex size-11 items-center justify-center rounded-full border-4 border-[#f7f8f4] bg-white text-lg shadow-[0_4px_16px_rgba(28,43,34,0.12)] sm:size-12">
+                      {event.icon}
+                    </span>
+
+                    {isDayEnd ? (
+                      <div className="min-w-0 overflow-hidden rounded-[1.5rem] border border-stone-200/80 bg-white shadow-[0_8px_28px_rgba(28,43,34,0.06)]">
+                        <div className="p-5 sm:p-6">
+                          <h3 className="text-lg font-semibold tracking-[-0.025em] text-stone-950 sm:text-xl">
+                            {event.title}
+                          </h3>
+                          {event.description ? (
+                            <p className="mt-2 text-sm leading-6 text-stone-500">
+                              {event.description}
+                            </p>
+                          ) : null}
+                          {event.duration ? (
+                            <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-stone-400">
+                              <Clock3 size={14} aria-hidden="true" />
+                              {event.duration}
+                            </span>
+                          ) : null}
+                          <Link
+                            to="/trip"
+                            className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-[1.25rem] bg-emerald-900 px-5 py-3.5 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(20,83,45,0.18)] transition hover:bg-emerald-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 sm:w-auto"
+                          >
+                            Вернуться к плану дня
+                            <ArrowRight size={16} aria-hidden="true" />
+                          </Link>
+                        </div>
                       </div>
-                      <ArrowRight
-                        size={19}
-                        className="mt-1 shrink-0 text-stone-300 transition group-hover:translate-x-1 group-hover:text-emerald-700"
-                        aria-hidden="true"
-                      />
-                    </div>
-                    {!event.isPlaceholder && event.duration && (
-                      <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-stone-400">
-                        <Clock3 size={14} aria-hidden="true" />
-                        {event.duration}
-                      </span>
+                    ) : (
+                      <Link
+                        to={`/trip/event/${event.id}`}
+                        className="group min-w-0 overflow-hidden rounded-[1.5rem] border border-stone-200/80 bg-white shadow-[0_8px_28px_rgba(28,43,34,0.06)] transition duration-300 hover:-translate-y-0.5 hover:border-emerald-200 hover:shadow-[0_16px_38px_rgba(28,43,34,0.10)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700"
+                      >
+                        {event.image ? (
+                          <div className="aspect-[21/9] overflow-hidden bg-stone-100 sm:aspect-[24/9]">
+                            <img
+                              src={event.image}
+                              alt=""
+                              className="size-full object-cover transition duration-500 group-hover:scale-[1.02]"
+                            />
+                          </div>
+                        ) : null}
+                        <div className="p-5 sm:p-6">
+                          <div className="flex items-start justify-between gap-3">
+                            <div className="min-w-0">
+                              <h3 className="text-lg font-semibold tracking-[-0.025em] text-stone-950 sm:text-xl">
+                                {event.title}
+                              </h3>
+                              {event.description ? (
+                                <p className="mt-2 line-clamp-2 text-sm leading-6 text-stone-500">
+                                  {event.description}
+                                </p>
+                              ) : null}
+                            </div>
+                            <ArrowRight
+                              size={19}
+                              className="mt-1 shrink-0 text-stone-300 transition group-hover:translate-x-1 group-hover:text-emerald-700"
+                              aria-hidden="true"
+                            />
+                          </div>
+                          {event.duration ? (
+                            <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-stone-400">
+                              <Clock3 size={14} aria-hidden="true" />
+                              {event.duration}
+                            </span>
+                          ) : null}
+                        </div>
+                      </Link>
                     )}
-                  </Link>
-                </div>
-              ))}
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>

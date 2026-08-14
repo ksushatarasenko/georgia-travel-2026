@@ -1,15 +1,13 @@
 import {
-  ArrowRight,
   Check,
   CircleDollarSign,
-  Clock3,
   Coffee,
   Lightbulb,
-  Mountain,
 } from 'lucide-react'
 import { useEffect, useState, type ReactNode } from 'react'
-import { Link } from 'react-router-dom'
 import type { BreakfastEventDetails } from '../types/data'
+import { EventNavFooter } from './EventNavFooter'
+import { ScheduleCard } from './ScheduleCard'
 
 const breakfastChecklistStorageKey =
   'georgia-travel-2026:breakfast:checklist'
@@ -83,27 +81,14 @@ export function BreakfastEventContent({
       </div>
 
       <div className="lg:col-span-2">
-        <BreakfastSection
-          icon={<Clock3 size={22} aria-hidden="true" />}
+        <ScheduleCard
           title="Расписание утра"
-        >
-          <div className="grid gap-4 sm:grid-cols-3">
-            {details.schedule.map((item) => (
-              <article
-                key={item.id}
-                className="rounded-[1.5rem] border border-stone-200 bg-stone-50 p-5"
-              >
-                <span className="flex size-12 items-center justify-center rounded-xl bg-white text-2xl shadow-sm">
-                  {item.icon}
-                </span>
-                <p className="mt-5 text-xs font-semibold uppercase tracking-[0.13em] text-stone-400">
-                  {item.label}
-                </p>
-                <p className="mt-2 font-semibold text-stone-900">{item.value}</p>
-              </article>
-            ))}
-          </div>
-        </BreakfastSection>
+          steps={details.schedule.map((item) => ({
+            id: item.id,
+            time: item.value,
+            label: item.label,
+          }))}
+        />
       </div>
 
       <div className="lg:col-span-2">
@@ -259,37 +244,7 @@ export function BreakfastEventContent({
         </BreakfastSection>
       </div>
 
-      <div className="lg:col-span-2">
-        <BreakfastSection
-          icon={<Mountain size={22} aria-hidden="true" />}
-          title="Следующий шаг"
-        >
-          <Link
-            to={`/trip/event/${details.nextAction.eventId}`}
-            className="group flex items-center gap-4 rounded-[1.5rem] bg-emerald-900 p-5 text-white shadow-[0_15px_40px_rgba(20,83,45,0.18)] transition hover:-translate-y-0.5 hover:bg-emerald-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 sm:p-7"
-          >
-            <span className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-2xl">
-              {details.nextAction.icon}
-            </span>
-            <span className="min-w-0 flex-1">
-              <span className="block text-xl font-semibold">
-                {details.nextAction.title}
-              </span>
-              <span className="mt-1 block text-sm leading-6 text-emerald-100/80">
-                {details.nextAction.description}
-              </span>
-            </span>
-            <span className="inline-flex shrink-0 items-center gap-2 text-sm font-semibold">
-              {details.nextAction.buttonLabel}
-              <ArrowRight
-                size={18}
-                className="transition group-hover:translate-x-1"
-                aria-hidden="true"
-              />
-            </span>
-          </Link>
-        </BreakfastSection>
-      </div>
+      <EventNavFooter action={details.nextAction} />
     </div>
   )
 }
