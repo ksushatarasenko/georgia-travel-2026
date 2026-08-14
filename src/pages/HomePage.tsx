@@ -112,6 +112,15 @@ export function HomePage() {
               <SectionCard key={section.path} section={section} index={index} />
             ))}
           </div>
+
+          <p className="mt-10 text-center">
+            <Link
+              to="/settings"
+              className="text-sm font-medium text-stone-400 transition hover:text-emerald-800"
+            >
+              Настройки
+            </Link>
+          </p>
         </div>
       </section>
     </main>

@@ -25,30 +25,18 @@ import { FlightEventContent } from '../components/FlightEventContent'
 import { HotelCheckInEventContent } from '../components/HotelCheckInEventContent'
 import { HotelReturnEventContent } from '../components/HotelReturnEventContent'
 import { LightboxImage } from '../components/lightbox'
-import { LinkedEntityCard } from '../components/LinkedEntityCard'
 import { MorningEventContent } from '../components/MorningEventContent'
-import { PlaceCard } from '../components/PlaceCard'
 import { ReturnDriveEventContent } from '../components/ReturnDriveEventContent'
 import { SeafoodLunchEventContent } from '../components/SeafoodLunchEventContent'
 import { SimEventContent } from '../components/SimEventContent'
 import { StoreEventContent } from '../components/StoreEventContent'
 import { WalkEventContent } from '../components/WalkEventContent'
 import { dataService } from '../services/dataService'
-import type {
-  Document as TravelDocument,
-  Transport,
-  TripEvent,
-  TripEventCategory,
-} from '../types/data'
+import type { TripEvent, TripEventCategory } from '../types/data'
 import { TripEventPlaceholderPage } from './TripEventPlaceholderPage'
 
 const tripDays = dataService.getTripDays()
 const tripEvents = dataService.getTripEvents()
-const places = dataService.getPlaces()
-const restaurants = dataService.getRestaurants()
-const transportItems = dataService.getTransport()
-const documents = dataService.getDocuments()
-const tips = dataService.getTips()
 
 const categoryLabels: Record<TripEventCategory, string> = {
   flight: 'Перелёт',
@@ -60,20 +48,6 @@ const categoryLabels: Record<TripEventCategory, string> = {
   activity: 'Активность',
   document: 'Документы',
   other: 'Другое',
-}
-
-const transportTypeLabels: Record<Transport['type'], string> = {
-  flight: 'Самолёт',
-  train: 'Поезд',
-  bus: 'Автобус',
-  car: 'Автомобиль',
-  other: 'Другое',
-}
-
-const documentStatusLabels: Record<TravelDocument['status'], string> = {
-  missing: 'Не готов',
-  ready: 'Готов',
-  checked: 'Проверен',
 }
 
 function formatDate(date: string) {
@@ -148,28 +122,6 @@ export function TripEventPage() {
   if (event.isPlaceholder) {
     return <TripEventPlaceholderPage day={day} event={event} />
   }
-
-  const linkedPlace = event.references.placeId
-    ? places.find((place) => place.id === event.references.placeId)
-    : undefined
-  const linkedTransport = event.references.transportId
-    ? transportItems.find(
-        (transport) => transport.id === event.references.transportId,
-      )
-    : undefined
-  const nearbyRestaurants = event.references.nearbyRestaurantIds
-    .map((restaurantId) =>
-      restaurants.find((restaurant) => restaurant.id === restaurantId),
-    )
-    .filter((restaurant) => restaurant !== undefined)
-  const linkedDocuments = event.references.documentIds
-    .map((documentId) =>
-      documents.find((document) => document.id === documentId),
-    )
-    .filter((document) => document !== undefined)
-  const linkedTips = event.references.tipIds
-    .map((tipId) => tips.find((tip) => tip.id === tipId))
-    .filter((tip) => tip !== undefined)
 
   const showAttractionPhoto = isAttractionEvent(event)
   const usesSimplePageHeader = Boolean(
@@ -393,88 +345,6 @@ export function TripEventPage() {
                 </div>
               </dl>
 
-              {(linkedPlace ||
-                linkedTransport ||
-                nearbyRestaurants.length > 0 ||
-                linkedDocuments.length > 0) && (
-                <div className="mt-12 space-y-10 border-t border-stone-200 pt-10">
-                  {linkedPlace && (
-                    <section>
-                      <p className="text-sm font-semibold uppercase tracking-[0.16em] text-emerald-700">
-                        📍 Место
-                      </p>
-                      <div className="mt-4 max-w-2xl">
-                        <PlaceCard
-                          place={linkedPlace}
-                          variant="compact"
-                          to="/places"
-                        />
-                      </div>
-                    </section>
-                  )}
-
-                  {linkedTransport && (
-                    <section>
-                      <p className="text-sm font-semibold uppercase tracking-[0.16em] text-emerald-700">
-                        🚌 Транспорт
-                      </p>
-                      <div className="mt-4 max-w-md">
-                        <LinkedEntityCard
-                          to="/transport"
-                          icon="🚌"
-                          eyebrow="Транспорт"
-                          title={linkedTransport.title}
-                          description={`${linkedTransport.departure} → ${linkedTransport.arrival}`}
-                          meta={transportTypeLabels[linkedTransport.type]}
-                        />
-                      </div>
-                    </section>
-                  )}
-
-                  {nearbyRestaurants.length > 0 && (
-                    <section>
-                      <p className="text-sm font-semibold uppercase tracking-[0.16em] text-emerald-700">
-                        🍽 Рядом
-                      </p>
-                      <div className="mt-4 grid gap-4 sm:grid-cols-2">
-                        {nearbyRestaurants.map((restaurant) => (
-                          <LinkedEntityCard
-                            key={restaurant.id}
-                            to="/sights"
-                            icon="🍽️"
-                            eyebrow="Ресторан"
-                            title={restaurant.name}
-                            description={`${restaurant.cuisine} · ${restaurant.address}`}
-                            meta={`Уровень ${restaurant.priceLevel}`}
-                          />
-                        ))}
-                      </div>
-                    </section>
-                  )}
-
-                  {linkedDocuments.length > 0 && (
-                    <section>
-                      <p className="text-sm font-semibold uppercase tracking-[0.16em] text-emerald-700">
-                        📄 Полезные документы
-                      </p>
-                      <div className="mt-4 grid gap-4 sm:grid-cols-2">
-                        {linkedDocuments.map((document) => (
-                          <LinkedEntityCard
-                            key={document.id}
-                            to="/documents"
-                            icon="📄"
-                            eyebrow="Документ"
-                            title={document.title}
-                            description={`Владелец: ${document.holder}`}
-                            meta={documentStatusLabels[document.status]}
-                          />
-                        ))}
-                      </div>
-                    </section>
-                  )}
-                </div>
-              )}
-
               <div className="mt-10 grid gap-5 lg:grid-cols-2">
                 <section className="rounded-[1.75rem] border border-emerald-100 bg-emerald-50/60 p-6 sm:p-7">
                   <div className="flex items-center gap-3">
@@ -486,24 +356,12 @@ export function TripEventPage() {
                     </h2>
                   </div>
                   <ul className="mt-5 space-y-3 text-sm leading-6 text-stone-600">
-                    {linkedTips.length > 0
-                      ? linkedTips.map((tip) => (
-                          <li key={tip.id} className="flex gap-3">
-                            <span className="mt-2 size-1.5 shrink-0 rounded-full bg-emerald-600" />
-                            <span>
-                              <strong className="block font-semibold text-stone-800">
-                                {tip.title}
-                              </strong>
-                              <span className="mt-1 block">{tip.content}</span>
-                            </span>
-                          </li>
-                        ))
-                      : event.tips.map((tip) => (
-                          <li key={tip} className="flex gap-3">
-                            <span className="mt-2 size-1.5 shrink-0 rounded-full bg-emerald-600" />
-                            {tip}
-                          </li>
-                        ))}
+                    {event.tips.map((tip) => (
+                      <li key={tip} className="flex gap-3">
+                        <span className="mt-2 size-1.5 shrink-0 rounded-full bg-emerald-600" />
+                        {tip}
+                      </li>
+                    ))}
                   </ul>
                 </section>
 
