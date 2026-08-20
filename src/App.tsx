@@ -5,6 +5,8 @@ import { sections } from './config/sections'
 import { AttractionsPage } from './pages/AttractionsPage'
 import { BudgetPage } from './pages/BudgetPage'
 import { ChecklistPage } from './pages/ChecklistPage'
+import { DocumentsPage } from './pages/DocumentsPage'
+import { ShoppingPage } from './pages/ShoppingPage'
 import { DeveloperPage } from './pages/DeveloperPage'
 import { HomePage } from './pages/HomePage'
 import { SettingsPage } from './pages/SettingsPage'
@@ -30,6 +32,8 @@ function App() {
           <Route path="/settings/developer" element={<DeveloperPage />} />
           <Route path="/checklist" element={<ChecklistPage />} />
           <Route path="/budget" element={<BudgetPage />} />
+          <Route path="/shopping" element={<ShoppingPage />} />
+          <Route path="/documents" element={<DocumentsPage />} />
           <Route path="/sights" element={<AttractionsPage />} />
           <Route path="/trip" element={<TripPage />} />
           <Route path="/trip/event/:eventId" element={<TripEventPage />} />

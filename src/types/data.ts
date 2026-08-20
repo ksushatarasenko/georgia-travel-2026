@@ -47,13 +47,6 @@ export interface TripEventReferences {
   tipIds: string[]
 }
 
-export interface FlightDocumentAttachment {
-  id: string
-  title: string
-  icon: string
-  filePath: string
-  available: boolean
-}
 
 export interface FlightChecklistItem {
   id: string
@@ -84,7 +77,7 @@ export interface FlightEventDetails {
     dimensions: string
   }
   checkIn: string
-  documents: FlightDocumentAttachment[]
+  documentIds: string[]
   cabinBag?: {
     dimensions: string
     imagePath: string

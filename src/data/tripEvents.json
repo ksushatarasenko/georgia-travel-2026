@@ -46,84 +46,18 @@
         "dimensions": "40 × 30 × 20 см"
       },
       "checkIn": "Автоматическая регистрация куплена.",
-      "documents": [
-        {
-          "id": "flight-booking",
-          "title": "Подтверждение бронирования",
-          "icon": "🧾",
-          "filePath": "/documents/flight/booking.pdf",
-          "available": false
-        },
-        {
-          "id": "boarding-pass-oksana",
-          "title": "Посадочный талон — Оксана",
-          "icon": "🎫",
-          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQTu6__TofI2QKB25DFb_U0QATay58UfUxqXbejNbzuJfz4",
-          "available": true
-        },
-        {
-          "id": "boarding-pass-marina",
-          "title": "Посадочный талон — Марина",
-          "icon": "🎫",
-          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQSFLL19uNRfRZQlTL1xZ93SAcRIuJOUlKX3_jYs78tTVDU",
-          "available": true
-        },
-        {
-          "id": "boarding-pass-kyrylo",
-          "title": "Посадочный талон — Kyrylo",
-          "icon": "🎫",
-          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQSw4H-mThRzQZo8ggfpCQ6TATvkUwGOYJhnTrBdblefJT8",
-          "available": true
-        },
-        {
-          "id": "passport-oksana",
-          "title": "Паспорт — Оксана",
-          "icon": "📘",
-          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQSGBL0JsSmyTq5gzovXj0JtAfAM6HRFmrvTgMbu-KEnI8g",
-          "available": false
-        },
-        {
-          "id": "passport-marina",
-          "title": "Паспорт — Марина",
-          "icon": "📘",
-          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQT1OLhGe3BCQo8YF-5Px5jcAVVLPwkdpGJSgwMOb62H5Y8",
-          "available": false
-        },
-        {
-          "id": "passport-kyrylo",
-          "title": "Паспорт — Кирилл",
-          "icon": "📘",
-          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQSVYRa5EiDCTanIXVmczcbRAQQw8OwLMzFM4QpX08vJsHA",
-          "available": false
-        },
-        {
-          "id": "cukr-oksana",
-          "title": "Карта CUKR — Оксана",
-          "icon": "💳",
-          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQR9Av-ZNZDiQY20e38l1iFGASWXno7NB3ktTI7NL44kAV0",
-          "available": false
-        },
-        {
-          "id": "cukr-marina",
-          "title": "Карта CUKR — Марина",
-          "icon": "💳",
-          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQR0xPak4GxVS5P5U6Cv716hAfMVUd7oieQXGqZHa5klNxk",
-          "available": false
-        },
-        {
-          "id": "cukr-kyrylo",
-          "title": "Карта CUKR — Кирилл",
-          "icon": "💳",
-          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQQzFpbxofp3So6RtPG5ycmqAe7iKFv6mV5d9Bmg29su6Y8",
-          "available": false
-        },
-        {
-          "id": "flight-insurance",
-          "title": "Страховка",
-          "icon": "🛡️",
-          "filePath": "https://1drv.ms/b/c/53bd6a3ee8a255fe/IQSNIoSxM3MnQID-_miPw5FRAaWhi-CD-elBrDXn61neTng",
-          "available": false
-        }
+      "documentIds": [
+        "flight-booking",
+        "boarding-pass-oksana",
+        "boarding-pass-marina",
+        "boarding-pass-kyrylo",
+        "passport-oksana",
+        "passport-marina",
+        "passport-kyrylo",
+        "cukr-oksana",
+        "cukr-marina",
+        "cukr-kyrylo",
+        "flight-insurance"
       ],
       "packingLists": [
         {

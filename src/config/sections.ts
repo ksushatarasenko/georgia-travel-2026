@@ -1,7 +1,9 @@
 import {
   ClipboardList,
+  FileText,
   Landmark,
   Settings,
+  ShoppingCart,
   WalletCards,
   type LucideIcon,
 } from 'lucide-react'
@@ -19,6 +21,8 @@ export const homeSectionPaths = [
   '/sights',
   '/checklist',
   '/budget',
+  '/shopping',
+  '/documents',
 ] as const
 
 export const sections: AppSection[] = [
@@ -42,6 +46,20 @@ export const sections: AppSection[] = [
     description: 'Расходы путешествия и конвертер валют',
     icon: WalletCards,
     accent: 'bg-lime-50 text-lime-700',
+  },
+  {
+    path: '/shopping',
+    title: 'Покупки',
+    description: 'Что купить, попробовать и посмотреть в Грузии',
+    icon: ShoppingCart,
+    accent: 'bg-orange-50 text-orange-700',
+  },
+  {
+    path: '/documents',
+    title: 'Документы',
+    description: 'Важные документы и ссылки на них',
+    icon: FileText,
+    accent: 'bg-sky-50 text-sky-700',
   },
   {
     path: '/settings',

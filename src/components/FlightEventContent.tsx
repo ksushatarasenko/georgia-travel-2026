@@ -18,6 +18,7 @@ import {
 } from 'lucide-react'
 import { useEffect, useState, type ReactNode } from 'react'
 import type { FlightEventDetails } from '../types/data'
+import { getTripDocumentsByIds } from '../data/tripDocuments'
 import { AirportGuide } from './AirportGuide'
 import { DocumentLinkCard } from './DocumentLinkCard'
 import { LightboxImage, useLightbox } from './lightbox'
@@ -100,6 +101,7 @@ export function FlightEventContent({
   const completedItems = details.checklist.filter(
     (item) => checkedItems[item.id],
   ).length
+  const flightDocuments = getTripDocumentsByIds(details.documentIds)
 
   return (
     <div className="mt-10 grid gap-5 lg:grid-cols-2">
@@ -199,12 +201,13 @@ export function FlightEventContent({
           title="Документы"
         >
           <div className="grid gap-3 sm:grid-cols-2">
-            {details.documents.map((document) => (
+            {flightDocuments.map((document) => (
               <DocumentLinkCard
                 key={document.id}
                 title={document.title}
+                description={document.description}
                 icon={document.icon}
-                filePath={document.filePath}
+                url={document.url}
                 available={document.available}
               />
             ))}

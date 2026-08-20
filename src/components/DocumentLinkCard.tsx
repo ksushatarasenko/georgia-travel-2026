@@ -10,18 +10,24 @@ import { DocumentViewerModal } from './DocumentViewerModal'
 interface DocumentLinkCardProps {
   title: string
   icon: string
-  filePath: string | null
+  description?: string
+  url?: string | null
+  /** @deprecated use url */
+  filePath?: string | null
   available?: boolean
 }
 
 export function DocumentLinkCard({
   title,
   icon,
+  description,
+  url,
   filePath,
   available,
 }: DocumentLinkCardProps) {
   const [isOpen, setIsOpen] = useState(false)
-  const canOpen = isDocumentOpenable(filePath, available)
+  const resolvedUrl = url ?? filePath ?? null
+  const canOpen = isDocumentOpenable(resolvedUrl, available)
 
   return (
     <div className="h-full">
@@ -32,6 +38,11 @@ export function DocumentLinkCard({
           </span>
           <div className="min-w-0 flex-1">
             <h3 className="font-semibold leading-6 text-stone-900">{title}</h3>
+            {description ? (
+              <p className="mt-1 text-sm leading-5 text-stone-500">
+                {description}
+              </p>
+            ) : null}
             {!canOpen && (
               <p className="mt-1 text-xs text-stone-400">
                 Документ пока не добавлен
@@ -40,7 +51,7 @@ export function DocumentLinkCard({
           </div>
         </div>
 
-        {canOpen && filePath ? (
+        {canOpen && resolvedUrl ? (
           <button
             type="button"
             onClick={() => setIsOpen(true)}
@@ -61,12 +72,12 @@ export function DocumentLinkCard({
         )}
       </article>
 
-      {canOpen && filePath && (
+      {canOpen && resolvedUrl && (
         <DocumentViewerModal
           isOpen={isOpen}
           title={title}
-          src={getDocumentViewerSrc(filePath)}
-          openUrl={getDocumentOpenUrl(filePath)}
+          src={getDocumentViewerSrc(resolvedUrl)}
+          openUrl={getDocumentOpenUrl(resolvedUrl)}
           onClose={() => setIsOpen(false)}
         />
       )}
